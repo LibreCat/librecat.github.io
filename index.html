@@ -1,11 +1,197 @@
-<html>
-        <head>
-                <title>LibreCat</title>
-        </head>
-        <body>
-                <div style="position: fixed; top: 50%; left: 50%; margin-top: -128px; margin-left: -128px;">
-                        <a href="https://github.com/LibreCat"><img src="images/librecat.png" title="Miau" width="256" height="256" border="0"/></a>
-             </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>LibreCat - Open Tools for Library and Research Services</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LibreCat">
+    <meta name="author" content="LibreCat">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+</head>
+
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+<!---navbar ---->
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="./index.html">Bootstrap</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="./index.html">Home</a>
+              </li>
+              <li class="">
+                <a href="./catmandu.html">Catmandu Tutorial</a>
+              </li>
+              <li class="">
+                <a href="./casestudy.html">Case Studies</a>
+              </li>
+              <li class="">
+                <a href="./events.html">Events &mdash; Workshops</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<div class="jumbotron masthead">
+  <div class="container">
+    <h1>LibreCat</h1>
+    <p>Open Tools for Library and Research Services</p>
+     <div class="row-fluid">
+      <div class="span12">
+        <a href="https://github.com/LibreCat"><img class="marketing-img" src="assets/img/librecat.png"></a>
+        <h2>Follow Us and Contribute!</h2>
+      </div>
+  </div>
+</div>
+</div>
+
+
+<div class="container">
+
+  <div class="marketing">
+
+    <h1>Introducing LibreCat</h1>
+    <p class="marketing-byline">Our goal is to provide the open source set of programming components to build up digital libraries and research services suited to your local needs.</p>
+
+    <div class="row-fluid">
+      <div class="span4">
+        <img class="marketing-img" src="assets/img/oa.svg">
+        <h2>Unlock Research</h2>
+        <p>As science evolves towards the principles of openess so digital library and research services will. LibreCat provides powerful tools to collect, distribute and present scientific output that matters.</p>
+      </div>
+      <div class="span4">
+        <img class="marketing-img" src="assets/img/refresh.svg">
+        <h2>Agile Development</h2>
+        <p>Let's put agility on the menu and meet demands on time. We work to unify library workflows in accordance with research and administrative requirements. For this aim, we build on strong solutions.</p>
+      </div>
+      <div class="span4">
+        <img class="marketing-img" src="assets/img/link.svg">
+        <h2>Interoperability</h2>
+          <p>We avoid multiple inputs and work. LibreCat respects digital library standards and interlinks you with the fast growing landscape of innovative research services to make all our efforts visible.</p>
+      </div>
+    </div>
+
+        <hr class="soften">
+
+    <div class="marketing">
+          <h1>Catmandu  &mdash; Our Backbone</h1>
+    <p class="marketing-byline">Creating any data oriented application the main task is to import data from various sources, map the fields to a common data model and put it all into a database or search engine. In data-warehousing, these processes are called ETL &mdash; Extract, Transform, Load.</p>
+
+    <img class="marketing-img" src="assets/img/catmandu.png">
+
+        <p>With Catmandu, LibreCat tools abstract digital library and research services as data warehouse processes. As stores we reuse  <a href="http://www.mongodb.org/">MongoDB</a> or <a href="http://www.elasticsearch.org/">ElasticSearch</a>  providing us with developer friendly APIs. Catmandu works with international library standards such as <a href="http://www.loc.gov/marc/">MARC</a>, <a href="http://www.loc.gov/mods/">MODS</a> and <a href="http://dublincore.org/">Dublin Core</a>, protocols such as <a href="http://www.openarchives.org/pmh/">OAI-PMH</a>, <a href="http://www.loc.gov/standards/sru/">SRU</a> and open repositories such as <a href="http://www.dspace.org/">DSpace</a> and <a href="http://fedora-commons.org/">Fedora</a>. And, of course, we speak the evolving <a href="http://semanticweb.org/wiki/Main_Page">Semantic Web</a>.</p>
+
+<div class="row-fluid">
+  <h3>Download from</h3>
+        <div class="span5">
+          <a href="http://search.cpan.org/search?query=Catmandu&mode=all"><img src="http://st.pimg.net/tucs/img/cpan_banner.png"></a>
+          </div>
+            <div class="span5">
+              <br>
+              <iframe src="http://ghbtns.com/github-btn.html?user=librecat&repo=catmandu&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30" align="right"></iframe>
+              <iframe src="http://ghbtns.com/github-btn.html?user=librecat&repo=catmandu&type=fork&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30" align="right"></iframe>
             </div>
-        </body>
+          </div>
+        </div>
+
+    <hr class="soften">
+
+    <div class="marketing">
+
+    <h1>Built with LibreCat</h1>
+    <p class="marketing-byline">For even more applications with LibreCat, browse our case-studies.</p>
+    <div class="row-fluid">
+      <ul class="thumbnails">
+        <li class="span4">
+          <a class="thumbnail" href="https://biblio.ugent.be/" alt="300x200" style="width: 300px; height: 200px;" target="_blank">
+            <img src="assets/img/biblio2.png" alt="biblio.ugent.be/">
+          </a>
+        </li>
+        <li class="span4">
+          <a class="thumbnail" href="http://pub.uni-bielefeld.de/person/9618254" alt="300x200" style="width: 300px; height: 200px;" target="http://pub.uni-bielefeld.de/person/9618254">
+            <img src="assets/img/buschi2.png" alt="pub.uni-bielefeld.de">
+          </a>
+        </li>
+        <li class="span4">
+          <a class="thumbnail" alt="300x200" style="width: 300px; height: 200px;" href="https://lup.lub.lu.se/luur/" target="_blank">
+            <img src="assets/img/lund.png" alt="lund">
+          </a>
+        </li>
+      </ul>
+     </div>
+   </div>
+
+  </div>
+
+</div>
+
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>LibreCat is an Open Collaboration of the Universty Libraries of Lund, Ghent and Bielefeld. 
+        <p>We acknowlegde support from the <a href="http://www.dfg.de/">Deutsche Forschungsgemeinschaft (DFG)</a> under the Project <a href="http://www.ub.uni-bielefeld.de/wiki/PubLister">Persönliche Publikationslisten als hochschulweiter Dienst</a>.
+        <p>Designed and built with <a href="https://github.com/twitter/bootstrap">Bootstrap</p>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="assets/js/application.js"></script>
+
+
+  </body>
 </html>
