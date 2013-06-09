@@ -1,0 +1,180 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>LibreCat - Open Tools for Library and Research Services</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="LibreCat">
+      <meta name="author" content="LibreCat">
+
+      <!-- Le styles -->
+      <link href="assets/css/bootstrap.css" rel="stylesheet">
+      <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+      <link href="assets/css/docs.css" rel="stylesheet">
+      <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+      <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+      <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.js"></script>
+      <![endif]-->
+
+      <!-- Le fav and touch icons -->
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                      <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                     <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+  <!---navbar ---->
+
+      <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+          <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="./index.html">LibreCat</a>
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li>
+                  <a href="./index.html">Home</a>
+                </li>
+                <li class="active">
+                  <a href="./catmandu.html">Catmandu Tutorial</a>
+                </li>
+                <li class="">
+                  <a href="./events.html">Events &mdash; Workshops</a>
+                </li>
+                 <li class="">
+                  <a href="./about.html">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <div class="span11 offset1">
+    <div class="marketing">
+     <h1>About LibreCat</h1>
+        
+    </div>
+   
+
+    <hr class="soften">
+    </div>
+
+    <div class="row">
+
+
+     <div class="span11 offset1">
+
+      <div class="marketing">
+     <h2>Open Source Development Project</h2>
+
+    </div>
+
+    <p>Institutional repositories and academic bibliographies have traditionally been thought of as integrated systems with cataloging workflows, file management, user management and a powerful search engine frontend for end-users.</p>
+            <p>This integration provided users with one common look and feel, but system implementers often ended up with monolithic systems capable only of very specialized tasks. Libraries often find themselves creating and installing separate cataloging projects with some of the same workflows as institutional repositories, but with different end results.</p>
+            <p>As an example: Lund University has a publication-publishing platform providing an open access repository to researchers. Within the same environment, they need to manage students' papers with different data input concerns. Each of these systems has its own notion of cataloging of publication metadata, providing a search interface and providing record import and export. They differ in user base, metadata storage, indexing and editing rules.</p>
+            <p>At Ghent University, the management of scanned books and articles requires the same metadata and file upload concerns as for the institutional repository, but the databases here also differ in workflows, access management, and user management.</p>
+            <p>Bielefeld, Lund and Ghent University each have lively development communities where many library-related services are created with common toolsets. The institutions share the basic toolsets to provide database interactions, creating web applications and file storage. It should be observed, however, that these tools all work on very low-level services: storage of data and writing web applications. Library applications also have higher-level code or building blocks, in addition to low-level functionality, that can be reused/shared in different applications. Examples are: </p>
+
+            <ul class="square">
+            <li>User management (Authentication/Authorization) </li>
+            <li>Import/Export tools (Data cleaning tools, Import data sources) </li>
+            <li>Metadata management (Cataloging tools, indexes, lookup lists) </li>
+            <li>File management (Storage, Versioning, Fixation,..) </li>
+            </ul>
+
+            <p>In 2010, the decision was taken to make a major redesign of the existing software platform and to make it open source. The aim of the redesign is to enhance the flexibility of the software, and to add new functionalities as plug-ins to a core framework. This redesign has been broken down into two sub-projects:</p>
+            <ol>
+            <li> To create a high-level system of building blocks that can be reused when creating repository-like applications: Project Catmandu; </li>
+            <li> To create a next-generation repository service based on these building blocks: Project LibreCat.</li>
+            </ol>
+            <p>As a first step Lund, Ghent and Bielefeld will provide the source code of the Catmandu project under an open license, as this will form the basis of future development.</p>
+
+            <h3>License</h3>
+            <p>
+            LibreCat is an open collaboration. Currently the three Universites of Lund, Gent and Bielefeld provide freely available tools for library and research services. We believe that LibreCat is a valuable set of applications and we would like to ensure its continued development for future innovations in the field of digital libraries and research services. 
+            </p>
+
+            <p>
+             The applications should be perceived as supplementary tools to serve your unique local need without loosing interoperability and standardisation already achieved. 
+             </p>
+             
+             <p>
+              LibreCat invites academic institutions with own development expertise to reuse and contribute. If you want to take an active part in LibreCat, please feel free to contact LibreCat Management. 
+             </p>
+
+             <p>
+             LibreCat software published at <a href="https://github.com/LibreCat">https://github.com/LibreCat</a> is free software without warranty, liabilities or support; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either  version 2 or any later version. Every contributor is free to state her/his copyright.
+            </p>
+            <h3>Contact information</h3>
+
+            <ul class="square">
+            <li><strong> Patrick Hochstenbach, Ghent</strong> <br/>patrick.hochstenbach (at) ugent.be</li>
+            <li><strong> Najko Jahn, Bielefeld</strong> <br/>najko.jahn (at) uni-bielefeld.de</li>
+            <li><strong> Jörgen Eriksson, Lund</strong> <br/>jorgen.eriksson (at) lub.lu.se</li>
+            </ul>
+
+  </div>
+
+</div>
+   
+
+        </div>
+
+
+   
+
+    </div>
+
+
+
+         <!-- Footer
+      ================================================== -->
+      
+      <footer class="footer">
+        <div class="container">
+          <p>LibreCat is an Open Collaboration of the Universty Libraries of Lund, Ghent and Bielefeld. 
+          <p>We acknowlegde support from the <a href="http://www.dfg.de/">Deutsche Forschungsgemeinschaft (DFG)</a> under the Project <a href="http://www.ub.uni-bielefeld.de/wiki/PubLister">Persönliche Publikationslisten als hochschulweiter Dienst</a>.
+          <p>Designed and built with <a href="https://github.com/twitter/bootstrap">Bootstrap</p>
+        </div>
+      </footer>
+
+
+
+      <!-- Le javascript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+      <script src="assets/js/jquery.js"></script>
+      <script src="assets/js/bootstrap-transition.js"></script>
+      <script src="assets/js/bootstrap-alert.js"></script>
+      <script src="assets/js/bootstrap-modal.js"></script>
+      <script src="assets/js/bootstrap-dropdown.js"></script>
+      <script src="assets/js/bootstrap-scrollspy.js"></script>
+      <script src="assets/js/bootstrap-tab.js"></script>
+      <script src="assets/js/bootstrap-tooltip.js"></script>
+      <script src="assets/js/bootstrap-popover.js"></script>
+      <script src="assets/js/bootstrap-button.js"></script>
+      <script src="assets/js/bootstrap-collapse.js"></script>
+      <script src="assets/js/bootstrap-carousel.js"></script>
+      <script src="assets/js/bootstrap-typeahead.js"></script>
+      <script src="assets/js/bootstrap-affix.js"></script>
+
+      <script src="assets/js/holder/holder.js"></script>
+      <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+      <script src="assets/js/application.js"></script>
+
+
+    </body>
+  </html>
