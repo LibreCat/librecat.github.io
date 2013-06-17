@@ -12,17 +12,20 @@
           <a class="brand" href="./index.html">Bootstrap</a>
           <div class="nav-collapse collapse">
                           <ul class="nav">
-                <li class="active">
-                  <a href="./index.html">Home</a>
+                <li class="{% if "index.html" == page.path %}active{% endif %}">
+                  <a href="/index.html">Home</a>
                 </li>
-                <li class="">
-                  <a href="./catmandu.html">Catmandu Tutorial</a>
+                <li class="{% if "catmandu.html" == page.path %}active{% endif %}">
+                  <a href="/catmandu.html">Catmandu Tutorial</a>
                 </li>
-                <li class="">
-                  <a href="./events.html">Events &mdash; Workshops</a>
+                <li class="{% if "events.html" == page.path %}active{% endif %}">
+                  <a href="/events.html">Events &mdash; Workshops</a>
                 </li>
-                 <li class="">
-                  <a href="./about.html">About</a>
+                <li class="{% if "blog.html" == page.path %}active{% endif %}">
+                  <a href="/blog.html">Blog</a>
+                </li>
+                 <li class="{% if "about.html" == page.path %}active{% endif %}">
+                  <a href="/about.html">About</a>
                 </li>
               </ul>
           </div>
