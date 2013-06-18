@@ -1,11 +1,14 @@
 ---
 layout: default
-title: Getting Started with LibreCat
+title: Tutorial &ndash; Getting Started with LibreCat/Catmandu
 ---
   <div class="span11 offset1">
     <div class="marketing">
      <h1>Catmandu Software Development</h1>
+     <h2>Getting Started</h2>
+
      <p class="lead">Importing, transforming, storing and indexing data should be easy</p>
+
      <p>Catmandu provides a suite of Perl modules to ease the import, storage, retrieval, export and transformation of metadata records. Combine Catmandu modules with web application frameworks such as <a href="http://plackperl.org/">PSGI/Plack</a>, document stores such as <a href="http://www.mongodb.org/">MongoDB</a> and full text indexes as <a href="http://lucene.apache.org/solr/">Solr</a> to create a rapid development environment for digital library services such as institutional repositories and search engines.</p>
 
      <div class="row-fluid">
@@ -64,9 +67,9 @@ title: Getting Started with LibreCat
 
   	<h4>Schemaless databases</h4>
   	<p>
-  Working with native Perl hashes and arrays we would like to use an easy mechanism to store and index this data in a database of choice. In the past it was a nuisance to create database schemas and indexes to store and search your data. Certainly in institutional repositories this can be a ongoing job for a programmer because the metadata schemas are not fixed in time. Any new report will require you to add new data fields and new relations for which you need to change your database schema. With the introduction of schemaless databases the storage of complex records is really easy. Create a Perl hash excute the function 'add' and your record is stored into the database. Execute 'get' to load a Perl hash from the database in memory. With our <i>ElasticSearch</i> plugin we even can provide you a CQL style query language for retrieval.
+  Working with native Perl hashes and arrays we would like to use an easy mechanism to store and index this data in a database of choice. In the past it was a nuisance to create database schemas and indexes to store and search your data. Certainly in institutional repositories this can be a ongoing job for a programmer because the metadata schemas are not fixed in time. Any new report will require you to add new data fields and new relations for which you need to change your database schema. With the introduction of schemaless databases the storage of complex records is really easy. Create a Perl hash excute the function 'add' and your record is stored into the database. Execute 'get' to load a Perl hash from the database in memory. With our <i>ElasticSearch</i> plugin we even can provide you a CQL style query language for retrieval.</p>
 
-  <pre class="prettyprint">
+{% highlight perl %}
    my $obj = { name => { last => 'Bond' , full => 'James Bond' } , occupation => 'Secret Agent' };
    $store->bag->add($obj);
     
@@ -74,21 +77,21 @@ title: Getting Started with LibreCat
   	my $obj = shift;
   	printf "%s\n" , $obj->{name}->{full};
    });
-  </pre>
-  	</p>
+{% endhighlight %}
 
-  	<h3>Getting Started</h3>
+
+  	<h3>Before you start</h3>
   	<p>
   To get Catmandu running on your system you need to download and install the CPAN <a href="http://search.cpan.org/search?query=Catmandu&mode=all">Catmandu</a> module.
   As Catmandu has numerous dependencies, we recommend installing them fully automatically, which can be done as follows.
-  <pre class="prettyprint">
+{% highlight bash %}
    $ sudo cpan
    o conf prerequisites_policy follow
    o conf build_requires_install_policy yes
    o conf commit
    install Task::Catmandu
    q
-  </pre>
+{% endhighlight %}
   	</p>
 
 
@@ -99,7 +102,7 @@ title: Getting Started with LibreCat
   	<p>
   As an example, lets create a Perl script to read a YAML file containing an array of values. We use the <tt>each</tt> function to loop through all the items
   	</p>
-  	<pre class="prettyprint lang-perl">
+{% highlight perl %}
   #!/usr/bin/env perl
   use Catmandu::Importer::YAML;
   my $importer = Catmandu::Importer::YAML->new(file => "./test.yaml");
@@ -110,19 +113,18 @@ title: Getting Started with LibreCat
   });
 
   print "Read: $count YAML items\n";
-  	</pre>
+{% endhighlight %}
   	<p>
   Running this script using this <a href="test.yaml">test.yaml</a> file you should see as output:
   	</p>
-  	<pre class="prettyprint">
-  <span class="nocode">
+{% highlight sh %}
   Read: 3 YAML items
-  </span>
-  	</pre>
+{% endhighlight %}
   	<p>
   Here is an example script to read 10 records from an OAI-PMH endpoint into an application:
   	</p>
-  	<pre class="prettyprint lang-perl">
+
+{% highlight perl %}
   #!/usr/bin/env perl
   use Catmandu::Importer::OAI;
 
@@ -134,7 +136,7 @@ title: Getting Started with LibreCat
   });
 
   print "Read sample of $count OAI items\n";
-  	</pre>
+{% endhighlight %}
   	
   	<h3>Iterable</h3>
   	<p>
@@ -143,22 +145,24 @@ title: Getting Started with LibreCat
   	<p>
   Using a 'Mock' importer we can generate some Perl hashes on-the-fly and show the functionality provided by Iterable:
   	</p>
-  	<pre class="prettyprint lang-perl">
+
+{% highlight perl %}
   use Catmandu::Importer::Mock;
   my $it = Catmandu::Importer::Mock->new(size => 10);
-  	</pre>
+{% endhighlight %}
   	<p>
   With <tt>each</tt> you can loop over all the items in an iterator:
   	</p>
-  	<pre class="prettyprint lang-perl">
+  	{% highlight perl %}
   $it->each(sub {
      printf "My n is %d\n" , shift->{n};
   });
-  	</pre>
+{% endhighlight %}
   	<p>
   Using <tt>any</tt>, <tt>many</tt>, <tt>all</tt> you can test for the existence of items in an Iterator:
   	</p>
-  	<pre class="prettyprint lang-perl">
+
+{% highlight perl %}
   my $answer = $it->any(sub { shift->{n} > 4});
   printf "Iterator contains n > 4 = %s\n" , $answer ? 'TRUE' : 'FALSE';
 
@@ -167,11 +171,13 @@ title: Getting Started with LibreCat
 
   my $answer = $it->all(sub { shift->{n} =~ /^\d+$/});
   printf "Iterator contains only digits = %s\n" , $answer ? 'TRUE' : 'FALSE';
-  	</pre>
+{% endhighlight %}
+
   	<p>
   <tt>Map</tt> and <tt>reduce</tt> are functions that evaluate a function on all the items in an iterator to procude a new iterator or a summary of the results:
   	</p>
-  	<pre class="prettyprint lang-perl">
+
+{% highlight perl %}
   # $it contains: [ { n => 1 } , { n => 2 } , ... ];
   my $ret = $it->map(sub {
        my $hash = shift;
@@ -186,7 +192,8 @@ title: Getting Started with LibreCat
        $prev + $this;
   });
   printf "SUM [ Iterator * 2] = %d\n" , $result;
-  	</pre>
+{% endhighlight %}
+
   	<p>
   The Iterable package provides many more functions such as: to_array, count, each, first, slice, take, group, tap, detect, select, reject, any, many, all, map, reduce and invoke.
   	</p>
@@ -198,18 +205,19 @@ title: Getting Started with LibreCat
   	<p>
   Here is an example using our Mock importer to stream 1 million Perl hashes through an Exporter:
   	</p>
-  	<pre class="prettyprint lang-perl">
+
+  	{% highlight perl %}
   use Catmandu::Exporter::YAML;
   my $exporter = Catmandu::Exporter::YAML->new();
   $exporter->add_many(Catmandu::Importer::Mock->new(size => 1000000));
-  	</pre>
+{% endhighlight %}
   	<p>
   Catmandu provides exporters for BibTeX, CSV, JSON, RIS, XLS and YAML. If you need a special exporter for your own format you could use the Template exporter which uses <a href="http://template-toolkit.org/">Template Toolkit</a>.
   	</p>
   	<p>
   As an example lets create an exporter for an Perl array of hashes <tt>$data</tt> using a template:
   	</p>
-  	<pre class="prettyprint lang-perl">
+{% highlight perl %}
   use Catmandu::Exporter::Template;
   my $data     = [
    { name => { first => 'James' , last => 'Bond' } , occupation => 'Secret Agent' } ,
@@ -217,14 +225,14 @@ title: Getting Started with LibreCat
   ];
   my $exporter = Catmandu::Exporter::Template->new(template => '/home/phochste/example.tt');
   $exporter->add_many($data);
-  	</pre>
+{% endhighlight %}
   The template <a href="example.tt">example.tt</a> will be rendered for every hash in the array <tt>$data</tt> (or for every item in an Iterable <tt>$data</tt>).
-  	<pre class="prettyprint lang-xml">
-  &lt;character&gt;
-   &lt;name&gt;[% name.last %], [% name.first %]&lt;/name&gt;
-   &lt;occupation&gt;[% occupation %]&lt;/occupation&gt;
-  &lt;/character&gt;
-  	</pre>
+{% highlight html+django %}
+  <character>
+   <name>[% name.last %], [% name.first %]</name>
+   <occupation>[% occupation %]</occupation>
+  </character>
+{% endhighlight %}
 
   	<h3>Fix</h3>
   	<p>
@@ -233,7 +241,7 @@ title: Getting Started with LibreCat
   	<p>
   As an example we will import data from a MARC file and change some metadata fields using Fix routines. Here is the code to run the example:
   	</p>
-  	<pre class="prettyprint lang-perl">
+  	{% highlight perl %}
   use Catmandu::Fix;
   use Catmandu::Importer::MARC;
   use Data::Dumper;
@@ -245,11 +253,11 @@ title: Getting Started with LibreCat
      my $obj = shift;
      print Dumper($obj);
   });
-  	</pre>
+{% endhighlight %}
   	<p>
   The output of this script should generate something like this:
   	</p>
-  	<pre class="prettyprint lang-perl">
+  	{% highlight perl %}
   $VAR1 = {
             '_id' => '000000043',
             'my' => {
@@ -269,12 +277,12 @@ title: Getting Started with LibreCat
                       'stringy' => 'MyTopic1; MyGenre1; MyTopic2; MyGenre2; MyTopic3; MyTopic4; MyGenre4'
                     }
           };
-  	</pre>
+{% endhighlight %}
 
   	<p>
   We need two files as input: <a href="marc.txt">marc.txt</a> is a file containing MARC records and <a href="marc.fix">marc.fix</a> contains the fixes that need to be applied to each MARC record. Lets take a look at the contents of this <tt>marc.fix</tt> file:
   	</p>
-  	<pre class="prettyprint">
+  	{% highlight perl %}
   marc_map('100','my.authors.$append');
   marc_map('710','my.authors.$append');
   marc_map('600x','my.subjects.$append');
@@ -283,7 +291,7 @@ title: Getting Started with LibreCat
   marc_map('199','my.condition', -value => 'ok');
 
   remove_field('record');
-  	</pre>
+{% endhighlight %}
   	<p>
   The fixes in this file are specialized in MARC processing. In line 1 we map the contents of the MARC-100 field into a deeply neested Perl hash with key 'authors'. In line 3 we map the contents of the MARC-600 x-subfield into the 'subjects' field. In Line 4 we read characters 35 to 37 from the MARC-008 control field into the 'language' key.
   	</p>
@@ -302,7 +310,7 @@ title: Getting Started with LibreCat
   an in memory hash store:
   </p>
 
-  <pre class="prettyprint">
+{% highlight perl %}
   use Catmandu::Importer::YAML;
   use Catmandu::Store::Hash;
   use Data::Dumper;
@@ -321,7 +329,7 @@ title: Getting Started with LibreCat
 
   # Commit all changes
   $store->bag->commit;
-  </pre>
+{% endhighlight %}
 
   <p>
   Each Catmandu::Store have one or more compartments (e.g. tables) to store data called 'bag'. We use the function 'add_many' to store 
@@ -333,19 +341,19 @@ title: Getting Started with LibreCat
   Each bag is an Iterator so you can apply any of the 'each','any','all',... methods shown above to read data from a bag.
   </p>
 
-  <pre class="prettyprint">
+{% highlight perl %}
    $store->bag->take(3)->each(sub {
      my $obj = shift;
      #.. your code
    });
-  </pre>
+{% endhighlight %}
 
   <p>
   When you store a perl Hash into a Catmandu::Store then an identifier field '_id' gets added to your perl Hash that can be used to 
   retrieve the item at a later stage. Lets take a look at the identifier and how it can be used.
   </p>
 
-  <pre class="prettyprint">
+{% highlight perl %}
   # First store a perl hash and return the stored item which includes the stored identifier
   my $item = $store->bag->add( { name => 'Patrick' });
 
@@ -354,7 +362,7 @@ title: Getting Started with LibreCat
 
   # Now you can use this identifier to retrieve the object from the store
   my $item2 = $store->bag->get('414003DC-9AD0-11E1-A3AD-D6BEE5345D14');
-  </pre>
+{% endhighlight %}
 
   <p>
   And that is how it works. Catmandu::Store has some more functionality to delete items and query the store (if the backend
@@ -367,19 +375,19 @@ title: Getting Started with LibreCat
   and install it on our system:
   </p>
 
-  <pre class="prettyprint">
+{% highlight bash %}
   $ wget https://github.com/downloads/elasticsearch/elasticsearch/elasticsearch-0.19.3.tar.gz
   $ tar zxvf elasticsearch-0.19.3.tar.gz
   $ cd elasticsearch-0.19.3
   $ bin/elasticsearch
-  </pre>
+{% endhighlight %}
 
   <p>
   After running the last command 'bin/elasticsearch' we have started the search daemon. Now we can index some data with 
   Catmandu:
   </p>
 
-  <pre class="prettyprint">
+{% highlight perl %}
   use Catmandu::Importer::YAML;
   use Catmandu::Store::ElasticSearch;
 
@@ -389,14 +397,14 @@ title: Getting Started with LibreCat
   $store->bag->add_many($importer);
 
   $store->bag->commit;
-  </pre>
+{% endhighlight %}
 
   <p>
   All records in the file 'test.yaml' should be available now index. We can test this by executing a new script to
   read all records stored in the store:
   </p>
 
-  <pre class="prettyprint">
+{% highlight perl %}
   use Catmandu::Store::ElasticSearch;
   use Data::Dumper;
 
@@ -406,13 +414,13 @@ title: Getting Started with LibreCat
     my $obj = shift;
     print Dumper($obj);
   });
-  </pre>
+{% endhighlight %}
 
   <p>
   If everything work correct you should something like this:
   </p>
 
-  <pre class="prettyprint">
+{% highlight perl %}
   $VAR1 = {
             'first' => 'Charly',
             '_id' => '96CA6692-9AD2-11E1-8800-92A3DA44A36C',
@@ -431,20 +439,20 @@ title: Getting Started with LibreCat
             'last' => 'Einstein',
             'job' => 'Physicist'
           };
-  </pre>
+{% endhighlight %}
 
   <p>
   The ElasticSearch store even provides an implementation of the Lucene and CQL query language:
   </p>
 
-  <pre class="prettyprint">
+{% highlight perl %}
   my $hits = $store->bag->searcher(query => 'first:Albert');
 
   $hits->each(sub {
     my $obj = shift;
     printf "%s %s\n" , $obj->{first} , $obj->{last};
   });
-  </pre>
+{% endhighlight %}
 
   <p>
   This last example will print 'Albert Einstein' as result. Clinton Gormley did some great work in providing
@@ -460,7 +468,7 @@ title: Getting Started with LibreCat
   <p>
   Say, you have a YAML file 'test.yml' like:
   </p>
-  <pre class="prettyprint">
+{% highlight yaml %}
   ---
   first: Charly
   last: Parker
@@ -474,14 +482,14 @@ title: Getting Started with LibreCat
   last: Ratzinger
   job: Pope
   ...
-  </pre>
+{% endhighlight %}
   <p>
   and you are required to transform it into JSON. Using the '<tt>catmandu</tt>' command you can do this with these options:
   </p>
 
-  <pre class="prettyprint">
-    $ catmandu data --from-importer YAML --into-exporter JSON &lt; test.yml
-  </pre>
+{% highlight perl %}
+    $ catmandu data --from-importer YAML --into-exporter JSON < test.yml
+{% endhighlight %}
 
   <p>
   Basically you connect a YAML importer to a JSON exporter.
@@ -491,99 +499,105 @@ title: Getting Started with LibreCat
   Need some fancy export? Then use the Template exporter which uses a template file like 'test.xml.tt' below to render the output.
   </p>
 
-  <pre class="prettyprint">
-   &lt;foo&gt;
-    &lt;first&gt;[% first %]&lt;/first&gt;
-    &lt;last&gt;[% last %]&lt;/last&gt;
-    &lt;job&gt;[% job %]&lt;/job&gt;
-   &lt;/foo&gt;
-  </pre>
+{% highlight xml %}
+   <foo>
+    <first>[% first %]</first>
+    <last>[% last %]</last>
+    <job>[% job %]</job>
+   </foo>
+{% endhighlight %}
 
   <p>
   To run the 'catmandu' command you need to provide 'Template' as the exporter to write into and a full path to the template file (without the .tt extension). Note that optional arguments for Importers and Exporters can be provided with the '--from-[NAME]' , '--into-[NAME]' syntax:
   </p>
 
-  <pre class="prettyprint">
-   $ catmandy data --from-importer YAML --into-exporter Template --into-template `pwd`/test.xml &lt; test.yml
-  </pre>
+{% highlight bash %}
+   $ catmandy data --from-importer YAML --into-exporter Template --into-template `pwd`/test.xml < test.yml
+{% endhighlight %}
 
   <p>
   Which produces the output:
   </p>
 
-  <pre class="prettyprint">
-   &lt;foo&gt;
-    &lt;first&gt;Charly&lt;/first&gt;
-    &lt;last&gt;Parker&lt;/last&gt;
-    &lt;job&gt;Artist&lt;/job&gt;
-   &lt;/foo&gt;
-   &lt;foo&gt;
-    &lt;first&gt;Albert&lt;/first&gt;
-    &lt;last&gt;Einstein&lt;/last&gt;
-    &lt;job&gt;Physicist&lt;/job&gt;
-   &lt;/foo&gt;
-   &lt;foo&gt;
-    &lt;first&gt;Joseph&lt;/first&gt;
-    &lt;last&gt;Ratzinger&lt;/last&gt;
-    &lt;job&gt;Pope&lt;/job&gt;
-   &lt;/foo&gt;
-  </pre>
+{% highlight xml %}
+   <foo>
+    <first>Charly</first>
+    <last>Parker</last>
+    <job>Artist</job>
+   </foo>
+   <foo>
+    <first>Albert</first>
+    <last>Einstein</last>
+    <job>Physicist</job>
+   </foo>
+   <foo>
+    <first>Joseph</first>
+    <last>Ratzinger</last>
+    <job>Pope</job>
+   </foo>
+{% endhighlight %}
 
   <p>
   Using this command line tools indexing data becomes also very easy. Boot up the ElasticSearch and run the command below to index the test.yml file:
   </p>
 
-  <pre class="prettyprint">
-   $ catmandu data -v --into-store ElasticSearch --into-index_name demo --into-bag data --from-importer YAML &lt; test.yml
-  </pre>
+{% highlight bash %}
+   $ catmandu data -v --into-store ElasticSearch --into-index_name demo --into-bag data --from-importer YAML < test.yml
+{% endhighlight %}
 
   <p>
   To show the results from your hard word we can export all the records from the ElasticSearch store:
   </p>
 
-  <pre class="prettyprint">
+{% highlight bash %}
    $ catmandu data --from-store ElasticSearch --from-bag data --from-index_name demo
+{% endhighlight %}
+{% highlight json %}
   {"first":"Albert","_id":"3A07B0F8-0973-11E2-98F8-F84380C42756","last":"Einstein","job":"Physicist"}
   {"first":"Charly","_id":"3A0792D0-0973-11E2-8724-A22A2812F5B2","last":"Parker","job":"Artist"}
   {"first":"Joseph","_id":"3A07B5EE-0973-11E2-97BF-E053E6A92BE5","last":"Ratzinger","job":"Pope"}
-  </pre>
+{% endhighlight %}
 
   <p>
   We can even be more lazy by creating a catmandu.yml file containing the connection parameters to the ElasticSearch:
   </p>
 
-  <pre class="prettyprint">
+{% highlight yaml %}
   ---
   store:
    default:
     package: ElasticSearch
     options:
       index_name: demo
-  </pre>
+{% endhighlight %}
 
   <p>
   Using the configuration file above indexation of YAML data can be done like this:
   </p>
 
-  <pre class="prettyprint">
+{% highlight bash %}
    $ catmandu data -v --into-bag data --from-importer YAML < ~/Desktop/test.yaml
-  </pre>
+{% endhighlight %}
 
   <p>
   And exporting all data can be done like this:
   </p>
 
-  <pre class="prettyprint">
+{% highlight bash %}
    $ catmandu data --from-bag data
-  </pre>
+{% endhighlight %}
 
   <p>
   For Catmandu stores that support a query language, exporting data can be very powerfull using the '--query' option. E.g. we can export all records about 'Einstein' from our ElasticSearch store using:
   </p>
 
-  <pre class="prettyprint">
+{% highlight bash %}
    $ catmandu data --from-bag data --query "Einstein"
-  </pre>
+{% endhighlight %}
+  
+  <hr class="soften">
+
+  <p><em>If you are interested in writing web applications, then please proceed to part 2 of this tutorial: <a href="dancer.html">Dancer &amp; Catmandu</a>.</em></p>
 
   </div>
 </div>

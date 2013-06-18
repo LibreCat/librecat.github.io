@@ -1,10 +1,11 @@
 
-<!-- _includes/navbar.html -->
+<!-- _includes/navbar.html {{ page.path }} -->
 
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
           <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -15,8 +16,8 @@
                 <li class="{% if "index.html" == page.path %}active{% endif %}">
                   <a href="/index.html">Home</a>
                 </li>
-                <li class="{% if "catmandu.html" == page.path %}active{% endif %}">
-                  <a href="/catmandu.html">Catmandu Tutorial</a>
+                <li class="{% if "tutorial/index.html" == page.path %}active{% endif %}">
+                  <a href="/tutorial/">Tutorial</a>
                 </li>
                 <li class="{% if "events.html" == page.path %}active{% endif %}">
                   <a href="/events.html">Events &mdash; Workshops</a>
