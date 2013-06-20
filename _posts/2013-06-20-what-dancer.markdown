@@ -59,9 +59,9 @@ my web app? I need to create a
 [SCRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) web app
 for searching, creating, reading, updating and deleting data records.
 
-Me: No. Perhaps that is why it is a called a microframework. But if you add
+Me: No. Perhaps this is why it is a called a microframework. But if you add
 Catmandu into the mix, you get exactly what you want. How about heading over to
-the second [Catmandu tutorial](/tutorial)? The second part, [Dancer & Catmandu:
+the [Catmandu tutorial](/tutorial)? The second part, [Dancer & Catmandu:
 Writing web applications should be easy and fun](/tutorial/dancer.html) teaches
 you exactly what you need to know.
 
