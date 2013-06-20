@@ -25,7 +25,7 @@ with a URL pattern to the left and the associated action to the right.
 He: Why would I want that?
 
 Me: These rules can be quite compact, giving you a nice overview of
-what you web application does (its REST API, if you will). More
+what your web application does (its REST API, if you will). More
 importantly, this approach allows you to decouple the URL layout from
 your program logic. In contrast to Ruby on Rails or Django, Dancer does not
 enforce a strict
