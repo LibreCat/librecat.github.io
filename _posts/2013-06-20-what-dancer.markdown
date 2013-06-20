@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "What is this Dancer anyway?"
-date: 2013-06-20 16:00
+author: Christian
+date: 2013-06-20 18:18
 tags: dancer catmandu webdev
 categores: catmandu
 ---
@@ -37,10 +38,9 @@ He: A templating system? Sounds complicated.
 
 Me: Not at all. Writing templates is much like writing PHP, but
 simpler. It's basically an HTML file with some placeholders in
-it. Even web designers can handle this. Some of them can even be
-tricked into using the limited control structures (IF, FOREACH, etc.)
-offered by templating engines -- realizing only later that they have
-started to do programming.
+it. Web designers love it. Some of them can even be tricked into using the
+limited control structures (IF, FOREACH, etc.) offered by templating engines --
+realizing only later that they have started to do programming.
 
 He: So why are they called microframeworks? Are they for toy projects only?
 
