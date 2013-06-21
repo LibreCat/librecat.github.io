@@ -2,8 +2,14 @@
 layout: post
 title: One Day of a Catmandu Developer
 author: Patrick
-tags: perl, catmandu
+tags: "perl, catmandu"
+published: true
+categores: catmandu
+categore: catmandu
+categor: catmandu
+category: catmandu
 ---
+
 At Ghent University Library we are using Catmandu these days in a project to create a new discovery
 interface for our Aleph catalog. Daily we export MARC sequential files from several ALEPH catalogs and store them
 in a [MongoDB](http://www.mongodb.org/) store. Into this store we also add records from our 
