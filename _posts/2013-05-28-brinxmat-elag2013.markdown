@@ -2,7 +2,9 @@
 layout: post
 title: Brinxmat on Catmandu
 author: Christian
-tags: elag, conference, report
+tags: "elag, conference, report"
+published: true
+category: catmandu
 ---
 
 Rurik "Brinxmat" Greenall attended Nicolas Steenlant's [ELAG 2013](http://elag2013.org/) pre-conference tutorial [Catmandu: boost your data processing with library oriented ETL](http://elag2013.org/bc3-catmandu-boost-your-repository-services-with-library-oriented-etl-processing/) and blogged quite [enthusiastically](https://twitter.com/brinxmat/status/339303739649306625) about it: [Catmandu: a tool for people who’re interested in data](https://brinxmat.wordpress.com/2013/05/28/catmandu-a-tool-for-people-whore-interested-in-data/).
