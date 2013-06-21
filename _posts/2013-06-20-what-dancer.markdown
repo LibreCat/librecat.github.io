@@ -1,14 +1,18 @@
 ---
 layout: post
-title:  "What is this Dancer anyway?"
+title: "What is this Dancer anyway?"
 author: Christian
-date: 2013-06-20 18:18
+date: "2013-06-20 18:18"
 tags: dancer catmandu webdev
 categores: catmandu
+published: true
+categore: catmandu
+categor: catmandu
+category: catmandu
 ---
 
-Today a colleague with a background in PHP and CGI scripting asked me,
-"What is this Dancer thing you keep bringing up?"
+_Today a colleague with a background in PHP and CGI scripting asked me,
+"What is this Dancer thing you keep bringing up?"_
 
 Me: [Dancer](http://www.perldancer.org/) is a microframework for web
 development in Perl, like Mojolicious. What
@@ -68,6 +72,6 @@ you exactly what you need to know.
 
 -----
 
-I would like to apologise to my colleague for making him look a
+_I would like to apologise to my colleague for making him look a
 little daft in this rendition of our dialogue. No offense intended! I
-felt I had to do it for clarity of exposition I guess.
+felt I had to do it for clarity of exposition I guess._
