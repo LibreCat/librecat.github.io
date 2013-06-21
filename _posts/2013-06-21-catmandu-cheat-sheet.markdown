@@ -31,6 +31,11 @@ category: catmandu
  $ catmandu convert SRU --base http://www.unicat.be/sru --query dna	
  $ catmandu convert ArXiv --query 'all:electron'
  $ catmandu convert PubMed --term 'hochstenbach'
+ $ cat test.tt
+[%- FOREACH f IN record %]
+[% _id %] [% f.shift %][% f.shift %][% f.shift %][% f.join(":") %]
+[%- END %]
+ $ catmandu convert MARC to Template --template `pwd`/test.tt < records.mrc 
 {% endhighlight %}
 
 ### Import/Export
@@ -45,11 +50,6 @@ category: catmandu
  $ catmandu export MongoDB --database_name mydb --bag data to JSON --fix 'retain_field("_id")'
  $ catmandu export Solr --url http://localhost:8983/solr to JSON
  $ catmandu export ElasticSearch --index_name mydb to JSON
- $ cat test.tt
-[%- FOREACH f IN record %]
-[% _id %] [% f.shift %][% f.shift %][% f.shift %][% f.join(":") %]
-[%- END %]
- $ catmandu convert MARC to Template --template `pwd`/test.tt < records.mrc 
 {% endhighlight %}
 
 ### Lazy
