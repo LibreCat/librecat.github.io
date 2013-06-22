@@ -98,7 +98,7 @@ remove_field("your.name");
 
 upcase("title");                           # marc -> MARC
 downcase("title");                         # MARC -> marc
-capitalize("my.deeply.nested.field.0");    # marc -> MArc
+capitalize("my.deeply.nested.field.0");    # marc -> Marc
 trim("field_with_spaces");                 # "  marc  " -> marc
 substring("title",0,1);                    # marc -> m
 prepend("title","die ");                   # marc -> die marc
