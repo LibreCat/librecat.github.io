@@ -11,7 +11,7 @@ category: catmandu
 ---
 
 With Catmandu we create [ETL](http://en.wikipedia.org/wiki/Extract,_transform,_load)-pipelines for library workflows. Read data from OAI, SRU, Z39.50, PubMed, arXive, transform it with Catmandu Fixes and load the results into Solr, MongoDB, CouchDB or serialize into YAML, CSV, XML whatever you like. Read my blog post about the [Catmandu Cheat Sheet](/catmandu/2013/06/21/catmandu-cheat-sheet.html)
-to get a quit recap.
+to get a quick recap.
 
 Today I want to show you how you can create your own Fix routines in any programming language using the [Catmandu::Fix::cmd](http://search.cpan.org/~nics/Catmandu-Fix-cmd-0.01/) which Nicolas Steenlant created.
 
