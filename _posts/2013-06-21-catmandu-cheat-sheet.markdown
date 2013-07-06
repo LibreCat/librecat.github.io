@@ -103,7 +103,16 @@ trim("field_with_spaces");                 # "  marc  " -> marc
 substring("title",0,1);                    # marc -> m
 prepend("title","die ");                   # marc -> die marc
 append("title"," must die");               # marc -> marc must die
-lookup("title","dict.csv",-sep_char=>'|')  # lookup 'marc' in dict.csv and replace the value
+
+lookup("title","dict.csv",-sep_char=>'|'); # lookup 'marc' in dict.csv and replace the value
+lookup("title","dict.csv",-default=>'test'); # lookup 'marc' in dict.csv and replace the value or set it to 'test'
+lookup("title","dict.csv",-delete=>'1');   # lookup 'marc' in dict.csv and replace the value or delete nothing found
+
+lookup_in_store('title', 'MongoDB', -database_name => 'lookups'); # lookup the (id)-value of title in 'lookups' and
+                                           # replace it with the data found
+lookup_in_store('title', 'MongoDB', -default => 'default value' , -delete => 1);
+
+count("myarray");                          # count number of elements in an array or hash
 
 split_field("foo",":");                    # marc:must:die -> ['marc','must','die']
 join_field("foo",":");                     # ['marc','must','die'] -> marc:must:die

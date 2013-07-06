@@ -76,7 +76,7 @@ while 1:
 If we run this we can see the expected result.
 
 {% highlight bash %}
-$ ./generate.pl | ./catjosn.py
+$ ./generate.pl | ./catjson.py
 {"random": 0.530965947974309, "title": "test"}
 {"random": 0.371021223752646, "title": "test"}
 {"random": 0.0907161737840951, "title": "test"}
