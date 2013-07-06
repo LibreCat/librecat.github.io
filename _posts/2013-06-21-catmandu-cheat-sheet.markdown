@@ -114,6 +114,9 @@ lookup_in_store('title', 'MongoDB', -default => 'default value' , -delete => 1);
 
 count("myarray");                          # count number of elements in an array or hash
 
+cmd("java MyClass");                       # Use an external program that can read JSON 
+                                           # from stdin and write JSON to stdout
+
 split_field("foo",":");                    # marc:must:die -> ['marc','must','die']
 join_field("foo",":");                     # ['marc','must','die'] -> marc:must:die
 retain_field("id");                        # delete any field except 'id'
