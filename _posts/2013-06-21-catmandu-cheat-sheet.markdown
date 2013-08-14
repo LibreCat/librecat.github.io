@@ -79,7 +79,7 @@ store:
   $ cat fixes.txt
 marc_map("245a","title");
 marc_map("100","author.$append");
-join("author",";");
+join_field("author",";");
 marc_map("008_/10-13","language");
   $ catmandu import MARC to test2 --fix fixes.txt
 {% endhighlight %}
