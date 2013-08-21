@@ -43,8 +43,8 @@ category: catmandu
  # Use Catmandu Store to store/retrieve data from a database
  $ catmandu import JSON to MongoDB --database_name mydb --bag data < records.json
  $ catmandu import MARC to MongoDB --database_name mydb --bag data < records.mrc
- $ catmandu import MARC to ElasticSearch --database_name mydb --bag data < records.mrc
- $ catmandu import MARC to ElasticSearch --database_name mydb --bag data --fix 'marc_map("245a","title")' < records.mrc
+ $ catmandu import MARC to ElasticSearch --index_name mydb --bag data < records.mrc
+ $ catmandu import MARC to ElasticSearch --index_name mydb --bag data --fix 'marc_map("245a","title")' < records.mrc
 
  $ catmandu export MongoDB --database_name mydb --bag data to JSON
  $ catmandu export MongoDB --database_name mydb --bag data to JSON --fix 'retain_field("_id")'
