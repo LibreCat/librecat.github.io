@@ -15,7 +15,11 @@ Within the [Catmandu](https://github.com/LibreCat/Catmandu) framework different 
 
 - those for different Sources like [arXiv](https://github.com/LibreCat/Catmandu-ArXiv), [Pubmed](https://github.com/LibreCat/Catmandu-PubMed), [PloS](https://github.com/LibreCat/Catmandu-PLoS) or in general those with an [OAI-Interface](https://github.com/LibreCat/Catmandu-OAI)
 
-Since Catmandu is designed for in a way, that can be extended... So in this little Tutorial we are going to create our own importer module *Catmandu::Importer::EuroPMC*. First of all, let us remember that
+Since Catmandu is designed for in a way, that can be extended... So in this little Tutorial we are going to create our own importer module *Catmandu::Importer::EuroPMC*. 
+
+## Starting with a module
+
+First of all, let us remember that
 
 	1. importers have to be within the namespace *Catmandu::Importer::*
 	2. Catmandu uses *Module::Build* as building tool
@@ -26,7 +30,10 @@ $ module-starter --builder="Module::Build" --module=Catmandu::Importer::EuroPMC 
 -- email="vitali@example.com"
 {% endhighlight %}
 
-Now, change directory to Catmandu-Importer-EuroPMC and open the file lib/Catmandu/Importer/EuroPMC.pm. Start 
+Now, change directory to Catmandu-Importer-EuroPMC and open the file lib/Catmandu/Importer/EuroPMC.pm.
+
+
+## Structure of an importer module
 
 {% highlight perl %}
 package Catmandu::Importer::EuroPMC;
