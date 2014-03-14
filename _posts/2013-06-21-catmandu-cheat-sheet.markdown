@@ -141,6 +141,8 @@ clone();                                   # clone the perl hash and work on the
 to_json('my.field');                       # convert a value of a field to json
 from_json('my.field');                     # replace the json field with the parsed value
 
+nothing();                                 # do nothing (used in benchmarking)
+
 # Copy all 245 subfields into the my.title hash
 marc_map('245','my.title');
 # Copy the 245-$a$b$c subfields into the my.title hash
