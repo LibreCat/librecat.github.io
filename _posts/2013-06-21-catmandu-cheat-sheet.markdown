@@ -138,6 +138,9 @@ collapse();                                # collapse deep nested hash to a flat
 expand();                                  # expand flat hash to deep nested hash
 clone();                                   # clone the perl hash and work on the clone
 
+to_json('my.field');                       # convert a value of a field to json
+from_json('my.field');                     # replace the json field with the parsed value
+
 # Copy all 245 subfields into the my.title hash
 marc_map('245','my.title');
 # Copy the 245-$a$b$c subfields into the my.title hash
