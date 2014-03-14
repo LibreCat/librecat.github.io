@@ -115,7 +115,11 @@ lookup_in_store('title', 'MongoDB', -default => 'default value' , -delete => 1);
 add_to_store('authors.*', 'MongoDB', '-bag', 'authors', '-database_name', 'catalog'); # add matching values to a store as a side effect
 
 count("myarray");                          # count number of elements in an array or hash
-
+sum("numbers");                            # replace an array element with the sum of its values
+sort_field("tags");                        # sort the values of an array
+sort_field("tags",-unique => 1);           # sort the values plus keep unique values
+sort_field("tags",-reverse => 1);          # revese sort
+sort_field("tags",-numeric => 1);          # sort numerical values
 cmd("java MyClass");                       # Use an external program that can read JSON 
                                            # from stdin and write JSON to stdout
 
