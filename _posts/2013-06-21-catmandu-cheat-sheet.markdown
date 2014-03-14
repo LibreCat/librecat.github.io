@@ -120,6 +120,7 @@ sort_field("tags");                        # sort the values of an array
 sort_field("tags",-unique => 1);           # sort the values plus keep unique values
 sort_field("tags",-reverse => 1);          # revese sort
 sort_field("tags",-numeric => 1);          # sort numerical values
+expand_date("2010-05-07");                 # Transforms a date to its parts {year => 2010, month => "5", day => "7", date => "2010-05-07"}
 cmd("java MyClass");                       # Use an external program that can read JSON 
                                            # from stdin and write JSON to stdout
 
