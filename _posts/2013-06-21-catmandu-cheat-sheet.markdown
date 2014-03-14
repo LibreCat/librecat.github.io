@@ -112,6 +112,8 @@ lookup_in_store('title', 'MongoDB', -database_name => 'lookups'); # lookup the (
                                            # replace it with the data found
 lookup_in_store('title', 'MongoDB', -default => 'default value' , -delete => 1);
 
+add_to_store('authors.*', 'MongoDB', '-bag', 'authors', '-database_name', 'catalog'); # add matching values to a store as a side effect
+
 count("myarray");                          # count number of elements in an array or hash
 
 cmd("java MyClass");                       # Use an external program that can read JSON 
