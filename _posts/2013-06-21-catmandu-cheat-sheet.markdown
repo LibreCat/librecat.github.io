@@ -168,6 +168,8 @@ marc_map('024','my.has024', -value => 'found');
 marc_map('245','my.title', -record => 'record2');
 # Remove the 900 fields
 marc_remove('900');
+# Add a marc field (in Catmandu::MARC 0.110)
+marc_add('999', ind1 => ' ' , ind2 => '1' , a => 'test123');
 
 # uppercase the value of field 'foo' if all members of 'oogly' have the value 'doogly'
 if_all_match('oogly.*', 'doogly');
