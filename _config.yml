@@ -2,3 +2,4 @@ name: LibreCat
 pygments: true
 url: http://librecat.org
 email: info@librecat.org
+markdown: kramdown
