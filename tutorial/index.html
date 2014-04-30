@@ -82,21 +82,14 @@ title: Tutorial &ndash; Getting Started with LibreCat/Catmandu
   	<p>
 
   To get Catmandu running on your system you need to download and install the <a href="http://search.cpan.org/search?query=Catmandu&mode=all">Catmandu</a>
-  module from CPAN. The Task::Catmandu meta-package bundles some additional modules commonly used with Catmandu:</p>
+  module from CPAN. The Task::Catmandu meta-package bundles some additional modules commonly used with Catmandu. Install it like this:
 
-  <p>On a Debian-based Linux distribution, this will install some prerequisites:
-{% highlight bash %}
-   $ sudo apt-get install build-essential cpanminus libxml2-dev libxml-libxml-simple-perl
-{% endhighlight %}
-
-  On RPM-based Linux distributions, the crucial binary package you need to install is called <tt>libxml2-devel</tt>.</p>
-
-  <p>Finally, for all systems, the following will install Catmandu and friends with their dependencies fully automatically.
 {% highlight bash %}
    $ cpanm Task::Catmandu
 {% endhighlight %}
   	</p>
 
+        <p>If some packages cannot be built, you may want to install some prerequisites using your systems's package manager. Please refer to the <a href="https://github.com/LibreCat/Catmandu/wiki/Install">Install</a> page of our <a href="https://github.com/LibreCat/Catmandu/wiki">wiki</a> for more advice.</p>
 
   	<h3><a name="importer">Importer</a></h3>
   	<p>
