@@ -12,7 +12,9 @@ title: Tutorial &ndash; Getting Started with LibreCat/Catmandu
      <p>Catmandu provides a suite of Perl modules to ease the import, storage, retrieval, export and transformation of metadata records. Combine Catmandu modules with web application frameworks such as <a href="http://plackperl.org/">PSGI/Plack</a>, document stores such as <a href="http://www.mongodb.org/">MongoDB</a> and full text indexes as <a href="http://lucene.apache.org/solr/">Solr</a> to create a rapid development environment for digital library services such as institutional repositories and search engines.</p>
 
      <div class="row-fluid">
-  <h3>Download from</h3>
+    <hr class="soften">
+
+  <h3><a name="download">Download from</a></h3>
         <div class="span5">
           <a href="http://search.cpan.org/search?query=Catmandu&mode=all"><img src="http://st.pimg.net/tucs/img/cpan_banner.png"></a>
           </div>
@@ -23,18 +25,17 @@ title: Tutorial &ndash; Getting Started with LibreCat/Catmandu
             </div>
           </div>
         </div>
-        
-    </div>
-   
-
     <hr class="soften">
+      </div>
+        
+
 
     <div class="row">
 
 
      <div class="span11 offset1">
 
-  <h3>Where do we use it?</h3>
+  <h3><a name="where">Where do we use it?</a></h3>
   	<p>
   In the <a href="http://librecat.org">LibreCat</a> project it is our goal to provide in open source a set of programming components to build up digital libraries services suited to your local needs. Here is an example of the projects we are working on:
   	</p>
@@ -51,21 +52,21 @@ title: Tutorial &ndash; Getting Started with LibreCat/Catmandu
   We have more than 40 Catmandu projects available at <a href="https://github.com/organizations/LibreCat">GitHub LibreCat</a>.
       </p>
 
-  	<h3>Why do we use it?</h3>
+  	<h3><a name="why">Why do we use it?</a></h3>
           <div style="text-align: center;">
-          <img src="assets/img/catmandu.png">
+          <img src="../assets/img/catmandu.png">
         </div>
-  	<h4>Extract, Transform and Load</h4>
+  	<h4><a name="etl">Extract, Transform and Load</a></h4>
   	<p>
   Create a search engine, one of your first tasks will to import data from various sources, map the fields to a common data model and post it to a full-text search engine. Perl modules such as <a href="http://search.cpan.org/~bricas/WebService-Solr-0.17/lib/WebService/Solr.pm">WebService::Solr</a> or <a href="http://search.cpan.org/~drtech/ElasticSearch-0.52/lib/ElasticSearch.pm">ElasticSearch</a> provide easy access to your favorite document stores, but you keep writing a lot of boilerplate code to create the connections, massaging the incoming data into the correct format, validating and uploading and indexing the data in the database. Next morning you are asked to provide a fast dump of records into an Excel worksheet. After some fixes are applied you are asked to upload it into your database. Again you hit Emacs or Vi and provide an ad-hoc script. In our LibreCat group we saw this workflow over and over. We tried to abstract this problem to a set of Perl tools which can work with library data such as MARC, Dublin Core, EndNote protocols such as OAI-PMH, SRU and repositories such as DSpace and Fedora. In data warehouses these processes are called ETL, <i>Extract</i>, <i>Transform</i>, <i>Load</i>. Many tools currenty exist for ETL processing but none adress typical library data models and services.
   	</p>
 
-  	<h4>Copy and Paste</h4>
+  	<h4><a name="copypaste">Copy and Paste</a></h4>
   	<p>
   As programmers, we would like to reuse our code and algorithms as easy as possible. In fast application development you typically want to copy and paste parts of existing code in a new project. In Catmandu we use a functional style of programming to keep our code tight and clean and suitable for copy and pasting. When working with library data models we use native Perl hashes and arrays to pass data around. In this way adhere to the rationale of Alan J. Perlis: "It is better to have 100 functions operate on one data structure than to have 10 functions operate on 10 data structures." Our functions are all based on a few primary data structures on which we define many functions (map, count, each, first, take, ...)
   	</p>
 
-  	<h4>Schemaless databases</h4>
+  	<h4><a name="nosql">Schemaless databases</a></h4>
   	<p>
   Working with native Perl hashes and arrays we would like to use an easy mechanism to store and index this data in a database of choice. In the past it was a nuisance to create database schemas and indexes to store and search your data. Certainly in institutional repositories this can be a ongoing job for a programmer because the metadata schemas are not fixed in time. Any new report will require you to add new data fields and new relations for which you need to change your database schema. With the introduction of schemaless databases the storage of complex records is really easy. Create a Perl hash excute the function 'add' and your record is stored into the database. Execute 'get' to load a Perl hash from the database in memory. With our <i>ElasticSearch</i> plugin we even can provide you a CQL style query language for retrieval.</p>
 
@@ -80,22 +81,20 @@ title: Tutorial &ndash; Getting Started with LibreCat/Catmandu
 {% endhighlight %}
 
 
-  	<h3>Before you start</h3>
+  	<h3><a name="install">Before you start</a></h3>
   	<p>
-  To get Catmandu running on your system you need to download and install the CPAN <a href="http://search.cpan.org/search?query=Catmandu&mode=all">Catmandu</a> module.
-  As Catmandu has numerous dependencies, we recommend installing them fully automatically, which can be done as follows.
+
+  To get Catmandu running on your system you need to download and install the <a href="http://search.cpan.org/search?query=Catmandu&mode=all">Catmandu</a>
+  module from CPAN. The Task::Catmandu meta-package bundles some additional modules commonly used with Catmandu. Install it like this:
+
 {% highlight bash %}
-   $ sudo cpan
-   o conf prerequisites_policy follow
-   o conf build_requires_install_policy yes
-   o conf commit
-   install Task::Catmandu
-   q
+   $ cpanm Task::Catmandu
 {% endhighlight %}
   	</p>
 
+        <p>If some packages cannot be built, you may want to install some prerequisites using your system's package manager. Please refer to the <a href="https://github.com/LibreCat/Catmandu/wiki/Install">Install</a> page of our <a href="https://github.com/LibreCat/Catmandu/wiki">wiki</a> for more advice.</p>
 
-  	<h3>Importer</h3>
+  	<h3><a name="importer">Importer</a></h3>
   	<p>
   Importers are Catmandu packages to read data into an application. We provide importers for MARC, JSON, YAML, CSV, Excel but also Atom and OAI-PMH endpoints.
   	</p>
@@ -138,7 +137,7 @@ title: Tutorial &ndash; Getting Started with LibreCat/Catmandu
   print "Read sample of $count OAI items\n";
 {% endhighlight %}
   	
-  	<h3>Iterable</h3>
+  	<h3><a name="iterable">Iterable</a></h3>
   	<p>
   The Iterable package provides many list methods to process large streams of records. Most of the methods are lazy if the underlying datastream supports it. While all of the data in Catmandu are native Perl hashes and arrays it can be impratical to load a result set of thousands of records into memory. Most Catmandu packages such as Importer, Exporter, Store provide therefor an Iterable implementation.
   	</p>
@@ -198,7 +197,7 @@ title: Tutorial &ndash; Getting Started with LibreCat/Catmandu
   The Iterable package provides many more functions such as: to_array, count, each, first, slice, take, group, tap, detect, select, reject, any, many, all, map, reduce and invoke.
   	</p>
 
-  	<h3>Exporter</h3>
+  	<h3><a name="exporter">Exporter</a></h3>
   	<p>
   Exporters are Catmandu packages to export data from an application. As input they can get native Perl hashes or arrays but also Iterators to stream huge data sets.
   	</p>
@@ -234,7 +233,7 @@ title: Tutorial &ndash; Getting Started with LibreCat/Catmandu
   </character>
 {% endhighlight %}
 
-  	<h3>Fix</h3>
+  	<h3><a name="fix">Fix</a></h3>
   	<p>
   Fixed can be used for easy data manipulation by non programmers. Using a small Perl DSL language librarians can use Fix routines to manipulate data objects. A plain text file of fixes can be created to specify all the data manipulations that need to be executed to 'massage' the data in the desired format.
   	</p>
@@ -298,7 +297,7 @@ title: Tutorial &ndash; Getting Started with LibreCat/Catmandu
   	<p>
   A Catmandu Fix provides also many functions to manipulate Perl hashes. The <tt>remove_field</tt>, as shown above in the fix file, will remove a key from a Perl hash. Other fix function are: add_field, capitalize, clone, collapse, copy_field, downcase, expand, join_field, move_fild, remove_field, replace_all, retain_field, set_field, split_field, substring, trim and upcase.
 
-  <h3>Store</h3>
+  <h3><a name="store">Store</a></h3>
   <p>
   As explained in the introduction, one of the rationales for creating Catmandu is to ease the serialization of records in our database of choice.
   The introduction of schemaless databases made the storage of complex records quite easy. Before we delve into this type of database
@@ -461,7 +460,7 @@ title: Tutorial &ndash; Getting Started with LibreCat/Catmandu
   data is simply done by using JSON over HTTP. All your fields are indexed automatically. 
   </p>
 
-  <h3>Lazy</h3>
+  <h3><a name="lazy">Lazy</a></h3>
   <p>
   Most of the Catmandu processing doesn't require you to write any Perl code. With command line tools you can store data files into databases, index your data, export data in various formats and provide basis data cleanup operations.
   </p>
