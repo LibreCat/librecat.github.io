@@ -1,0 +1,3 @@
+[submodule "tutorial/wiki"]
+	path = tutorial/wiki
+	url = git@github.com:LibreCat/Catmandu.wiki.git
