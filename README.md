@@ -9,9 +9,16 @@ Catmandu documentation (<http://librecat.org/Catmandu>) is managed in
 ## Local usage
 
 See [GitHub pages documentation](https://help.github.com/articles/using-jekyll-with-pages/)
-for local usage of this homepage. To also include Catmandu documentation 
+for local usage of this homepage. 
+
+To also include Catmandu documentation:
 
     git clone https://github.com/LibreCat/Catmandu.wiki.git wiki
     ln -s wiki/book Catmandu
     cd wiki; make # build HTML documentation
+
+To update module information, install Catmandu and run:
+
+    make local
+    make
 
