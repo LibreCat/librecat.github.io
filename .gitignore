@@ -5,3 +5,7 @@ Catmandu
 wiki
 local
 download
+.perl-version
+purr.err
+purr.pl
+purr.sh
