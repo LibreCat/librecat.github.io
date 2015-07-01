@@ -13,4 +13,4 @@ local:
 
 # locally serve with Jekyll
 serve:
-	bundle exec jekyll serve
+	bundle exec jekyll serve --port 6666

@@ -149,7 +149,7 @@
    "tests" : {
       "fail" : 1,
       "na" : 40,
-      "pass" : 1015,
+      "pass" : 1016,
       "unknown" : 0
    },
    "version" : "0.9301"
@@ -411,19 +411,14 @@
 },
 {
    "abstract" : "ASCII/Markdown table exporter",
-   "date" : "2014-07-16T08:25:04",
-   "download_url" : "http://cpan.metacpan.org/authors/id/V/VO/VOJ/Catmandu-Exporter-Table-0.2.1.tar.gz",
+   "date" : "2015-07-01T10:20:43",
+   "download_url" : "https://cpan.metacpan.org/authors/id/V/VO/VOJ/Catmandu-Exporter-Table-0.3.0.tar.gz",
    "name" : "Catmandu-Exporter-Table",
    "provides" : [
       "Catmandu::Exporter::Table"
    ],
-   "tests" : {
-      "fail" : 129,
-      "na" : 4,
-      "pass" : 506,
-      "unknown" : 0
-   },
-   "version" : "0.2.1"
+   "tests" : null,
+   "version" : "0.3.0"
 },
 {
    "abstract" : "Low level Catmandu interface to the Fedora Commons REST API",
@@ -532,7 +527,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 9,
-      "pass" : 216,
+      "pass" : 217,
       "unknown" : 40
    },
    "version" : "0.0111"
@@ -793,7 +788,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 12,
-      "pass" : 164,
+      "pass" : 165,
       "unknown" : 0
    },
    "version" : "0.210"
@@ -1405,7 +1400,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 7,
-      "pass" : 121,
+      "pass" : 143,
       "unknown" : 0
    },
    "version" : "0.05"
