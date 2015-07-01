@@ -1,0 +1,618 @@
+{
+   "Exporter" : [
+      {
+         "module" : "Catmandu::Exporter::Atom",
+         "name" : "Atom"
+      },
+      {
+         "module" : "Catmandu::Exporter::BagIt",
+         "name" : "BagIt"
+      },
+      {
+         "module" : "Catmandu::Exporter::BibTeX",
+         "name" : "BibTeX"
+      },
+      {
+         "module" : "Catmandu::Exporter::CSV",
+         "name" : "CSV"
+      },
+      {
+         "module" : "Catmandu::Exporter::JSON",
+         "name" : "JSON"
+      },
+      {
+         "module" : "Catmandu::Exporter::MAB2",
+         "name" : "MAB2"
+      },
+      {
+         "module" : "Catmandu::Exporter::MARC",
+         "name" : "MARC"
+      },
+      {
+         "module" : "Catmandu::Exporter::Null",
+         "name" : "Null"
+      },
+      {
+         "module" : "Catmandu::Exporter::PICA",
+         "name" : "PICA"
+      },
+      {
+         "module" : "Catmandu::Exporter::RDF",
+         "name" : "RDF"
+      },
+      {
+         "module" : "Catmandu::Exporter::RIS",
+         "name" : "RIS"
+      },
+      {
+         "module" : "Catmandu::Exporter::Stat",
+         "name" : "Stat"
+      },
+      {
+         "module" : "Catmandu::Exporter::Table",
+         "name" : "Table"
+      },
+      {
+         "module" : "Catmandu::Exporter::Template",
+         "name" : "Template"
+      },
+      {
+         "module" : "Catmandu::Exporter::XLS",
+         "name" : "XLS"
+      },
+      {
+         "module" : "Catmandu::Exporter::XLSX",
+         "name" : "XLSX"
+      },
+      {
+         "module" : "Catmandu::Exporter::XML",
+         "name" : "XML"
+      },
+      {
+         "module" : "Catmandu::Exporter::YAML",
+         "name" : "YAML"
+      }
+   ],
+   "Fix" : [
+      {
+         "module" : "Catmandu::Fix::Base",
+         "name" : "Base"
+      },
+      {
+         "module" : "Catmandu::Fix::Bind",
+         "name" : "Bind"
+      },
+      {
+         "module" : "Catmandu::Fix::Condition",
+         "name" : "Condition"
+      },
+      {
+         "module" : "Catmandu::Fix::Date",
+         "name" : "Date"
+      },
+      {
+         "module" : "Catmandu::Fix::Has",
+         "name" : "Has"
+      },
+      {
+         "module" : "Catmandu::Fix::Parser",
+         "name" : "Parser"
+      },
+      {
+         "module" : "Catmandu::Fix::SimpleGetValue",
+         "name" : "SimpleGetValue"
+      },
+      {
+         "module" : "Catmandu::Fix::XML",
+         "name" : "XML"
+      },
+      {
+         "module" : "Catmandu::Fix::add_field",
+         "name" : "add_field"
+      },
+      {
+         "module" : "Catmandu::Fix::add_to_store",
+         "name" : "add_to_store"
+      },
+      {
+         "module" : "Catmandu::Fix::append",
+         "name" : "append"
+      },
+      {
+         "module" : "Catmandu::Fix::aref_query",
+         "name" : "aref_query"
+      },
+      {
+         "module" : "Catmandu::Fix::array",
+         "name" : "array"
+      },
+      {
+         "module" : "Catmandu::Fix::capitalize",
+         "name" : "capitalize"
+      },
+      {
+         "module" : "Catmandu::Fix::clone",
+         "name" : "clone"
+      },
+      {
+         "module" : "Catmandu::Fix::cmd",
+         "name" : "cmd"
+      },
+      {
+         "module" : "Catmandu::Fix::code",
+         "name" : "code"
+      },
+      {
+         "module" : "Catmandu::Fix::collapse",
+         "name" : "collapse"
+      },
+      {
+         "module" : "Catmandu::Fix::copy_field",
+         "name" : "copy_field"
+      },
+      {
+         "module" : "Catmandu::Fix::count",
+         "name" : "count"
+      },
+      {
+         "module" : "Catmandu::Fix::datetime_format",
+         "name" : "datetime_format"
+      },
+      {
+         "module" : "Catmandu::Fix::downcase",
+         "name" : "downcase"
+      },
+      {
+         "module" : "Catmandu::Fix::end_day",
+         "name" : "end_day"
+      },
+      {
+         "module" : "Catmandu::Fix::end_week",
+         "name" : "end_week"
+      },
+      {
+         "module" : "Catmandu::Fix::end_year",
+         "name" : "end_year"
+      },
+      {
+         "module" : "Catmandu::Fix::epmc_dblinks",
+         "name" : "epmc_dblinks"
+      },
+      {
+         "module" : "Catmandu::Fix::expand",
+         "name" : "expand"
+      },
+      {
+         "module" : "Catmandu::Fix::expand_date",
+         "name" : "expand_date"
+      },
+      {
+         "module" : "Catmandu::Fix::filter",
+         "name" : "filter"
+      },
+      {
+         "module" : "Catmandu::Fix::from_json",
+         "name" : "from_json"
+      },
+      {
+         "module" : "Catmandu::Fix::get_json",
+         "name" : "get_json"
+      },
+      {
+         "module" : "Catmandu::Fix::hash",
+         "name" : "hash"
+      },
+      {
+         "module" : "Catmandu::Fix::join_field",
+         "name" : "join_field"
+      },
+      {
+         "module" : "Catmandu::Fix::log",
+         "name" : "log"
+      },
+      {
+         "module" : "Catmandu::Fix::lookup",
+         "name" : "lookup"
+      },
+      {
+         "module" : "Catmandu::Fix::lookup_in_store",
+         "name" : "lookup_in_store"
+      },
+      {
+         "module" : "Catmandu::Fix::mab_map",
+         "name" : "mab_map"
+      },
+      {
+         "module" : "Catmandu::Fix::marc_add",
+         "name" : "marc_add"
+      },
+      {
+         "module" : "Catmandu::Fix::marc_decode_dollar_subfields",
+         "name" : "marc_decode_dollar_subfields"
+      },
+      {
+         "module" : "Catmandu::Fix::marc_in_json",
+         "name" : "marc_in_json"
+      },
+      {
+         "module" : "Catmandu::Fix::marc_map",
+         "name" : "marc_map"
+      },
+      {
+         "module" : "Catmandu::Fix::marc_remove",
+         "name" : "marc_remove"
+      },
+      {
+         "module" : "Catmandu::Fix::marc_set",
+         "name" : "marc_set"
+      },
+      {
+         "module" : "Catmandu::Fix::marc_xml",
+         "name" : "marc_xml"
+      },
+      {
+         "module" : "Catmandu::Fix::markdown_to_html",
+         "name" : "markdown_to_html"
+      },
+      {
+         "module" : "Catmandu::Fix::move_field",
+         "name" : "move_field"
+      },
+      {
+         "module" : "Catmandu::Fix::nothing",
+         "name" : "nothing"
+      },
+      {
+         "module" : "Catmandu::Fix::pica_map",
+         "name" : "pica_map"
+      },
+      {
+         "module" : "Catmandu::Fix::prepend",
+         "name" : "prepend"
+      },
+      {
+         "module" : "Catmandu::Fix::reject",
+         "name" : "reject"
+      },
+      {
+         "module" : "Catmandu::Fix::remove_field",
+         "name" : "remove_field"
+      },
+      {
+         "module" : "Catmandu::Fix::replace_all",
+         "name" : "replace_all"
+      },
+      {
+         "module" : "Catmandu::Fix::retain",
+         "name" : "retain"
+      },
+      {
+         "module" : "Catmandu::Fix::retain_field",
+         "name" : "retain_field"
+      },
+      {
+         "module" : "Catmandu::Fix::set_array",
+         "name" : "set_array"
+      },
+      {
+         "module" : "Catmandu::Fix::set_field",
+         "name" : "set_field"
+      },
+      {
+         "module" : "Catmandu::Fix::set_hash",
+         "name" : "set_hash"
+      },
+      {
+         "module" : "Catmandu::Fix::sfx_threshold",
+         "name" : "sfx_threshold"
+      },
+      {
+         "module" : "Catmandu::Fix::sfx_year_range",
+         "name" : "sfx_year_range"
+      },
+      {
+         "module" : "Catmandu::Fix::sort_field",
+         "name" : "sort_field"
+      },
+      {
+         "module" : "Catmandu::Fix::split_field",
+         "name" : "split_field"
+      },
+      {
+         "module" : "Catmandu::Fix::start_day",
+         "name" : "start_day"
+      },
+      {
+         "module" : "Catmandu::Fix::start_week",
+         "name" : "start_week"
+      },
+      {
+         "module" : "Catmandu::Fix::start_year",
+         "name" : "start_year"
+      },
+      {
+         "module" : "Catmandu::Fix::stat_mean",
+         "name" : "stat_mean"
+      },
+      {
+         "module" : "Catmandu::Fix::stat_median",
+         "name" : "stat_median"
+      },
+      {
+         "module" : "Catmandu::Fix::stat_mode",
+         "name" : "stat_mode"
+      },
+      {
+         "module" : "Catmandu::Fix::stat_stddev",
+         "name" : "stat_stddev"
+      },
+      {
+         "module" : "Catmandu::Fix::stat_variance",
+         "name" : "stat_variance"
+      },
+      {
+         "module" : "Catmandu::Fix::substring",
+         "name" : "substring"
+      },
+      {
+         "module" : "Catmandu::Fix::sum",
+         "name" : "sum"
+      },
+      {
+         "module" : "Catmandu::Fix::template",
+         "name" : "template"
+      },
+      {
+         "module" : "Catmandu::Fix::timestamp",
+         "name" : "timestamp"
+      },
+      {
+         "module" : "Catmandu::Fix::to_json",
+         "name" : "to_json"
+      },
+      {
+         "module" : "Catmandu::Fix::trim",
+         "name" : "trim"
+      },
+      {
+         "module" : "Catmandu::Fix::upcase",
+         "name" : "upcase"
+      },
+      {
+         "module" : "Catmandu::Fix::viaf_read",
+         "name" : "viaf_read"
+      },
+      {
+         "module" : "Catmandu::Fix::wd_language",
+         "name" : "wd_language"
+      },
+      {
+         "module" : "Catmandu::Fix::wd_simple",
+         "name" : "wd_simple"
+      },
+      {
+         "module" : "Catmandu::Fix::wd_simple_claims",
+         "name" : "wd_simple_claims"
+      },
+      {
+         "module" : "Catmandu::Fix::wd_simple_strings",
+         "name" : "wd_simple_strings"
+      },
+      {
+         "module" : "Catmandu::Fix::xID",
+         "name" : "xID"
+      },
+      {
+         "module" : "Catmandu::Fix::xml_read",
+         "name" : "xml_read"
+      },
+      {
+         "module" : "Catmandu::Fix::xml_simple",
+         "name" : "xml_simple"
+      },
+      {
+         "module" : "Catmandu::Fix::xml_transform",
+         "name" : "xml_transform"
+      },
+      {
+         "module" : "Catmandu::Fix::xml_write",
+         "name" : "xml_write"
+      }
+   ],
+   "Importer" : [
+      {
+         "module" : "Catmandu::Importer::AlephX",
+         "name" : "AlephX"
+      },
+      {
+         "module" : "Catmandu::Importer::ApacheLog",
+         "name" : "ApacheLog"
+      },
+      {
+         "module" : "Catmandu::Importer::ArXiv",
+         "name" : "ArXiv"
+      },
+      {
+         "module" : "Catmandu::Importer::Atom",
+         "name" : "Atom"
+      },
+      {
+         "module" : "Catmandu::Importer::BagIt",
+         "name" : "BagIt"
+      },
+      {
+         "module" : "Catmandu::Importer::BibTeX",
+         "name" : "BibTeX"
+      },
+      {
+         "module" : "Catmandu::Importer::CPAN",
+         "name" : "CPAN"
+      },
+      {
+         "module" : "Catmandu::Importer::CSV",
+         "name" : "CSV"
+      },
+      {
+         "module" : "Catmandu::Importer::CrossRef",
+         "name" : "CrossRef"
+      },
+      {
+         "module" : "Catmandu::Importer::DBI",
+         "name" : "DBI"
+      },
+      {
+         "module" : "Catmandu::Importer::EuropePMC",
+         "name" : "EuropePMC"
+      },
+      {
+         "module" : "Catmandu::Importer::Inspire",
+         "name" : "Inspire"
+      },
+      {
+         "module" : "Catmandu::Importer::JSON",
+         "name" : "JSON"
+      },
+      {
+         "module" : "Catmandu::Importer::LDAP",
+         "name" : "LDAP"
+      },
+      {
+         "module" : "Catmandu::Importer::MAB2",
+         "name" : "MAB2"
+      },
+      {
+         "module" : "Catmandu::Importer::MARC",
+         "name" : "MARC"
+      },
+      {
+         "module" : "Catmandu::Importer::MODS",
+         "name" : "MODS"
+      },
+      {
+         "module" : "Catmandu::Importer::MWTemplates",
+         "name" : "MWTemplates"
+      },
+      {
+         "module" : "Catmandu::Importer::MediaMosa",
+         "name" : "MediaMosa"
+      },
+      {
+         "module" : "Catmandu::Importer::MendeleyCatalog",
+         "name" : "MendeleyCatalog"
+      },
+      {
+         "module" : "Catmandu::Importer::Mock",
+         "name" : "Mock"
+      },
+      {
+         "module" : "Catmandu::Importer::Modules",
+         "name" : "Modules"
+      },
+      {
+         "module" : "Catmandu::Importer::OAI",
+         "name" : "OAI"
+      },
+      {
+         "module" : "Catmandu::Importer::PICA",
+         "name" : "PICA"
+      },
+      {
+         "module" : "Catmandu::Importer::Parltrack",
+         "name" : "Parltrack"
+      },
+      {
+         "module" : "Catmandu::Importer::Purr",
+         "name" : "Purr"
+      },
+      {
+         "module" : "Catmandu::Importer::RDF",
+         "name" : "RDF"
+      },
+      {
+         "module" : "Catmandu::Importer::SRU",
+         "name" : "SRU"
+      },
+      {
+         "module" : "Catmandu::Importer::Solr",
+         "name" : "Solr"
+      },
+      {
+         "module" : "Catmandu::Importer::Twitter",
+         "name" : "Twitter"
+      },
+      {
+         "module" : "Catmandu::Importer::Wikidata",
+         "name" : "Wikidata"
+      },
+      {
+         "module" : "Catmandu::Importer::XLS",
+         "name" : "XLS"
+      },
+      {
+         "module" : "Catmandu::Importer::XLSX",
+         "name" : "XLSX"
+      },
+      {
+         "module" : "Catmandu::Importer::XML",
+         "name" : "XML"
+      },
+      {
+         "module" : "Catmandu::Importer::YAML",
+         "name" : "YAML"
+      },
+      {
+         "module" : "Catmandu::Importer::Z3950",
+         "name" : "Z3950"
+      },
+      {
+         "module" : "Catmandu::Importer::getJSON",
+         "name" : "getJSON"
+      }
+   ],
+   "Store" : [
+      {
+         "module" : "Catmandu::Store::AlephX",
+         "name" : "AlephX"
+      },
+      {
+         "module" : "Catmandu::Store::AlephX",
+         "name" : "AlephX"
+      },
+      {
+         "module" : "Catmandu::Store::CHI",
+         "name" : "CHI"
+      },
+      {
+         "module" : "Catmandu::Store::CouchDB",
+         "name" : "CouchDB"
+      },
+      {
+         "module" : "Catmandu::Store::DBI",
+         "name" : "DBI"
+      },
+      {
+         "module" : "Catmandu::Store::ElasticSearch",
+         "name" : "ElasticSearch"
+      },
+      {
+         "module" : "Catmandu::Store::FedoraCommons",
+         "name" : "FedoraCommons"
+      },
+      {
+         "module" : "Catmandu::Store::Hash",
+         "name" : "Hash"
+      },
+      {
+         "module" : "Catmandu::Store::Lucy",
+         "name" : "Lucy"
+      },
+      {
+         "module" : "Catmandu::Store::MongoDB",
+         "name" : "MongoDB"
+      },
+      {
+         "module" : "Catmandu::Store::Solr",
+         "name" : "Solr"
+      }
+   ]
+}
