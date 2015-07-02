@@ -18,7 +18,7 @@ To build **Catmandu Documentation**, clone the
 
     git clone https://github.com/LibreCat/Catmandu.wiki.git wiki
     ln -s wiki/book Catmandu
-    cd wiki; make # build HTML documentation
+    cd wiki/book; make # build HTML documentation
 
 To update **Catmandu Distributions** install
 [Catmandu](https://metacpan.org/release/Catmandu) and run:
