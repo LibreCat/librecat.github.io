@@ -149,7 +149,7 @@
    "tests" : {
       "fail" : 1,
       "na" : 40,
-      "pass" : 1016,
+      "pass" : 1049,
       "unknown" : 0
    },
    "version" : "0.9301"
@@ -238,7 +238,7 @@
    "tests" : {
       "fail" : 2,
       "na" : 7,
-      "pass" : 221,
+      "pass" : 222,
       "unknown" : 0
    },
    "version" : "0.022"
@@ -417,7 +417,12 @@
    "provides" : [
       "Catmandu::Exporter::Table"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 0,
+      "na" : 3,
+      "pass" : 37,
+      "unknown" : 0
+   },
    "version" : "0.3.0"
 },
 {
@@ -1140,7 +1145,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 8,
-      "pass" : 293,
+      "pass" : 294,
       "unknown" : 0
    },
    "version" : "0.0209"
@@ -1400,7 +1405,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 7,
-      "pass" : 143,
+      "pass" : 158,
       "unknown" : 0
    },
    "version" : "0.05"
@@ -1423,7 +1428,7 @@
    "tests" : {
       "fail" : 1,
       "na" : 0,
-      "pass" : 138,
+      "pass" : 139,
       "unknown" : 0
    },
    "version" : "0.16"

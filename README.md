@@ -24,12 +24,13 @@ To update **Catmandu Distributions** install
 [Catmandu](https://metacpan.org/release/Catmandu) and run:
 
     make local  # once or when update script changed
-    make
+    make data
+    make date
 
 Information about Catmandu Distribuions is build in directory `_data` and must
 be committed to update the website: 
 
-    git add _data
+    git add _data _config.yml
     git commit -m "autoupdate distributions"
     git push
 
