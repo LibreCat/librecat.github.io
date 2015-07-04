@@ -149,7 +149,7 @@
    "tests" : {
       "fail" : 1,
       "na" : 40,
-      "pass" : 1049,
+      "pass" : 1073,
       "unknown" : 0
    },
    "version" : "0.9301"
@@ -370,7 +370,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 4,
-      "pass" : 276,
+      "pass" : 277,
       "unknown" : 0
    },
    "version" : "0.0135"
@@ -419,8 +419,8 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 3,
-      "pass" : 37,
+      "na" : 7,
+      "pass" : 108,
       "unknown" : 0
    },
    "version" : "0.3.0"
@@ -460,7 +460,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 20,
-      "pass" : 145,
+      "pass" : 146,
       "unknown" : 0
    },
    "version" : "0.272"
@@ -484,7 +484,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 10,
-      "pass" : 240,
+      "pass" : 241,
       "unknown" : 0
    },
    "version" : "0.0123"
@@ -532,7 +532,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 9,
-      "pass" : 217,
+      "pass" : 218,
       "unknown" : 40
    },
    "version" : "0.0111"
@@ -564,7 +564,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 84,
-      "pass" : 269,
+      "pass" : 270,
       "unknown" : 0
    },
    "version" : "0.01"
@@ -641,7 +641,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 11,
-      "pass" : 320,
+      "pass" : 321,
       "unknown" : 0
    },
    "version" : "0.50"
@@ -793,7 +793,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 12,
-      "pass" : 165,
+      "pass" : 166,
       "unknown" : 0
    },
    "version" : "0.210"
@@ -810,7 +810,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 6,
-      "pass" : 340,
+      "pass" : 341,
       "unknown" : 0
    },
    "version" : "0.3"
@@ -879,8 +879,8 @@
 },
 {
    "abstract" : "Catmandu modules for working with OAI repositories",
-   "date" : "2015-05-20T14:15:45",
-   "download_url" : "https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-OAI-0.07.tar.gz",
+   "date" : "2015-07-03T09:32:17",
+   "download_url" : "https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-OAI-0.08.tar.gz",
    "name" : "Catmandu-OAI",
    "provides" : [
       "Catmandu::Importer::OAI",
@@ -892,31 +892,31 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 12,
-      "pass" : 168,
+      "na" : 3,
+      "pass" : 21,
       "unknown" : 0
    },
-   "version" : "0.07"
+   "version" : "0.08"
 },
 {
    "abstract" : "Catmandu modules for working with OCLC web services",
-   "date" : "2014-06-12T05:52:05",
-   "download_url" : "http://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-OCLC-0.005.tar.gz",
+   "date" : "2015-07-03T13:48:40",
+   "download_url" : "https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-OCLC-0.006.tar.gz",
    "name" : "Catmandu-OCLC",
    "provides" : [
-      "Catmandu::OCLC",
-      "Catmandu::OCLC::xID",
-      "Catmandu::OCLC::VIAFAuthorityCluster",
+      "Catmandu::Fix::viaf_read",
       "Catmandu::Fix::xID",
-      "Catmandu::Fix::viaf_read"
+      "Catmandu::OCLC",
+      "Catmandu::OCLC::VIAFAuthorityCluster",
+      "Catmandu::OCLC::xID"
    ],
    "tests" : {
-      "fail" : 24,
-      "na" : 7,
-      "pass" : 42,
+      "fail" : 0,
+      "na" : 3,
+      "pass" : 25,
       "unknown" : 0
    },
-   "version" : "0.005"
+   "version" : "0.006"
 },
 {
    "abstract" : "Catmandu modules for working with PICA+ data",
@@ -1026,7 +1026,7 @@
    "tests" : {
       "fail" : 1,
       "na" : 0,
-      "pass" : 158,
+      "pass" : 159,
       "unknown" : 0
    },
    "version" : "0.27"
@@ -1166,7 +1166,7 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 60,
+      "na" : 61,
       "pass" : 49,
       "unknown" : 1
    },
@@ -1312,7 +1312,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 6,
-      "pass" : 248,
+      "pass" : 300,
       "unknown" : 0
    },
    "version" : "0.08"
