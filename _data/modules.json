@@ -57,6 +57,10 @@
          "name" : "Template"
       },
       {
+         "module" : "Catmandu::Exporter::Text",
+         "name" : "Text"
+      },
+      {
          "module" : "Catmandu::Exporter::XLS",
          "name" : "XLS"
       },
@@ -125,6 +129,10 @@
       {
          "module" : "Catmandu::Fix::array",
          "name" : "array"
+      },
+      {
+         "module" : "Catmandu::Fix::assoc",
+         "name" : "assoc"
       },
       {
          "module" : "Catmandu::Fix::capitalize",
@@ -203,6 +211,18 @@
          "name" : "hash"
       },
       {
+         "module" : "Catmandu::Fix::isbn10",
+         "name" : "isbn10"
+      },
+      {
+         "module" : "Catmandu::Fix::isbn13",
+         "name" : "isbn13"
+      },
+      {
+         "module" : "Catmandu::Fix::issn",
+         "name" : "issn"
+      },
+      {
          "module" : "Catmandu::Fix::join_field",
          "name" : "join_field"
       },
@@ -255,12 +275,20 @@
          "name" : "markdown_to_html"
       },
       {
+         "module" : "Catmandu::Fix::memento_find",
+         "name" : "memento_find"
+      },
+      {
          "module" : "Catmandu::Fix::move_field",
          "name" : "move_field"
       },
       {
          "module" : "Catmandu::Fix::nothing",
          "name" : "nothing"
+      },
+      {
+         "module" : "Catmandu::Fix::perlcode",
+         "name" : "perlcode"
       },
       {
          "module" : "Catmandu::Fix::pica_map",
@@ -377,6 +405,10 @@
       {
          "module" : "Catmandu::Fix::upcase",
          "name" : "upcase"
+      },
+      {
+         "module" : "Catmandu::Fix::uuid",
+         "name" : "uuid"
       },
       {
          "module" : "Catmandu::Fix::viaf_read",
@@ -529,12 +561,20 @@
          "name" : "RDF"
       },
       {
+         "module" : "Catmandu::Importer::RIS",
+         "name" : "RIS"
+      },
+      {
          "module" : "Catmandu::Importer::SRU",
          "name" : "SRU"
       },
       {
          "module" : "Catmandu::Importer::Solr",
          "name" : "Solr"
+      },
+      {
+         "module" : "Catmandu::Importer::Text",
+         "name" : "Text"
       },
       {
          "module" : "Catmandu::Importer::Twitter",
