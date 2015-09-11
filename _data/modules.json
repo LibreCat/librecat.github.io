@@ -203,6 +203,10 @@
          "name" : "from_json"
       },
       {
+         "module" : "Catmandu::Fix::geocode",
+         "name" : "geocode"
+      },
+      {
          "module" : "Catmandu::Fix::get_json",
          "name" : "get_json"
       },
@@ -287,6 +291,22 @@
          "name" : "nothing"
       },
       {
+         "module" : "Catmandu::Fix::orcid_bio",
+         "name" : "orcid_bio"
+      },
+      {
+         "module" : "Catmandu::Fix::orcid_find",
+         "name" : "orcid_find"
+      },
+      {
+         "module" : "Catmandu::Fix::orcid_profile",
+         "name" : "orcid_profile"
+      },
+      {
+         "module" : "Catmandu::Fix::orcid_works",
+         "name" : "orcid_works"
+      },
+      {
          "module" : "Catmandu::Fix::perlcode",
          "name" : "perlcode"
       },
@@ -317,6 +337,10 @@
       {
          "module" : "Catmandu::Fix::retain_field",
          "name" : "retain_field"
+      },
+      {
+         "module" : "Catmandu::Fix::reverse_geocode",
+         "name" : "reverse_geocode"
       },
       {
          "module" : "Catmandu::Fix::set_array",
