@@ -29,12 +29,12 @@
          "name" : "MARC"
       },
       {
-         "module" : "Catmandu::Exporter::Null",
-         "name" : "Null"
+         "module" : "Catmandu::Exporter::Multi",
+         "name" : "Multi"
       },
       {
-         "module" : "Catmandu::Exporter::PICA",
-         "name" : "PICA"
+         "module" : "Catmandu::Exporter::Null",
+         "name" : "Null"
       },
       {
          "module" : "Catmandu::Exporter::RDF",
@@ -113,6 +113,10 @@
       {
          "module" : "Catmandu::Fix::add_field",
          "name" : "add_field"
+      },
+      {
+         "module" : "Catmandu::Fix::add_to_exporter",
+         "name" : "add_to_exporter"
       },
       {
          "module" : "Catmandu::Fix::add_to_store",
@@ -199,6 +203,14 @@
          "name" : "filter"
       },
       {
+         "module" : "Catmandu::Fix::flatten",
+         "name" : "flatten"
+      },
+      {
+         "module" : "Catmandu::Fix::format",
+         "name" : "format"
+      },
+      {
          "module" : "Catmandu::Fix::from_json",
          "name" : "from_json"
       },
@@ -213,6 +225,14 @@
       {
          "module" : "Catmandu::Fix::hash",
          "name" : "hash"
+      },
+      {
+         "module" : "Catmandu::Fix::import",
+         "name" : "import"
+      },
+      {
+         "module" : "Catmandu::Fix::include",
+         "name" : "include"
       },
       {
          "module" : "Catmandu::Fix::isbn10",
@@ -307,6 +327,10 @@
          "name" : "orcid_works"
       },
       {
+         "module" : "Catmandu::Fix::parse_text",
+         "name" : "parse_text"
+      },
+      {
          "module" : "Catmandu::Fix::perlcode",
          "name" : "perlcode"
       },
@@ -339,6 +363,10 @@
          "name" : "retain_field"
       },
       {
+         "module" : "Catmandu::Fix::reverse",
+         "name" : "reverse"
+      },
+      {
          "module" : "Catmandu::Fix::reverse_geocode",
          "name" : "reverse_geocode"
       },
@@ -363,8 +391,16 @@
          "name" : "sfx_year_range"
       },
       {
+         "module" : "Catmandu::Fix::sleep",
+         "name" : "sleep"
+      },
+      {
          "module" : "Catmandu::Fix::sort_field",
          "name" : "sort_field"
+      },
+      {
+         "module" : "Catmandu::Fix::split_date",
+         "name" : "split_date"
       },
       {
          "module" : "Catmandu::Fix::split_field",
@@ -427,12 +463,20 @@
          "name" : "trim"
       },
       {
+         "module" : "Catmandu::Fix::uniq",
+         "name" : "uniq"
+      },
+      {
          "module" : "Catmandu::Fix::upcase",
          "name" : "upcase"
       },
       {
          "module" : "Catmandu::Fix::uuid",
          "name" : "uuid"
+      },
+      {
+         "module" : "Catmandu::Fix::vacuum",
+         "name" : "vacuum"
       },
       {
          "module" : "Catmandu::Fix::viaf_read",
@@ -501,6 +545,10 @@
          "name" : "BibTeX"
       },
       {
+         "module" : "Catmandu::Importer::Blacklight",
+         "name" : "Blacklight"
+      },
+      {
          "module" : "Catmandu::Importer::CPAN",
          "name" : "CPAN"
       },
@@ -563,6 +611,14 @@
       {
          "module" : "Catmandu::Importer::Modules",
          "name" : "Modules"
+      },
+      {
+         "module" : "Catmandu::Importer::Multi",
+         "name" : "Multi"
+      },
+      {
+         "module" : "Catmandu::Importer::Null",
+         "name" : "Null"
       },
       {
          "module" : "Catmandu::Importer::OAI",
@@ -629,6 +685,10 @@
          "name" : "Z3950"
       },
       {
+         "module" : "Catmandu::Importer::Zotero",
+         "name" : "Zotero"
+      },
+      {
          "module" : "Catmandu::Importer::getJSON",
          "name" : "getJSON"
       }
@@ -673,6 +733,10 @@
       {
          "module" : "Catmandu::Store::MongoDB",
          "name" : "MongoDB"
+      },
+      {
+         "module" : "Catmandu::Store::Multi",
+         "name" : "Multi"
       },
       {
          "module" : "Catmandu::Store::Solr",
