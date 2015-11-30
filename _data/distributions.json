@@ -16,7 +16,7 @@
                "stretch",
                "sid"
             ],
-            "version" : "0.9502-1"
+            "version" : "0.9504-1"
          },
          {
             "area" : "main",
@@ -460,14 +460,15 @@
 },
 {
    "abstract" : "Low level Catmandu interface to the Fedora Commons REST API",
-   "date" : "2015-05-21T07:50:16",
-   "download_url" : "https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-FedoraCommons-0.272.tar.gz",
+   "date" : "2015-11-17T13:42:54",
+   "download_url" : "https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-FedoraCommons-0.273.tar.gz",
    "name" : "Catmandu-FedoraCommons",
    "provides" : [
       "Catmandu::FedoraCommons",
       "Catmandu::FedoraCommons::Model::addRelationship",
       "Catmandu::FedoraCommons::Model::datastreamHistory",
       "Catmandu::FedoraCommons::Model::datastreamProfile",
+      "Catmandu::FedoraCommons::Model::describeRepository",
       "Catmandu::FedoraCommons::Model::export",
       "Catmandu::FedoraCommons::Model::findObjects",
       "Catmandu::FedoraCommons::Model::getDatastreamDissemination",
@@ -490,18 +491,13 @@
       "Catmandu::Store::FedoraCommons::DC",
       "Catmandu::Store::FedoraCommons::FOXML"
    ],
-   "tests" : {
-      "fail" : 0,
-      "na" : 20,
-      "pass" : 152,
-      "unknown" : 0
-   },
-   "version" : "0.272"
+   "tests" : null,
+   "version" : "0.273"
 },
 {
    "abstract" : "Catmandu fixes for processing dates",
-   "date" : "2015-10-08T07:41:18",
-   "download_url" : "https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-Fix-Date-0.0124.tar.gz",
+   "date" : "2015-11-16T08:06:31",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-Fix-Date-0.0126.tar.gz",
    "name" : "Catmandu-Fix-Date",
    "provides" : [
       "Catmandu::Fix::Date",
@@ -516,7 +512,7 @@
       "Catmandu::Fix::timestamp"
    ],
    "tests" : null,
-   "version" : "0.0124"
+   "version" : "0.0126"
 },
 {
    "abstract" : "Catmandu fix modules for processing xml (deprecated)",
@@ -755,7 +751,7 @@
 },
 {
    "abstract" : "Catmandu modules for working with MAB2 data.",
-   "date" : "2015-10-01T08:52:54",
+   "date" : "2015-11-24T10:33:45",
    "debian" : {
       "package" : "libcatmandu-mab2-perl",
       "pathl" : [
@@ -782,7 +778,7 @@
          }
       ]
    },
-   "download_url" : "https://cpan.metacpan.org/authors/id/J/JO/JOROL/Catmandu-MAB2-0.12.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/J/JO/JOROL/Catmandu-MAB2-0.13.tar.gz",
    "name" : "Catmandu-MAB2",
    "provides" : [
       "Catmandu::Exporter::MAB2",
@@ -801,7 +797,7 @@
       "MAB2::Writer::XML"
    ],
    "tests" : null,
-   "version" : "0.12"
+   "version" : "0.13"
 },
 {
    "abstract" : "Catmandu modules for working with MARC data",
@@ -821,7 +817,7 @@
                "stretch",
                "sid"
             ],
-            "version" : "0.213-1"
+            "version" : "0.214-1"
          },
          {
             "area" : "main",
@@ -984,18 +980,20 @@
 },
 {
    "abstract" : "Catmandu modules for working with PICA+ data",
-   "date" : "2015-09-30T13:54:49",
-   "download_url" : "https://cpan.metacpan.org/authors/id/J/JO/JOROL/Catmandu-PICA-0.16.tar.gz",
+   "date" : "2015-11-18T17:16:45",
+   "download_url" : "https://cpan.metacpan.org/authors/id/J/JO/JOROL/Catmandu-PICA-0.17.tar.gz",
    "name" : "Catmandu-PICA",
    "provides" : [
+      "Catmandu::Exporter::PICA",
       "Catmandu::Fix::Bind::pica_each",
       "Catmandu::Fix::Condition::pica_match",
       "Catmandu::Fix::pica_map",
       "Catmandu::Importer::PICA",
+      "Catmandu::Importer::SRU::Parser::picaxml",
       "Catmandu::PICA"
    ],
    "tests" : null,
-   "version" : "0.16"
+   "version" : "0.17"
 },
 {
    "abstract" : "Catmandu module for working with PLoS data",
@@ -1047,7 +1045,7 @@
 },
 {
    "abstract" : "Modules for handling RDF data within the Catmandu framework",
-   "date" : "2015-05-30T12:18:35",
+   "date" : "2015-11-25T10:36:59",
    "debian" : {
       "package" : "libcatmandu-rdf-perl",
       "pathl" : [
@@ -1074,7 +1072,7 @@
          }
       ]
    },
-   "download_url" : "https://cpan.metacpan.org/authors/id/V/VO/VOJ/Catmandu-RDF-0.27.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/V/VO/VOJ/Catmandu-RDF-0.28.tar.gz",
    "name" : "Catmandu-RDF",
    "provides" : [
       "Catmandu::Exporter::RDF",
@@ -1082,13 +1080,8 @@
       "Catmandu::Importer::RDF",
       "Catmandu::RDF"
    ],
-   "tests" : {
-      "fail" : 1,
-      "na" : 0,
-      "pass" : 167,
-      "unknown" : 0
-   },
-   "version" : "0.27"
+   "tests" : null,
+   "version" : "0.28"
 },
 {
    "abstract" : "Catmandu modules for working with RIS data",

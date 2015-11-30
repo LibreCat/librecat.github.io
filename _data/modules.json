@@ -37,6 +37,10 @@
          "name" : "Null"
       },
       {
+         "module" : "Catmandu::Exporter::PICA",
+         "name" : "PICA"
+      },
+      {
          "module" : "Catmandu::Exporter::RDF",
          "name" : "RDF"
       },
