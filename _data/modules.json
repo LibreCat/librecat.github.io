@@ -29,6 +29,10 @@
          "name" : "MARC"
       },
       {
+         "module" : "Catmandu::Exporter::Mock",
+         "name" : "Mock"
+      },
+      {
          "module" : "Catmandu::Exporter::Multi",
          "name" : "Multi"
       },
@@ -51,6 +55,10 @@
       {
          "module" : "Catmandu::Exporter::Stat",
          "name" : "Stat"
+      },
+      {
+         "module" : "Catmandu::Exporter::TSV",
+         "name" : "TSV"
       },
       {
          "module" : "Catmandu::Exporter::Table",
@@ -335,6 +343,10 @@
          "name" : "parse_text"
       },
       {
+         "module" : "Catmandu::Fix::paste",
+         "name" : "paste"
+      },
+      {
          "module" : "Catmandu::Fix::perlcode",
          "name" : "perlcode"
       },
@@ -475,6 +487,14 @@
          "name" : "upcase"
       },
       {
+         "module" : "Catmandu::Fix::uri_decode",
+         "name" : "uri_decode"
+      },
+      {
+         "module" : "Catmandu::Fix::uri_encode",
+         "name" : "uri_encode"
+      },
+      {
          "module" : "Catmandu::Fix::uuid",
          "name" : "uuid"
       },
@@ -605,6 +625,10 @@
          "name" : "MediaMosa"
       },
       {
+         "module" : "Catmandu::Importer::MediaWiki",
+         "name" : "MediaWiki"
+      },
+      {
          "module" : "Catmandu::Importer::MendeleyCatalog",
          "name" : "MendeleyCatalog"
       },
@@ -655,6 +679,10 @@
       {
          "module" : "Catmandu::Importer::Solr",
          "name" : "Solr"
+      },
+      {
+         "module" : "Catmandu::Importer::TSV",
+         "name" : "TSV"
       },
       {
          "module" : "Catmandu::Importer::Text",
