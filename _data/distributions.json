@@ -1,6 +1,6 @@
 [{
    "abstract" : "a data toolkit",
-   "date" : "2016-02-22T15:18:03",
+   "date" : "2016-03-03T15:32:53",
    "debian" : {
       "package" : "libcatmandu-perl",
       "pathl" : [
@@ -27,7 +27,7 @@
          }
       ]
    },
-   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-1.00.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-1.0001.tar.gz",
    "name" : "Catmandu",
    "provides" : [
       "Catmandu",
@@ -194,7 +194,7 @@
       "Catmandu::Validator::Simple"
    ],
    "tests" : null,
-   "version" : "1.00"
+   "version" : "1.0001"
 },
 {
    "abstract" : "Catmandu module for Activiti",
@@ -817,21 +817,10 @@
          {
             "area" : "main",
             "suites" : [
+               "stretch",
                "sid"
             ],
             "version" : "0.215-1"
-         },
-         {
-            "area" : "main",
-            "suites" : [],
-            "version" : "0.214-2"
-         },
-         {
-            "area" : "main",
-            "suites" : [
-               "stretch"
-            ],
-            "version" : "0.214-1"
          },
          {
             "area" : "main",
@@ -940,15 +929,15 @@
 },
 {
    "abstract" : "Catmandu modules for MediaWiki",
-   "date" : "2016-02-25T09:35:03",
-   "download_url" : "https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-MediaWiki-0.01.tar.gz",
+   "date" : "2016-03-03T13:44:53",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-MediaWiki-0.021.tar.gz",
    "name" : "Catmandu-MediaWiki",
    "provides" : [
       "Catmandu::Importer::MediaWiki",
       "Catmandu::MediaWiki"
    ],
    "tests" : null,
-   "version" : "0.01"
+   "version" : "0.021"
 },
 {
    "abstract" : "Catmandu modules wrapping the Mendeley API",
@@ -1156,16 +1145,10 @@
          {
             "area" : "main",
             "suites" : [
+               "stretch",
                "sid"
             ],
             "version" : "0.037-3"
-         },
-         {
-            "area" : "main",
-            "suites" : [
-               "stretch"
-            ],
-            "version" : "0.037-2"
          },
          {
             "area" : "main",
@@ -1224,8 +1207,8 @@
 },
 {
    "abstract" : "Catmandu modules for working with solr endpoints",
-   "date" : "2016-02-23T09:25:49",
-   "download_url" : "https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-Solr-0.0213.tar.gz",
+   "date" : "2016-02-26T14:11:02",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-Solr-0.0215.tar.gz",
    "name" : "Catmandu-Solr",
    "provides" : [
       "Catmandu::Importer::Solr",
@@ -1236,7 +1219,7 @@
       "Catmandu::Store::Solr::Searcher"
    ],
    "tests" : null,
-   "version" : "0.0213"
+   "version" : "0.0215"
 },
 {
    "abstract" : "Catmandu modules for working with statistical data",
