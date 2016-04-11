@@ -290,8 +290,8 @@ only screen and (     -o-min-device-pixel-ratio: 2/1) {
 }
 .marketing-img {
   display: block;
-  margin: 0 auto 30px;
-  max-height: 145px;
+  margin: 0 auto 15px;
+  max-height: 80px;
 }
 
 
