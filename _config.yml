@@ -1,5 +1,5 @@
 name: LibreCat
-highlighter: true
+highlighter: rouge
 url: http://librecat.org
 email: info@librecat.org
 markdown: kramdown

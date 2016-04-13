@@ -7,7 +7,7 @@ title: LibreCat/Catmandu data processing toolkit
     <h1>Catmandu</h1>
     <p>- the data processing toolkit - </p>
      <div class="row-fluid">
-      <div class="span12">
+      <div>
         <a href="https://github.com/LibreCat/Catmandu"><img class="marketing-img" src="assets/img/librecat.png"></a>
       </div>
   </div>
@@ -26,21 +26,35 @@ title: LibreCat/Catmandu data processing toolkit
 
 
     <div class="marketing">
+      <h2>What is Catmandu?</h2>
 <p>
-Access your digital library and research services from the
-command line with Catmandu. <br>
-Download data via <a href="http://www.openarchives.org/pmh/">OAI-PMH</a> and <a href="http://www.loc.gov/standards/sru/">SRU</a>. <br>
-Convert  <a href="http://www.loc.gov/marc/">MARC</a>, <a href="http://www.loc.gov/mods/">MODS</a>, <a href="http://dublincore.org/">Dublin Core</a> an many more. <br> 
+Catmandu is a command line tool to access and convert data <br>
+from your digital library, research services or any other open data sets.
+</p>
+      <h2>Features</h2>
+<p>
+Download data via protocols such as <a href="http://www.openarchives.org/pmh/">OAI-PMH</a>, <a href="http://www.loc.gov/standards/sru/">SRU</a>, <a href="https://en.wikipedia.org/wiki/SPARQL">SPARQL</a> and <a href="http://linkeddatafragments.org/">Linked Data Fragments</a>. <br>
+Convert formats such as <a href="http://www.loc.gov/marc/">MARC</a>, <a href="http://www.loc.gov/mods/">MODS</a>, <a href="http://dublincore.org/">Dublin Core</a> and many more. <br> 
 Generate <a href="https://www.w3.org/RDF/">RDF</a> and speak the <a href="http://semanticweb.org/wiki/Main_Page">Semantic Web</a>. <br>
 Index your data into databases such as <a href="http://lucene.apache.org/solr/">Solr</a>,
 <a href="https://www.elastic.co/">Elasticsearch</a> and 
 <a href="https://www.mongodb.org/">MongoDB</a>. <br>
-Catmandu tools abstracts digital library and research services as data warehouse processes. 
+Use a simple <a href="http://librecat.org/Catmandu/#fix-language">Fix</a> language to convert metadata into any format you like.
+</p>
+      <h2>What does it look like?</h2>
+<p>
+  <pre style="text-align: left; padding-left: 150px;"><tt>$ catmandu convert OAI --url http://biblio.ugent.be/oai
+$ catmandu convert MARC --fix "marc_map(245,title)" &lt; data.mrc
+$ catmandu import MARC to MongoDB --database_name data < marc.mrc
+$ catmandu export MongoDB --database_name data to JSON 
 
-        </p>
+  </tt></pre>
+</p>
 
 <div class="row-fluid">
-  <h3>Download</h3>
+  <h2>Download</h2>
+    Download <a href="https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-1.0002.tar.gz">Catmandu 1.0002</a>
+
     <div>
      CPAN: <a href="https://metacpan.org/pod/Catmandu">https://metacpan.org/pod/Catmandu</a>
     </div>
@@ -56,7 +70,7 @@ Catmandu tools abstracts digital library and research services as data warehouse
 </div>
 
 <div class="row-fluid">
-  <h3>Install and try out</h3>
+  <h2>Documentation and Help</h2>
   <p>
     Read the <a href="Catmandu/#installation">installation instructions</a>,
     try a <a href="http://demo.librecat.org/">live demo</a> or look
