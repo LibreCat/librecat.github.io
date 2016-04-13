@@ -1,6 +1,6 @@
 [{
    "abstract" : "a data toolkit",
-   "date" : "2016-03-03T15:32:53",
+   "date" : "2016-04-01T11:39:08",
    "debian" : {
       "package" : "libcatmandu-perl",
       "pathl" : [
@@ -27,7 +27,7 @@
          }
       ]
    },
-   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-1.0001.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-1.0002.tar.gz",
    "name" : "Catmandu",
    "provides" : [
       "Catmandu",
@@ -194,7 +194,7 @@
       "Catmandu::Validator::Simple"
    ],
    "tests" : null,
-   "version" : "1.0001"
+   "version" : "1.0002"
 },
 {
    "abstract" : "Catmandu module for Activiti",
@@ -278,9 +278,9 @@
       "Catmandu::Importer::ArXiv"
    ],
    "tests" : {
-      "fail" : 3,
+      "fail" : 4,
       "na" : 7,
-      "pass" : 228,
+      "pass" : 229,
       "unknown" : 0
    },
    "version" : "0.022"
@@ -324,15 +324,15 @@
    "tests" : {
       "fail" : 0,
       "na" : 11,
-      "pass" : 249,
+      "pass" : 250,
       "unknown" : 0
    },
    "version" : "0.04"
 },
 {
    "abstract" : "Low level Catmandu interface to the BagIt packages.",
-   "date" : "2016-01-20T14:49:12",
-   "download_url" : "https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-BagIt-0.11.tar.gz",
+   "date" : "2016-04-08T14:06:43",
+   "download_url" : "https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-BagIt-0.12.tar.gz",
    "name" : "Catmandu-BagIt",
    "provides" : [
       "Catmandu::BagIt",
@@ -342,7 +342,7 @@
       "Catmandu::Importer::BagIt"
    ],
    "tests" : null,
-   "version" : "0.11"
+   "version" : "0.12"
 },
 {
    "abstract" : "Catmandu modules for working with BibTeX data",
@@ -636,7 +636,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 84,
-      "pass" : 276,
+      "pass" : 277,
       "unknown" : 0
    },
    "version" : "0.01"
@@ -754,7 +754,7 @@
 },
 {
    "abstract" : "Catmandu modules for working with MAB2 data.",
-   "date" : "2015-11-24T10:33:45",
+   "date" : "2016-03-18T16:15:22",
    "debian" : {
       "package" : "libcatmandu-mab2-perl",
       "pathl" : [
@@ -781,7 +781,7 @@
          }
       ]
    },
-   "download_url" : "https://cpan.metacpan.org/authors/id/J/JO/JOROL/Catmandu-MAB2-0.13.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/J/JO/JOROL/Catmandu-MAB2-0.14.tar.gz",
    "name" : "Catmandu-MAB2",
    "provides" : [
       "Catmandu::Exporter::MAB2",
@@ -800,7 +800,7 @@
       "MAB2::Writer::XML"
    ],
    "tests" : null,
-   "version" : "0.13"
+   "version" : "0.14"
 },
 {
    "abstract" : "Catmandu modules for working with MARC data",
@@ -951,7 +951,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 10,
-      "pass" : 296,
+      "pass" : 297,
       "unknown" : 0
    },
    "version" : "0.01"
@@ -1061,7 +1061,7 @@
 },
 {
    "abstract" : "Modules for handling RDF data within the Catmandu framework",
-   "date" : "2015-11-25T10:36:59",
+   "date" : "2016-04-13T08:26:27",
    "debian" : {
       "package" : "libcatmandu-rdf-perl",
       "pathl" : [
@@ -1088,7 +1088,7 @@
          }
       ]
    },
-   "download_url" : "https://cpan.metacpan.org/authors/id/V/VO/VOJ/Catmandu-RDF-0.28.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/V/VO/VOJ/Catmandu-RDF-0.31.tar.gz",
    "name" : "Catmandu-RDF",
    "provides" : [
       "Catmandu::Exporter::RDF",
@@ -1097,7 +1097,7 @@
       "Catmandu::RDF"
    ],
    "tests" : null,
-   "version" : "0.28"
+   "version" : "0.31"
 },
 {
    "abstract" : "Catmandu modules for working with RIS data",
@@ -1125,7 +1125,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 0,
-      "pass" : 291,
+      "pass" : 293,
       "unknown" : 0
    },
    "version" : "0.01"
@@ -1374,7 +1374,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 6,
-      "pass" : 388,
+      "pass" : 389,
       "unknown" : 0
    },
    "version" : "0.08"
@@ -1396,20 +1396,15 @@
    "version" : "0.03"
 },
 {
-   "abstract" : "Catmandu Validator for JSON Schema",
-   "date" : "2014-07-02T14:33:58",
-   "download_url" : "http://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-Validator-JSONSchema-0.1.tar.gz",
+   "abstract" : "An implementation of Catmandu::Validator to support JSON Schema",
+   "date" : "2016-04-06T06:43:46",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-Validator-JSONSchema-0.11.tar.gz",
    "name" : "Catmandu-Validator-JSONSchema",
    "provides" : [
       "Catmandu::Validator::JSONSchema"
    ],
-   "tests" : {
-      "fail" : 0,
-      "na" : 4,
-      "pass" : 424,
-      "unknown" : 0
-   },
-   "version" : "0.1"
+   "tests" : null,
+   "version" : "0.11"
 },
 {
    "abstract" : "Import from Wikidata for processing with Catmandu",
@@ -1485,7 +1480,7 @@
    "tests" : {
       "fail" : 1,
       "na" : 0,
-      "pass" : 151,
+      "pass" : 153,
       "unknown" : 0
    },
    "version" : "0.16"
