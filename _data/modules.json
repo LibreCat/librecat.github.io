@@ -21,6 +21,10 @@
          "name" : "JSON"
       },
       {
+         "module" : "Catmandu::Exporter::LIDO",
+         "name" : "LIDO"
+      },
+      {
          "module" : "Catmandu::Exporter::MAB2",
          "name" : "MAB2"
       },
@@ -359,6 +363,10 @@
          "name" : "prepend"
       },
       {
+         "module" : "Catmandu::Fix::random",
+         "name" : "random"
+      },
+      {
          "module" : "Catmandu::Fix::reject",
          "name" : "reject"
       },
@@ -603,6 +611,10 @@
       {
          "module" : "Catmandu::Importer::LDAP",
          "name" : "LDAP"
+      },
+      {
+         "module" : "Catmandu::Importer::LIDO",
+         "name" : "LIDO"
       },
       {
          "module" : "Catmandu::Importer::MAB2",

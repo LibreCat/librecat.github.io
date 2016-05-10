@@ -1,6 +1,6 @@
 [{
    "abstract" : "a data toolkit",
-   "date" : "2016-04-01T11:39:08",
+   "date" : "2016-05-10T11:08:46",
    "debian" : {
       "package" : "libcatmandu-perl",
       "pathl" : [
@@ -27,7 +27,7 @@
          }
       ]
    },
-   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-1.0002.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-1.01.tar.gz",
    "name" : "Catmandu",
    "provides" : [
       "Catmandu",
@@ -89,7 +89,12 @@
       "Catmandu::Fix::Condition::exists",
       "Catmandu::Fix::Condition::greater_than",
       "Catmandu::Fix::Condition::in",
+      "Catmandu::Fix::Condition::is_array",
       "Catmandu::Fix::Condition::is_false",
+      "Catmandu::Fix::Condition::is_null",
+      "Catmandu::Fix::Condition::is_number",
+      "Catmandu::Fix::Condition::is_object",
+      "Catmandu::Fix::Condition::is_string",
       "Catmandu::Fix::Condition::is_true",
       "Catmandu::Fix::Condition::less_than",
       "Catmandu::Fix::Has",
@@ -127,6 +132,7 @@
       "Catmandu::Fix::paste",
       "Catmandu::Fix::perlcode",
       "Catmandu::Fix::prepend",
+      "Catmandu::Fix::random",
       "Catmandu::Fix::reject",
       "Catmandu::Fix::remove_field",
       "Catmandu::Fix::replace_all",
@@ -194,7 +200,7 @@
       "Catmandu::Validator::Simple"
    ],
    "tests" : null,
-   "version" : "1.0002"
+   "version" : "1.01"
 },
 {
    "abstract" : "Catmandu module for Activiti",
@@ -211,7 +217,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 4,
-      "pass" : 271,
+      "pass" : 278,
       "unknown" : 0
    },
    "version" : "0.11"
@@ -264,26 +270,26 @@
       "fail" : 0,
       "na" : 3,
       "pass" : 157,
-      "unknown" : 41
+      "unknown" : 46
    },
    "version" : "1.065"
 },
 {
    "abstract" : "Catmandu modules for working with ArXiv data.",
-   "date" : "2015-02-20T06:37:13",
-   "download_url" : "https://cpan.metacpan.org/authors/id/V/VP/VPEIL/Catmandu-ArXiv-0.022.tar.gz",
+   "date" : "2016-04-15T10:39:11",
+   "download_url" : "https://cpan.metacpan.org/authors/id/V/VP/VPEIL/Catmandu-ArXiv-0.023.tar.gz",
    "name" : "Catmandu-ArXiv",
    "provides" : [
       "Catmandu::ArXiv",
       "Catmandu::Importer::ArXiv"
    ],
    "tests" : {
-      "fail" : 4,
+      "fail" : 0,
       "na" : 7,
-      "pass" : 229,
+      "pass" : 100,
       "unknown" : 0
    },
-   "version" : "0.022"
+   "version" : "0.023"
 },
 {
    "abstract" : "modules for working with Atom feeds",
@@ -324,7 +330,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 11,
-      "pass" : 250,
+      "pass" : 274,
       "unknown" : 0
    },
    "version" : "0.04"
@@ -341,7 +347,12 @@
       "Catmandu::Exporter::BagIt",
       "Catmandu::Importer::BagIt"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 3,
+      "na" : 15,
+      "pass" : 282,
+      "unknown" : 0
+   },
    "version" : "0.12"
 },
 {
@@ -354,7 +365,12 @@
       "Catmandu::Exporter::BibTeX",
       "Catmandu::Importer::BibTeX"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 0,
+      "na" : 12,
+      "pass" : 310,
+      "unknown" : 0
+   },
    "version" : "0.07"
 },
 {
@@ -366,7 +382,12 @@
       "Catmandu::Blacklight",
       "Catmandu::Importer::Blacklight"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 0,
+      "na" : 12,
+      "pass" : 208,
+      "unknown" : 0
+   },
    "version" : "0.03"
 },
 {
@@ -380,7 +401,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 15,
-      "pass" : 958,
+      "pass" : 975,
       "unknown" : 1
    },
    "version" : "0.01"
@@ -397,24 +418,34 @@
    "tests" : {
       "fail" : 0,
       "na" : 8,
-      "pass" : 185,
+      "pass" : 199,
       "unknown" : 0
    },
    "version" : "0.006"
 },
 {
    "abstract" : "Catmandu tools to communicate with DBI based interfaces",
-   "date" : "2016-02-19T11:31:48",
-   "download_url" : "https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-DBI-0.0504.tar.gz",
+   "date" : "2016-04-20T14:41:12",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-DBI-0.0505.tar.gz",
    "name" : "Catmandu-DBI",
    "provides" : [
       "Catmandu::DBI",
       "Catmandu::Importer::DBI",
       "Catmandu::Store::DBI",
-      "Catmandu::Store::DBI::Bag"
+      "Catmandu::Store::DBI::Bag",
+      "Catmandu::Store::DBI::Handler",
+      "Catmandu::Store::DBI::Handler::MySQL",
+      "Catmandu::Store::DBI::Handler::Pg",
+      "Catmandu::Store::DBI::Handler::SQLite",
+      "Catmandu::Store::DBI::Iterator"
    ],
-   "tests" : null,
-   "version" : "0.0504"
+   "tests" : {
+      "fail" : 0,
+      "na" : 27,
+      "pass" : 165,
+      "unknown" : 0
+   },
+   "version" : "0.0505"
 },
 {
    "abstract" : "Catmandu modules for working with DOI data.",
@@ -425,7 +456,7 @@
       null
    ],
    "tests" : {
-      "fail" : 4,
+      "fail" : 27,
       "na" : 9,
       "pass" : 215,
       "unknown" : 0
@@ -442,7 +473,12 @@
       "Catmandu::Fix::epmc_dblinks",
       "Catmandu::Importer::EuropePMC"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 6,
+      "na" : 10,
+      "pass" : 157,
+      "unknown" : 0
+   },
    "version" : "0.17"
 },
 {
@@ -456,7 +492,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 7,
-      "pass" : 206,
+      "pass" : 471,
       "unknown" : 0
    },
    "version" : "0.3.0"
@@ -494,7 +530,12 @@
       "Catmandu::Store::FedoraCommons::DC",
       "Catmandu::Store::FedoraCommons::FOXML"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 0,
+      "na" : 28,
+      "pass" : 140,
+      "unknown" : 0
+   },
    "version" : "0.274"
 },
 {
@@ -514,7 +555,12 @@
       "Catmandu::Fix::start_year",
       "Catmandu::Fix::timestamp"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 0,
+      "na" : 14,
+      "pass" : 346,
+      "unknown" : 0
+   },
    "version" : "0.0128"
 },
 {
@@ -529,7 +575,7 @@
       "fail" : 0,
       "na" : 6,
       "pass" : 168,
-      "unknown" : 22
+      "unknown" : 27
    },
    "version" : "0.2"
 },
@@ -544,7 +590,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 6,
-      "pass" : 398,
+      "pass" : 412,
       "unknown" : 0
    },
    "version" : "0.0201"
@@ -559,7 +605,12 @@
       "Catmandu::Fix::reverse_geocode",
       "Catmandu::Geocode"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 0,
+      "na" : 7,
+      "pass" : 253,
+      "unknown" : 0
+   },
    "version" : "0.01"
 },
 {
@@ -590,7 +641,12 @@
       "Catmandu::Identifier",
       "Memento::TimeTravel"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 1,
+      "na" : 8,
+      "pass" : 90,
+      "unknown" : 3
+   },
    "version" : "0.06"
 },
 {
@@ -604,8 +660,8 @@
    "tests" : {
       "fail" : 0,
       "na" : 9,
-      "pass" : 223,
-      "unknown" : 41
+      "pass" : 224,
+      "unknown" : 54
    },
    "version" : "0.0111"
 },
@@ -620,7 +676,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 3,
-      "pass" : 291,
+      "pass" : 308,
       "unknown" : 0
    },
    "version" : "0.03"
@@ -636,7 +692,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 84,
-      "pass" : 277,
+      "pass" : 298,
       "unknown" : 0
    },
    "version" : "0.01"
@@ -652,7 +708,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 0,
-      "pass" : 301,
+      "pass" : 315,
       "unknown" : 2
    },
    "version" : "0.001"
@@ -668,7 +724,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 7,
-      "pass" : 280,
+      "pass" : 294,
       "unknown" : 0
    },
    "version" : "0.02"
@@ -713,7 +769,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 11,
-      "pass" : 329,
+      "pass" : 364,
       "unknown" : 0
    },
    "version" : "0.50"
@@ -728,9 +784,9 @@
       "Catmandu::Importer::Inspire"
    ],
    "tests" : {
-      "fail" : 7,
+      "fail" : 13,
       "na" : 5,
-      "pass" : 119,
+      "pass" : 132,
       "unknown" : 0
    },
    "version" : "0.265"
@@ -747,10 +803,28 @@
    "tests" : {
       "fail" : 0,
       "na" : 10,
-      "pass" : 825,
+      "pass" : 841,
       "unknown" : 0
    },
    "version" : "0.0103"
+},
+{
+   "abstract" : "Modules for handling LIDO data within the Catmandu framework",
+   "date" : "2016-04-23T14:39:08",
+   "download_url" : "https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-LIDO-0.03.tar.gz",
+   "name" : "Catmandu-LIDO",
+   "provides" : [
+      "Catmandu::Exporter::LIDO",
+      "Catmandu::Importer::LIDO",
+      "Catmandu::LIDO"
+   ],
+   "tests" : {
+      "fail" : 0,
+      "na" : 0,
+      "pass" : 62,
+      "unknown" : 0
+   },
+   "version" : "0.03"
 },
 {
    "abstract" : "Catmandu modules for working with MAB2 data.",
@@ -799,7 +873,12 @@
       "MAB2::Writer::RAW",
       "MAB2::Writer::XML"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 3,
+      "na" : 12,
+      "pass" : 157,
+      "unknown" : 0
+   },
    "version" : "0.14"
 },
 {
@@ -867,7 +946,12 @@
       "Catmandu::Importer::MARC::XML",
       "Catmandu::MARC"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 0,
+      "na" : 13,
+      "pass" : 169,
+      "unknown" : 0
+   },
    "version" : "0.215"
 },
 {
@@ -879,7 +963,12 @@
       "Catmandu::Importer::MODS",
       "Catmandu::MODS"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 12,
+      "na" : 9,
+      "pass" : 326,
+      "unknown" : 0
+   },
    "version" : "0.31"
 },
 {
@@ -894,7 +983,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 2,
-      "pass" : 237,
+      "pass" : 252,
       "unknown" : 0
    },
    "version" : "0.011"
@@ -922,7 +1011,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 0,
-      "pass" : 99,
+      "pass" : 111,
       "unknown" : 0
    },
    "version" : "0.279"
@@ -936,7 +1025,12 @@
       "Catmandu::Importer::MediaWiki",
       "Catmandu::MediaWiki"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 0,
+      "na" : 9,
+      "pass" : 227,
+      "unknown" : 0
+   },
    "version" : "0.021"
 },
 {
@@ -951,7 +1045,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 10,
-      "pass" : 297,
+      "pass" : 313,
       "unknown" : 0
    },
    "version" : "0.01"
@@ -970,7 +1064,12 @@
       "Catmandu::Importer::OAI::Parser::struct",
       "Catmandu::OAI"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 0,
+      "na" : 4,
+      "pass" : 216,
+      "unknown" : 0
+   },
    "version" : "0.11"
 },
 {
@@ -988,7 +1087,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 10,
-      "pass" : 41,
+      "pass" : 60,
       "unknown" : 0
    },
    "version" : "0.006"
@@ -1008,7 +1107,12 @@
       "Catmandu::Importer::SRU::Parser::ppxml",
       "Catmandu::PICA"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 0,
+      "na" : 0,
+      "pass" : 162,
+      "unknown" : 0
+   },
    "version" : "0.19"
 },
 {
@@ -1022,7 +1126,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 20,
-      "pass" : 711,
+      "pass" : 723,
       "unknown" : 0
    },
    "version" : "0.01"
@@ -1036,7 +1140,7 @@
       "Catmandu::Plack::unAPI"
    ],
    "tests" : {
-      "fail" : 37,
+      "fail" : 51,
       "na" : 2,
       "pass" : 245,
       "unknown" : 0
@@ -1054,7 +1158,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 20,
-      "pass" : 717,
+      "pass" : 728,
       "unknown" : 0
    },
    "version" : "0.01"
@@ -1096,7 +1200,12 @@
       "Catmandu::Importer::RDF",
       "Catmandu::RDF"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 0,
+      "na" : 21,
+      "pass" : 206,
+      "unknown" : 0
+   },
    "version" : "0.31"
 },
 {
@@ -1109,7 +1218,12 @@
       "Catmandu::Importer::RIS",
       "Catmandu::RIS"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 0,
+      "na" : 1,
+      "pass" : 273,
+      "unknown" : 0
+   },
    "version" : "0.10"
 },
 {
@@ -1125,7 +1239,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 0,
-      "pass" : 293,
+      "pass" : 310,
       "unknown" : 0
    },
    "version" : "0.01"
@@ -1172,8 +1286,8 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 4,
-      "pass" : 282,
+      "na" : 10,
+      "pass" : 550,
       "unknown" : 0
    },
    "version" : "0.038"
@@ -1186,7 +1300,12 @@
    "provides" : [
       "Catmandu::Serializer::messagepack"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 0,
+      "na" : 8,
+      "pass" : 327,
+      "unknown" : 0
+   },
    "version" : "0.0102"
 },
 {
@@ -1200,15 +1319,15 @@
    "tests" : {
       "fail" : 0,
       "na" : 10,
-      "pass" : 491,
+      "pass" : 507,
       "unknown" : 0
    },
    "version" : "0.0102"
 },
 {
    "abstract" : "Catmandu modules for working with solr endpoints",
-   "date" : "2016-02-26T14:11:02",
-   "download_url" : "https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-Solr-0.0215.tar.gz",
+   "date" : "2016-04-21T13:00:55",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-Solr-0.02151.tar.gz",
    "name" : "Catmandu-Solr",
    "provides" : [
       "Catmandu::Importer::Solr",
@@ -1218,8 +1337,13 @@
       "Catmandu::Store::Solr::CQL",
       "Catmandu::Store::Solr::Searcher"
    ],
-   "tests" : null,
-   "version" : "0.0215"
+   "tests" : {
+      "fail" : 0,
+      "na" : 7,
+      "pass" : 129,
+      "unknown" : 0
+   },
+   "version" : "0.02151"
 },
 {
    "abstract" : "Catmandu modules for working with statistical data",
@@ -1235,7 +1359,12 @@
       "Catmandu::Fix::stat_variance",
       "Catmandu::Stat"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 0,
+      "na" : 6,
+      "pass" : 367,
+      "unknown" : 0
+   },
    "version" : "0.04"
 },
 {
@@ -1250,7 +1379,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 7,
-      "pass" : 458,
+      "pass" : 471,
       "unknown" : 0
    },
    "version" : "0.02"
@@ -1267,7 +1396,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 13,
-      "pass" : 617,
+      "pass" : 624,
       "unknown" : 0
    },
    "version" : "0.01"
@@ -1283,7 +1412,12 @@
       "Catmandu::Store::ElasticSearch::CQL",
       "Catmandu::Store::ElasticSearch::Searcher"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 0,
+      "na" : 13,
+      "pass" : 242,
+      "unknown" : 0
+   },
    "version" : "0.0306"
 },
 {
@@ -1322,9 +1456,9 @@
       "Catmandu::Store::Lucy::Bag"
    ],
    "tests" : {
-      "fail" : 5,
+      "fail" : 7,
       "na" : 5,
-      "pass" : 225,
+      "pass" : 245,
       "unknown" : 0
    },
    "version" : "0.0101"
@@ -1358,7 +1492,12 @@
       "Catmandu::Store::MongoDB::Bag",
       "Catmandu::Store::MongoDB::Searcher"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 0,
+      "na" : 13,
+      "pass" : 230,
+      "unknown" : 0
+   },
    "version" : "0.0403"
 },
 {
@@ -1374,7 +1513,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 6,
-      "pass" : 389,
+      "pass" : 681,
       "unknown" : 0
    },
    "version" : "0.08"
@@ -1390,7 +1529,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 12,
-      "pass" : 804,
+      "pass" : 816,
       "unknown" : 4
    },
    "version" : "0.03"
@@ -1403,7 +1542,12 @@
    "provides" : [
       "Catmandu::Validator::JSONSchema"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 0,
+      "na" : 14,
+      "pass" : 274,
+      "unknown" : 0
+   },
    "version" : "0.11"
 },
 {
@@ -1442,7 +1586,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 9,
-      "pass" : 440,
+      "pass" : 463,
       "unknown" : 0
    },
    "version" : "0.06"
@@ -1459,7 +1603,12 @@
       "Catmandu::Importer::XLSX",
       "Catmandu::XLS"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 0,
+      "na" : 5,
+      "pass" : 155,
+      "unknown" : 0
+   },
    "version" : "0.08"
 },
 {
@@ -1478,9 +1627,9 @@
       "Catmandu::XML::Transformer"
    ],
    "tests" : {
-      "fail" : 1,
+      "fail" : 25,
       "na" : 0,
-      "pass" : 153,
+      "pass" : 304,
       "unknown" : 0
    },
    "version" : "0.16"
@@ -1497,7 +1646,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 6,
-      "pass" : 5,
+      "pass" : 14,
       "unknown" : 0
    },
    "version" : "0.04"
@@ -1511,6 +1660,11 @@
       "Catmandu::Importer::Zotero",
       "Catmandu::Zotero"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 0,
+      "na" : 8,
+      "pass" : 211,
+      "unknown" : 0
+   },
    "version" : "0.07"
 }]
