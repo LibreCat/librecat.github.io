@@ -13,8 +13,16 @@
          "name" : "BibTeX"
       },
       {
+         "module" : "Catmandu::Exporter::Breaker",
+         "name" : "Breaker"
+      },
+      {
          "module" : "Catmandu::Exporter::CSV",
          "name" : "CSV"
+      },
+      {
+         "module" : "Catmandu::Exporter::Count",
+         "name" : "Count"
       },
       {
          "module" : "Catmandu::Exporter::JSON",
@@ -47,6 +55,10 @@
       {
          "module" : "Catmandu::Exporter::PICA",
          "name" : "PICA"
+      },
+      {
+         "module" : "Catmandu::Exporter::PNX",
+         "name" : "PNX"
       },
       {
          "module" : "Catmandu::Exporter::RDF",
@@ -89,6 +101,10 @@
          "name" : "XML"
       },
       {
+         "module" : "Catmandu::Exporter::XSD",
+         "name" : "XSD"
+      },
+      {
          "module" : "Catmandu::Exporter::YAML",
          "name" : "YAML"
       }
@@ -107,12 +123,20 @@
          "name" : "Condition"
       },
       {
+         "module" : "Catmandu::Fix::Datahub",
+         "name" : "Datahub"
+      },
+      {
          "module" : "Catmandu::Fix::Date",
          "name" : "Date"
       },
       {
          "module" : "Catmandu::Fix::Has",
          "name" : "Has"
+      },
+      {
+         "module" : "Catmandu::Fix::Inlineable",
+         "name" : "Inlineable"
       },
       {
          "module" : "Catmandu::Fix::Parser",
@@ -125,6 +149,22 @@
       {
          "module" : "Catmandu::Fix::XML",
          "name" : "XML"
+      },
+      {
+         "module" : "Catmandu::Fix::aat_match",
+         "name" : "aat_match"
+      },
+      {
+         "module" : "Catmandu::Fix::aat_match",
+         "name" : "aat_match"
+      },
+      {
+         "module" : "Catmandu::Fix::aat_search",
+         "name" : "aat_search"
+      },
+      {
+         "module" : "Catmandu::Fix::aat_search",
+         "name" : "aat_search"
       },
       {
          "module" : "Catmandu::Fix::add_field",
@@ -251,6 +291,10 @@
          "name" : "include"
       },
       {
+         "module" : "Catmandu::Fix::index",
+         "name" : "index"
+      },
+      {
          "module" : "Catmandu::Fix::isbn10",
          "name" : "isbn10"
       },
@@ -265,6 +309,46 @@
       {
          "module" : "Catmandu::Fix::join_field",
          "name" : "join_field"
+      },
+      {
+         "module" : "Catmandu::Fix::lido_actor",
+         "name" : "lido_actor"
+      },
+      {
+         "module" : "Catmandu::Fix::lido_baseid",
+         "name" : "lido_baseid"
+      },
+      {
+         "module" : "Catmandu::Fix::lido_basenameset",
+         "name" : "lido_basenameset"
+      },
+      {
+         "module" : "Catmandu::Fix::lido_basevalue",
+         "name" : "lido_basevalue"
+      },
+      {
+         "module" : "Catmandu::Fix::lido_classification",
+         "name" : "lido_classification"
+      },
+      {
+         "module" : "Catmandu::Fix::lido_date",
+         "name" : "lido_date"
+      },
+      {
+         "module" : "Catmandu::Fix::lido_descriptivenote",
+         "name" : "lido_descriptivenote"
+      },
+      {
+         "module" : "Catmandu::Fix::lido_inscription",
+         "name" : "lido_inscription"
+      },
+      {
+         "module" : "Catmandu::Fix::lido_objectmeasurements",
+         "name" : "lido_objectmeasurements"
+      },
+      {
+         "module" : "Catmandu::Fix::lido_term",
+         "name" : "lido_term"
       },
       {
          "module" : "Catmandu::Fix::log",
@@ -305,6 +389,10 @@
       {
          "module" : "Catmandu::Fix::marc_set",
          "name" : "marc_set"
+      },
+      {
+         "module" : "Catmandu::Fix::marc_spec",
+         "name" : "marc_spec"
       },
       {
          "module" : "Catmandu::Fix::marc_xml",
@@ -393,6 +481,14 @@
       {
          "module" : "Catmandu::Fix::reverse_geocode",
          "name" : "reverse_geocode"
+      },
+      {
+         "module" : "Catmandu::Fix::rkd_name",
+         "name" : "rkd_name"
+      },
+      {
+         "module" : "Catmandu::Fix::rkd_name",
+         "name" : "rkd_name"
       },
       {
          "module" : "Catmandu::Fix::set_array",
@@ -511,8 +607,16 @@
          "name" : "vacuum"
       },
       {
+         "module" : "Catmandu::Fix::viaf_match",
+         "name" : "viaf_match"
+      },
+      {
          "module" : "Catmandu::Fix::viaf_read",
          "name" : "viaf_read"
+      },
+      {
+         "module" : "Catmandu::Fix::viaf_search",
+         "name" : "viaf_search"
       },
       {
          "module" : "Catmandu::Fix::wd_language",
@@ -549,6 +653,10 @@
       {
          "module" : "Catmandu::Fix::xml_write",
          "name" : "xml_write"
+      },
+      {
+         "module" : "Catmandu::Fix::xpath_map",
+         "name" : "xpath_map"
       }
    ],
    "Importer" : [
@@ -669,6 +777,10 @@
          "name" : "PICA"
       },
       {
+         "module" : "Catmandu::Importer::PNX",
+         "name" : "PNX"
+      },
+      {
          "module" : "Catmandu::Importer::Parltrack",
          "name" : "Parltrack"
       },
@@ -721,6 +833,10 @@
          "name" : "XML"
       },
       {
+         "module" : "Catmandu::Importer::XSD",
+         "name" : "XSD"
+      },
+      {
          "module" : "Catmandu::Importer::YAML",
          "name" : "YAML"
       },
@@ -739,12 +855,24 @@
    ],
    "Store" : [
       {
+         "module" : "Catmandu::Store::AAT",
+         "name" : "AAT"
+      },
+      {
+         "module" : "Catmandu::Store::AAT",
+         "name" : "AAT"
+      },
+      {
          "module" : "Catmandu::Store::AlephX",
          "name" : "AlephX"
       },
       {
          "module" : "Catmandu::Store::AlephX",
          "name" : "AlephX"
+      },
+      {
+         "module" : "Catmandu::Store::CA",
+         "name" : "CA"
       },
       {
          "module" : "Catmandu::Store::CHI",
@@ -757,6 +885,10 @@
       {
          "module" : "Catmandu::Store::DBI",
          "name" : "DBI"
+      },
+      {
+         "module" : "Catmandu::Store::Datahub",
+         "name" : "Datahub"
       },
       {
          "module" : "Catmandu::Store::ElasticSearch",
@@ -783,8 +915,28 @@
          "name" : "Multi"
       },
       {
+         "module" : "Catmandu::Store::RKD",
+         "name" : "RKD"
+      },
+      {
+         "module" : "Catmandu::Store::RKD",
+         "name" : "RKD"
+      },
+      {
+         "module" : "Catmandu::Store::Resolver",
+         "name" : "Resolver"
+      },
+      {
          "module" : "Catmandu::Store::Solr",
          "name" : "Solr"
+      },
+      {
+         "module" : "Catmandu::Store::VIAF",
+         "name" : "VIAF"
+      },
+      {
+         "module" : "Catmandu::Store::VKC",
+         "name" : "VKC"
       }
    ]
 }
