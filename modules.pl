@@ -3,13 +3,16 @@ use Catmandu -all, -load;
 
 my $modules = { };
 
-importer('YAML', file => '_data/distributions.yml')->each(sub {
-    my $d = shift;
+my $importer = importer('YAML', file => '_data/distributions.yml');
+
+my $distributions = $importer->first;
+
+for my $d (@$distributions) {
     foreach (@{$d->{provides}}) {
         next unless /^Catmandu::(Importer|Exporter|Store|Fix)::([^:]+)$/;
         push @{$modules->{$1}}, $2;
     }
-});
+}
 
 foreach my $ns ( keys %$modules ) {
     $modules->{$ns} = [
