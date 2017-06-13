@@ -11,7 +11,7 @@ dynamically build for updates.
 ## Local usage
 
 See [GitHub pages](https://help.github.com/articles/using-jekyll-with-pages/)
-for local usage of this homepage. 
+for local usage of this homepage.
 
 To build **Catmandu Documentation**, clone the
 [Catmandu wiki](https://github.com/LibreCat/Catmandu/wiki):
@@ -27,10 +27,9 @@ To update **Catmandu Distributions** install
     make data
     make date
 
-Information about Catmandu Distribuions is build in directory `_data` and must
-be committed to update the website: 
+Information about Catmandu Distributions is build in directory `_data` and must
+be committed to update the website:
 
     git add _data _config.yml
     git commit -m "autoupdate distributions"
     git push
-
