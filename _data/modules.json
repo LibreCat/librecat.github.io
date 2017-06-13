@@ -1,4 +1,4 @@
-{
+[{
    "Exporter" : [
       {
          "module" : "Catmandu::Exporter::Atom",
@@ -131,6 +131,10 @@
          "name" : "Date"
       },
       {
+         "module" : "Catmandu::Fix::File",
+         "name" : "File"
+      },
+      {
          "module" : "Catmandu::Fix::Has",
          "name" : "Has"
       },
@@ -195,6 +199,10 @@
          "name" : "assoc"
       },
       {
+         "module" : "Catmandu::Fix::basename",
+         "name" : "basename"
+      },
+      {
          "module" : "Catmandu::Fix::capitalize",
          "name" : "capitalize"
       },
@@ -215,6 +223,10 @@
          "name" : "collapse"
       },
       {
+         "module" : "Catmandu::Fix::compact",
+         "name" : "compact"
+      },
+      {
          "module" : "Catmandu::Fix::copy_field",
          "name" : "copy_field"
       },
@@ -223,8 +235,16 @@
          "name" : "count"
       },
       {
+         "module" : "Catmandu::Fix::datetime_diff",
+         "name" : "datetime_diff"
+      },
+      {
          "module" : "Catmandu::Fix::datetime_format",
          "name" : "datetime_format"
+      },
+      {
+         "module" : "Catmandu::Fix::dirname",
+         "name" : "dirname"
       },
       {
          "module" : "Catmandu::Fix::downcase",
@@ -247,12 +267,24 @@
          "name" : "epmc_dblinks"
       },
       {
+         "module" : "Catmandu::Fix::error",
+         "name" : "error"
+      },
+      {
          "module" : "Catmandu::Fix::expand",
          "name" : "expand"
       },
       {
          "module" : "Catmandu::Fix::expand_date",
          "name" : "expand_date"
+      },
+      {
+         "module" : "Catmandu::Fix::export_to_string",
+         "name" : "export_to_string"
+      },
+      {
+         "module" : "Catmandu::Fix::file_size",
+         "name" : "file_size"
       },
       {
          "module" : "Catmandu::Fix::filter",
@@ -283,8 +315,16 @@
          "name" : "hash"
       },
       {
+         "module" : "Catmandu::Fix::human_byte_size",
+         "name" : "human_byte_size"
+      },
+      {
          "module" : "Catmandu::Fix::import",
          "name" : "import"
+      },
+      {
+         "module" : "Catmandu::Fix::import_from_string",
+         "name" : "import_from_string"
       },
       {
          "module" : "Catmandu::Fix::include",
@@ -293,6 +333,10 @@
       {
          "module" : "Catmandu::Fix::index",
          "name" : "index"
+      },
+      {
+         "module" : "Catmandu::Fix::int",
+         "name" : "int"
       },
       {
          "module" : "Catmandu::Fix::isbn10",
@@ -365,6 +409,10 @@
       {
          "module" : "Catmandu::Fix::mab_map",
          "name" : "mab_map"
+      },
+      {
+         "module" : "Catmandu::Fix::make_pid",
+         "name" : "make_pid"
       },
       {
          "module" : "Catmandu::Fix::marc_add",
@@ -463,6 +511,10 @@
          "name" : "remove_field"
       },
       {
+         "module" : "Catmandu::Fix::rename",
+         "name" : "rename"
+      },
+      {
          "module" : "Catmandu::Fix::replace_all",
          "name" : "replace_all"
       },
@@ -489,6 +541,10 @@
       {
          "module" : "Catmandu::Fix::rkd_name",
          "name" : "rkd_name"
+      },
+      {
+         "module" : "Catmandu::Fix::search_in_store",
+         "name" : "search_in_store"
       },
       {
          "module" : "Catmandu::Fix::set_array",
@@ -557,6 +613,10 @@
       {
          "module" : "Catmandu::Fix::stat_variance",
          "name" : "stat_variance"
+      },
+      {
+         "module" : "Catmandu::Fix::string",
+         "name" : "string"
       },
       {
          "module" : "Catmandu::Fix::substring",
@@ -661,6 +721,10 @@
    ],
    "Importer" : [
       {
+         "module" : "Catmandu::Importer::Adlib",
+         "name" : "Adlib"
+      },
+      {
          "module" : "Catmandu::Importer::AlephX",
          "name" : "AlephX"
       },
@@ -703,6 +767,10 @@
       {
          "module" : "Catmandu::Importer::DBI",
          "name" : "DBI"
+      },
+      {
+         "module" : "Catmandu::Importer::DOI",
+         "name" : "DOI"
       },
       {
          "module" : "Catmandu::Importer::EuropePMC",
@@ -777,12 +845,20 @@
          "name" : "PICA"
       },
       {
+         "module" : "Catmandu::Importer::PLoS",
+         "name" : "PLoS"
+      },
+      {
          "module" : "Catmandu::Importer::PNX",
          "name" : "PNX"
       },
       {
          "module" : "Catmandu::Importer::Parltrack",
          "name" : "Parltrack"
+      },
+      {
+         "module" : "Catmandu::Importer::PubMed",
+         "name" : "PubMed"
       },
       {
          "module" : "Catmandu::Importer::Purr",
@@ -863,8 +939,8 @@
          "name" : "AAT"
       },
       {
-         "module" : "Catmandu::Store::AlephX",
-         "name" : "AlephX"
+         "module" : "Catmandu::Store::Adlib",
+         "name" : "Adlib"
       },
       {
          "module" : "Catmandu::Store::AlephX",
@@ -913,6 +989,10 @@
       {
          "module" : "Catmandu::Store::Multi",
          "name" : "Multi"
+      },
+      {
+         "module" : "Catmandu::Store::REST",
+         "name" : "REST"
       },
       {
          "module" : "Catmandu::Store::RKD",

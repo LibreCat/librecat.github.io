@@ -1,6 +1,6 @@
 [{
    "abstract" : "a data toolkit",
-   "date" : "2016-11-23T10:23:40",
+   "date" : "2017-05-19T15:35:10",
    "debian" : {
       "package" : "libcatmandu-perl",
       "pathl" : [
@@ -27,7 +27,7 @@
          }
       ]
    },
-   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-1.0304.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-1.0507.tar.gz",
    "name" : "Catmandu",
    "provides" : [
       "Catmandu",
@@ -42,13 +42,13 @@
       "Catmandu::Bag::IdGenerator::UUID",
       "Catmandu::Buffer",
       "Catmandu::CLI",
+      "Catmandu::CQLSearchable",
       "Catmandu::Cmd",
       "Catmandu::Cmd::compile",
       "Catmandu::Cmd::config",
       "Catmandu::Cmd::convert",
       "Catmandu::Cmd::copy",
       "Catmandu::Cmd::count",
-      "Catmandu::Cmd::data",
       "Catmandu::Cmd::delete",
       "Catmandu::Cmd::drop",
       "Catmandu::Cmd::export",
@@ -102,6 +102,7 @@
       "Catmandu::Fix::Condition::is_string",
       "Catmandu::Fix::Condition::is_true",
       "Catmandu::Fix::Condition::less_than",
+      "Catmandu::Fix::Condition::valid",
       "Catmandu::Fix::Has",
       "Catmandu::Fix::Inlineable",
       "Catmandu::Fix::Parser",
@@ -116,19 +117,24 @@
       "Catmandu::Fix::clone",
       "Catmandu::Fix::code",
       "Catmandu::Fix::collapse",
+      "Catmandu::Fix::compact",
       "Catmandu::Fix::copy_field",
       "Catmandu::Fix::count",
       "Catmandu::Fix::downcase",
+      "Catmandu::Fix::error",
       "Catmandu::Fix::expand",
       "Catmandu::Fix::expand_date",
+      "Catmandu::Fix::export_to_string",
       "Catmandu::Fix::filter",
       "Catmandu::Fix::flatten",
       "Catmandu::Fix::format",
       "Catmandu::Fix::from_json",
       "Catmandu::Fix::hash",
       "Catmandu::Fix::import",
+      "Catmandu::Fix::import_from_string",
       "Catmandu::Fix::include",
       "Catmandu::Fix::index",
+      "Catmandu::Fix::int",
       "Catmandu::Fix::join_field",
       "Catmandu::Fix::log",
       "Catmandu::Fix::lookup",
@@ -142,16 +148,19 @@
       "Catmandu::Fix::random",
       "Catmandu::Fix::reject",
       "Catmandu::Fix::remove_field",
+      "Catmandu::Fix::rename",
       "Catmandu::Fix::replace_all",
       "Catmandu::Fix::retain",
       "Catmandu::Fix::retain_field",
       "Catmandu::Fix::reverse",
+      "Catmandu::Fix::search_in_store",
       "Catmandu::Fix::set_array",
       "Catmandu::Fix::set_field",
       "Catmandu::Fix::set_hash",
       "Catmandu::Fix::sleep",
       "Catmandu::Fix::sort_field",
       "Catmandu::Fix::split_field",
+      "Catmandu::Fix::string",
       "Catmandu::Fix::substring",
       "Catmandu::Fix::sum",
       "Catmandu::Fix::to_json",
@@ -207,12 +216,12 @@
       "Catmandu::Validator::Simple"
    ],
    "tests" : {
-      "fail" : 8,
-      "na" : 35,
-      "pass" : 665,
+      "fail" : 0,
+      "na" : 38,
+      "pass" : 602,
       "unknown" : 0
    },
-   "version" : "1.0304"
+   "version" : "1.0507"
 },
 {
    "abstract" : "Retrieve items from the AAT",
@@ -229,9 +238,9 @@
       "Catmandu::Store::AAT::Bag"
    ],
    "tests" : {
-      "fail" : 13,
+      "fail" : 14,
       "na" : 6,
-      "pass" : 279,
+      "pass" : 450,
       "unknown" : 0
    },
    "version" : "0.03"
@@ -239,79 +248,100 @@
 {
    "abstract" : "Catmandu module for Activiti",
    "date" : "2014-06-12T10:22:00",
-   "download_url" : "http://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-Activiti-0.11.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-Activiti-0.11.tar.gz",
    "name" : "Catmandu-Activiti",
    "provides" : [
-      "Catmandu::Importer::Activiti::RuntimeProcessInstance",
-      "Catmandu::Importer::Activiti::RuntimeTask",
-      "Catmandu::Importer::Activiti::HistoricProcessInstance",
       "Catmandu::Activiti",
-      "Catmandu::Importer::Activiti::HistoricTask"
+      "Catmandu::Importer::Activiti::HistoricProcessInstance",
+      "Catmandu::Importer::Activiti::HistoricTask",
+      "Catmandu::Importer::Activiti::RuntimeProcessInstance",
+      "Catmandu::Importer::Activiti::RuntimeTask"
    ],
    "tests" : {
       "fail" : 0,
       "na" : 4,
-      "pass" : 295,
+      "pass" : 333,
       "unknown" : 0
    },
    "version" : "0.11"
 },
 {
+   "abstract" : "Catmandu interface to Adlib",
+   "date" : "2017-04-20T09:40:58",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NE/NETSENSEI/Catmandu-Adlib-0.02.tar.gz",
+   "name" : "Catmandu-Adlib",
+   "provides" : [
+      "Catmandu::Adlib",
+      "Catmandu::Adlib::API",
+      "Catmandu::Adlib::API::Login",
+      "Catmandu::Adlib::API::QueryBuilder",
+      "Catmandu::Importer::Adlib",
+      "Catmandu::Importer::OAI::Parser::adlib",
+      "Catmandu::Store::Adlib",
+      "Catmandu::Store::Adlib::Bag"
+   ],
+   "tests" : {
+      "fail" : 0,
+      "na" : 13,
+      "pass" : 463,
+      "unknown" : 0
+   },
+   "version" : "0.02"
+},
+{
    "abstract" : "Low level api for Aleph X Services",
    "date" : "2014-05-14T13:34:15",
-   "download_url" : "http://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-AlephX-1.065.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-AlephX-1.065.tar.gz",
    "name" : "Catmandu-AlephX",
    "provides" : [
-      "Catmandu::Store::AlephX",
-      "Catmandu::Store::AlephX::Bag",
-      "Catmandu::AlephX::Metadata::MARC::Aleph",
-      "Catmandu::AlephX::Metadata",
-      "Catmandu::AlephX::Response",
-      "Catmandu::AlephX::Op::IllLoanInfo",
-      "Catmandu::AlephX::Op::IllGetDocShort",
-      "Catmandu::AlephX::Op::GetHolding",
-      "Catmandu::AlephX::Op::CircStatM",
-      "Catmandu::AlephX::Op::Present",
-      "Catmandu::AlephX::Record::Present",
-      "Catmandu::AlephX::Op::Find",
       "Catmandu::AlephX",
-      "Catmandu::AlephX::Op::IllBorInfo",
-      "Catmandu::AlephX::Op::UpdateItem",
-      "Catmandu::AlephX::Op::PublishAvail",
+      "Catmandu::AlephX::Metadata",
+      "Catmandu::AlephX::Metadata::MARC",
+      "Catmandu::AlephX::Metadata::MARC::Aleph",
+      "Catmandu::AlephX::Op::BorAuth",
+      "Catmandu::AlephX::Op::BorInfo",
+      "Catmandu::AlephX::Op::CircStatM",
       "Catmandu::AlephX::Op::CircStatus",
+      "Catmandu::AlephX::Op::Find",
+      "Catmandu::AlephX::Op::FindDoc",
+      "Catmandu::AlephX::Op::GetHolding",
       "Catmandu::AlephX::Op::HoldReq",
+      "Catmandu::AlephX::Op::HoldReqCancel",
+      "Catmandu::AlephX::Op::IllBorInfo",
+      "Catmandu::AlephX::Op::IllGetDoc",
+      "Catmandu::AlephX::Op::IllGetDocShort",
+      "Catmandu::AlephX::Op::IllLoanInfo",
       "Catmandu::AlephX::Op::ItemData",
       "Catmandu::AlephX::Op::ItemDataMulti",
-      "Catmandu::AlephX::Op::UserAuth",
-      "Catmandu::Importer::AlephX",
-      "Catmandu::AlephX::Metadata::MARC",
-      "Catmandu::AlephX::Op::HoldReqCancel",
-      "Catmandu::Store::AlephX",
-      "Catmandu::Store::AlephX::Bag",
-      "Catmandu::AlephX::Op::BorInfo",
-      "Catmandu::AlephX::Op::Renew",
+      "Catmandu::AlephX::Op::Present",
+      "Catmandu::AlephX::Op::PublishAvail",
       "Catmandu::AlephX::Op::ReadItem",
-      "Catmandu::AlephX::Record",
-      "Catmandu::AlephX::Op::IllGetDoc",
-      "Catmandu::AlephX::UserAgent",
-      "Catmandu::AlephX::XPath::Helper",
-      "Catmandu::AlephX::UserAgent::LWP",
+      "Catmandu::AlephX::Op::Renew",
       "Catmandu::AlephX::Op::UpdateDoc",
-      "Catmandu::AlephX::Op::FindDoc",
-      "Catmandu::AlephX::Op::BorAuth"
+      "Catmandu::AlephX::Op::UpdateItem",
+      "Catmandu::AlephX::Op::UserAuth",
+      "Catmandu::AlephX::Record",
+      "Catmandu::AlephX::Record::Present",
+      "Catmandu::AlephX::Response",
+      "Catmandu::AlephX::UserAgent",
+      "Catmandu::AlephX::UserAgent::LWP",
+      "Catmandu::AlephX::XPath::Helper",
+      "Catmandu::Importer::AlephX",
+      "Catmandu::Store::AlephX",
+      "Catmandu::Store::AlephX::Bag"
    ],
    "tests" : {
       "fail" : 0,
       "na" : 3,
       "pass" : 157,
-      "unknown" : 63
+      "unknown" : 78
    },
    "version" : "1.065"
 },
 {
    "abstract" : "Catmandu modules for working with ArXiv data.",
-   "date" : "2016-04-15T10:39:11",
-   "download_url" : "https://cpan.metacpan.org/authors/id/V/VP/VPEIL/Catmandu-ArXiv-0.023.tar.gz",
+   "date" : "2017-03-10T15:51:28",
+   "download_url" : "https://cpan.metacpan.org/authors/id/V/VP/VPEIL/Catmandu-ArXiv-0.101.tar.gz",
    "name" : "Catmandu-ArXiv",
    "provides" : [
       "Catmandu::ArXiv",
@@ -319,11 +349,11 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 7,
-      "pass" : 136,
+      "na" : 18,
+      "pass" : 89,
       "unknown" : 0
    },
-   "version" : "0.023"
+   "version" : "0.101"
 },
 {
    "abstract" : "modules for working with Atom feeds",
@@ -358,13 +388,13 @@
    "name" : "Catmandu-Atom",
    "provides" : [
       "Catmandu::Atom",
-      "Catmandu::Importer::Atom",
-      "Catmandu::Exporter::Atom"
+      "Catmandu::Exporter::Atom",
+      "Catmandu::Importer::Atom"
    ],
    "tests" : {
       "fail" : 2,
       "na" : 11,
-      "pass" : 293,
+      "pass" : 306,
       "unknown" : 0
    },
    "version" : "0.04"
@@ -382,9 +412,9 @@
       "Catmandu::Importer::BagIt"
    ],
    "tests" : {
-      "fail" : 5,
+      "fail" : 7,
       "na" : 15,
-      "pass" : 316,
+      "pass" : 335,
       "unknown" : 0
    },
    "version" : "0.12"
@@ -399,7 +429,12 @@
       "Catmandu::Exporter::BibTeX",
       "Catmandu::Importer::BibTeX"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 0,
+      "na" : 21,
+      "pass" : 337,
+      "unknown" : 0
+   },
    "version" : "0.08"
 },
 {
@@ -414,7 +449,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 12,
-      "pass" : 226,
+      "pass" : 245,
       "unknown" : 0
    },
    "version" : "0.03"
@@ -435,15 +470,15 @@
    "tests" : {
       "fail" : 0,
       "na" : 27,
-      "pass" : 318,
+      "pass" : 352,
       "unknown" : 0
    },
    "version" : "0.10"
 },
 {
    "abstract" : "Catmandu interface to CollectiveAccess",
-   "date" : "2017-01-13T15:09:30",
-   "download_url" : "https://cpan.metacpan.org/authors/id/P/PI/PIETERDP/Catmandu-CA-0.02.tar.gz",
+   "date" : "2017-02-15T14:14:42",
+   "download_url" : "https://cpan.metacpan.org/authors/id/P/PI/PIETERDP/Catmandu-CA-0.06.tar.gz",
    "name" : "Catmandu-CA",
    "provides" : [
       "Catmandu::CA",
@@ -457,25 +492,25 @@
       "Catmandu::Store::VKC::Bag"
    ],
    "tests" : {
-      "fail" : 0,
-      "na" : 0,
-      "pass" : 156,
+      "fail" : 1,
+      "na" : 3,
+      "pass" : 377,
       "unknown" : 0
    },
-   "version" : "0.02"
+   "version" : "0.06"
 },
 {
    "abstract" : "interactive shell for Catmandu",
    "date" : "2012-05-07T14:45:06",
-   "download_url" : "http://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-Cmd-repl-0.01.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-Cmd-repl-0.01.tar.gz",
    "name" : "Catmandu-Cmd-repl",
    "provides" : [
-      null
+      "Catmandu::Cmd::repl"
    ],
    "tests" : {
       "fail" : 0,
       "na" : 16,
-      "pass" : 985,
+      "pass" : 1000,
       "unknown" : 1
    },
    "version" : "0.01"
@@ -492,7 +527,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 9,
-      "pass" : 209,
+      "pass" : 222,
       "unknown" : 0
    },
    "version" : "0.007"
@@ -515,8 +550,8 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 4,
-      "pass" : 336,
+      "na" : 8,
+      "pass" : 460,
       "unknown" : 0
    },
    "version" : "0.0511"
@@ -524,13 +559,14 @@
 {
    "abstract" : "Catmandu modules for working with DOI data.",
    "date" : "2012-10-05T14:14:40",
-   "download_url" : "http://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-DOI-0.01.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-DOI-0.01.tar.gz",
    "name" : "Catmandu-DOI",
    "provides" : [
-      null
+      "Catmandu::DOI",
+      "Catmandu::Importer::DOI"
    ],
    "tests" : {
-      "fail" : 51,
+      "fail" : 81,
       "na" : 9,
       "pass" : 216,
       "unknown" : 0
@@ -548,9 +584,9 @@
       "Catmandu::Importer::EuropePMC"
    ],
    "tests" : {
-      "fail" : 6,
-      "na" : 10,
-      "pass" : 172,
+      "fail" : 20,
+      "na" : 11,
+      "pass" : 207,
       "unknown" : 0
    },
    "version" : "0.17"
@@ -565,8 +601,8 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 7,
-      "pass" : 888,
+      "na" : 10,
+      "pass" : 934,
       "unknown" : 4
    },
    "version" : "0.3.0"
@@ -607,7 +643,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 29,
-      "pass" : 167,
+      "pass" : 185,
       "unknown" : 0
    },
    "version" : "0.274"
@@ -622,16 +658,22 @@
       "Catmandu::Fix::Datahub",
       "Catmandu::Fix::Datahub::Util"
    ],
-   "tests" : null,
+   "tests" : {
+      "fail" : 0,
+      "na" : 1,
+      "pass" : 507,
+      "unknown" : 0
+   },
    "version" : "0.03"
 },
 {
    "abstract" : "Catmandu fixes for processing dates",
-   "date" : "2016-08-08T06:56:43",
-   "download_url" : "https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-Fix-Date-0.0130.tar.gz",
+   "date" : "2017-01-20T12:19:19",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-Fix-Date-0.0131.tar.gz",
    "name" : "Catmandu-Fix-Date",
    "provides" : [
       "Catmandu::Fix::Date",
+      "Catmandu::Fix::datetime_diff",
       "Catmandu::Fix::datetime_format",
       "Catmandu::Fix::end_day",
       "Catmandu::Fix::end_week",
@@ -644,59 +686,64 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 29,
+      "na" : 22,
+      "pass" : 379,
+      "unknown" : 0
+   },
+   "version" : "0.0131"
+},
+{
+   "abstract" : "Catmandu fixes to check file attributes",
+   "date" : "2017-02-24T13:19:19",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-Fix-File-0.011.tar.gz",
+   "name" : "Catmandu-Fix-File",
+   "provides" : [
+      "Catmandu::Fix::Condition::file_test",
+      "Catmandu::Fix::File",
+      "Catmandu::Fix::basename",
+      "Catmandu::Fix::dirname",
+      "Catmandu::Fix::file_size",
+      "Catmandu::Fix::human_byte_size"
+   ],
+   "tests" : {
+      "fail" : 0,
+      "na" : 45,
       "pass" : 390,
       "unknown" : 0
    },
-   "version" : "0.0130"
+   "version" : "0.011"
 },
 {
    "abstract" : "Catmandu fix modules for processing xml (deprecated)",
    "date" : "2014-06-20T09:54:36",
-   "download_url" : "http://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-Fix-XML-0.2.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-Fix-XML-0.2.tar.gz",
    "name" : "Catmandu-Fix-XML",
    "provides" : [
       "Catmandu::Fix::XML"
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 6,
+      "na" : 7,
       "pass" : 168,
-      "unknown" : 42
+      "unknown" : 55
    },
    "version" : "0.2"
 },
 {
    "abstract" : "pipe data to be fixed through an external process",
    "date" : "2013-06-21T07:39:52",
-   "download_url" : "http://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-Fix-cmd-0.0201.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-Fix-cmd-0.0201.tar.gz",
    "name" : "Catmandu-Fix-cmd",
    "provides" : [
       "Catmandu::Fix::cmd"
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 6,
-      "pass" : 425,
+      "na" : 8,
+      "pass" : 457,
       "unknown" : 0
    },
    "version" : "0.0201"
-},
-{
-   "abstract" : "reference MARC values via MARCspec - A common MARC record path language",
-   "date" : "2016-07-05T12:33:34",
-   "download_url" : "https://cpan.metacpan.org/authors/id/K/KL/KLEE/Catmandu-Fix-marc_spec-0.0.1.tar.gz",
-   "name" : "Catmandu-Fix-marc_spec",
-   "provides" : [
-      "Catmandu::Fix::marc_spec"
-   ],
-   "tests" : {
-      "fail" : 0,
-      "na" : 18,
-      "pass" : 244,
-      "unknown" : 0
-   },
-   "version" : "0.0.1"
 },
 {
    "abstract" : "Catmandu modules for the Google Maps geocoding api",
@@ -710,8 +757,8 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 7,
-      "pass" : 270,
+      "na" : 11,
+      "pass" : 312,
       "unknown" : 0
    },
    "version" : "0.01"
@@ -745,9 +792,9 @@
       "Memento::TimeTravel"
    ],
    "tests" : {
-      "fail" : 1,
-      "na" : 8,
-      "pass" : 112,
+      "fail" : 3,
+      "na" : 10,
+      "pass" : 243,
       "unknown" : 3
    },
    "version" : "0.06"
@@ -763,26 +810,21 @@
    "tests" : {
       "fail" : 0,
       "na" : 19,
-      "pass" : 340,
+      "pass" : 366,
       "unknown" : 6
    },
    "version" : "0.0112"
 },
 {
    "abstract" : "get information about CPAN releases",
-   "date" : "2014-10-20T07:30:21",
-   "download_url" : "http://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-Importer-CPAN-0.03.tar.gz",
+   "date" : "2017-06-13T08:13:18",
+   "download_url" : "https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-Importer-CPAN-0.04.tar.gz",
    "name" : "Catmandu-Importer-CPAN",
    "provides" : [
       "Catmandu::Importer::CPAN"
    ],
-   "tests" : {
-      "fail" : 0,
-      "na" : 3,
-      "pass" : 328,
-      "unknown" : 0
-   },
-   "version" : "0.03"
+   "tests" : null,
+   "version" : "0.04"
 },
 {
    "abstract" : "extract MediaWiki template data",
@@ -793,9 +835,9 @@
       "Catmandu::Importer::MWTemplates"
    ],
    "tests" : {
-      "fail" : 0,
-      "na" : 88,
-      "pass" : 344,
+      "fail" : 7,
+      "na" : 90,
+      "pass" : 366,
       "unknown" : 0
    },
    "version" : "0.01"
@@ -803,7 +845,7 @@
 {
    "abstract" : "import data from Parltrack into Catmandu",
    "date" : "2014-10-19T09:07:37",
-   "download_url" : "http://cpan.metacpan.org/authors/id/J/JO/JONASS/Catmandu-Importer-Parltrack-0.001.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/J/JO/JONASS/Catmandu-Importer-Parltrack-0.001.tar.gz",
    "name" : "Catmandu-Importer-Parltrack",
    "provides" : [
       "Catmandu::Importer::Parltrack"
@@ -811,7 +853,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 0,
-      "pass" : 334,
+      "pass" : 351,
       "unknown" : 2
    },
    "version" : "0.001"
@@ -819,7 +861,7 @@
 {
    "abstract" : "Perl Utility for Recent Releases",
    "date" : "2014-03-28T10:22:56",
-   "download_url" : "http://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-Importer-Purr-0.02.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-Importer-Purr-0.02.tar.gz",
    "name" : "Catmandu-Importer-Purr",
    "provides" : [
       "Catmandu::Importer::Purr"
@@ -827,7 +869,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 7,
-      "pass" : 313,
+      "pass" : 330,
       "unknown" : 0
    },
    "version" : "0.02"
@@ -872,7 +914,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 11,
-      "pass" : 382,
+      "pass" : 437,
       "unknown" : 0
    },
    "version" : "0.50"
@@ -880,24 +922,24 @@
 {
    "abstract" : "Catmandu modules for working with Inspire data.",
    "date" : "2014-08-11T08:58:22",
-   "download_url" : "http://cpan.metacpan.org/authors/id/V/VP/VPEIL/Catmandu-Inspire-0.265.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/V/VP/VPEIL/Catmandu-Inspire-0.265.tar.gz",
    "name" : "Catmandu-Inspire",
    "provides" : [
-      "Catmandu::Inspire",
-      "Catmandu::Importer::Inspire"
+      "Catmandu::Importer::Inspire",
+      "Catmandu::Inspire"
    ],
    "tests" : {
       "fail" : 15,
       "na" : 5,
-      "pass" : 145,
+      "pass" : 157,
       "unknown" : 0
    },
    "version" : "0.265"
 },
 {
    "abstract" : "Catmandu modules for working with LDAP directories",
-   "date" : "2013-03-26T10:41:35",
-   "download_url" : "http://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-LDAP-0.0103.tar.gz",
+   "date" : "2017-02-23T08:52:27",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-LDAP-0.0104.tar.gz",
    "name" : "Catmandu-LDAP",
    "provides" : [
       "Catmandu::Importer::LDAP",
@@ -905,16 +947,16 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 10,
-      "pass" : 854,
+      "na" : 44,
+      "pass" : 399,
       "unknown" : 0
    },
-   "version" : "0.0103"
+   "version" : "0.0104"
 },
 {
    "abstract" : "Modules for handling LIDO data within the Catmandu framework",
-   "date" : "2016-12-07T16:06:15",
-   "download_url" : "https://cpan.metacpan.org/authors/id/N/NE/NETSENSEI/Catmandu-LIDO-0.07.tar.gz",
+   "date" : "2017-02-20T13:05:31",
+   "download_url" : "https://cpan.metacpan.org/authors/id/P/PI/PIETERDP/Catmandu-LIDO-0.09.tar.gz",
    "name" : "Catmandu-LIDO",
    "provides" : [
       "Catmandu::Exporter::LIDO",
@@ -941,10 +983,10 @@
    "tests" : {
       "fail" : 0,
       "na" : 0,
-      "pass" : 231,
+      "pass" : 367,
       "unknown" : 0
    },
-   "version" : "0.07"
+   "version" : "0.09"
 },
 {
    "abstract" : "Catmandu modules for working with MAB2 data.",
@@ -994,16 +1036,16 @@
       "MAB2::Writer::XML"
    ],
    "tests" : {
-      "fail" : 3,
-      "na" : 12,
-      "pass" : 194,
+      "fail" : 4,
+      "na" : 13,
+      "pass" : 227,
       "unknown" : 0
    },
    "version" : "0.14"
 },
 {
    "abstract" : "Catmandu modules for working with MARC data",
-   "date" : "2016-11-03T07:48:46",
+   "date" : "2017-05-29T08:24:08",
    "debian" : {
       "package" : "libcatmandu-marc-perl",
       "pathl" : [
@@ -1030,7 +1072,7 @@
          }
       ]
    },
-   "download_url" : "https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-MARC-1.03.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-MARC-1.12.tar.gz",
    "name" : "Catmandu-MARC",
    "provides" : [
       "Catmandu::Exporter::MARC",
@@ -1054,6 +1096,7 @@
       "Catmandu::Fix::marc_map",
       "Catmandu::Fix::marc_remove",
       "Catmandu::Fix::marc_set",
+      "Catmandu::Fix::marc_spec",
       "Catmandu::Fix::marc_xml",
       "Catmandu::Importer::MARC",
       "Catmandu::Importer::MARC::ALEPHSEQ",
@@ -1070,11 +1113,11 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 42,
-      "pass" : 84,
+      "na" : 23,
+      "pass" : 286,
       "unknown" : 0
    },
-   "version" : "1.03"
+   "version" : "1.12"
 },
 {
    "abstract" : "Catmandu modules for working with MODS records",
@@ -1087,8 +1130,8 @@
    ],
    "tests" : {
       "fail" : 13,
-      "na" : 9,
-      "pass" : 344,
+      "na" : 10,
+      "pass" : 391,
       "unknown" : 0
    },
    "version" : "0.31"
@@ -1096,16 +1139,16 @@
 {
    "abstract" : "Catmandu tools for working with markdown data",
    "date" : "2014-10-06T11:42:21",
-   "download_url" : "http://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-Markdown-0.011.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-Markdown-0.011.tar.gz",
    "name" : "Catmandu-Markdown",
    "provides" : [
-      "Catmandu::Markdown",
-      "Catmandu::Fix::markdown_to_html"
+      "Catmandu::Fix::markdown_to_html",
+      "Catmandu::Markdown"
    ],
    "tests" : {
       "fail" : 0,
       "na" : 2,
-      "pass" : 267,
+      "pass" : 291,
       "unknown" : 0
    },
    "version" : "0.011"
@@ -1113,27 +1156,27 @@
 {
    "abstract" : "Package that imports MediaMosa asset information into your application",
    "date" : "2013-04-09T10:26:19",
-   "download_url" : "http://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-MediaMosa-0.279.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-MediaMosa-0.279.tar.gz",
    "name" : "Catmandu-MediaMosa",
    "provides" : [
-      "Catmandu::MediaMosa::Items::status",
-      "Catmandu::MediaMosa::Items::asset",
-      "Catmandu::MediaMosa::Response::Header",
-      "Catmandu::MediaMosa::Items::asset_list",
-      "Catmandu::MediaMosa::XPath::Helper",
-      "Catmandu::MediaMosa::Items",
-      "Catmandu::MediaMosa::Response::Items",
       "Catmandu::Importer::MediaMosa",
       "Catmandu::MediaMosa",
+      "Catmandu::MediaMosa::Items",
+      "Catmandu::MediaMosa::Items::asset",
+      "Catmandu::MediaMosa::Items::asset_list",
       "Catmandu::MediaMosa::Items::login",
-      "Catmandu::MediaMosa::Response",
       "Catmandu::MediaMosa::Items::mediafile",
-      "Catmandu::MediaMosa::Items::simple_list"
+      "Catmandu::MediaMosa::Items::simple_list",
+      "Catmandu::MediaMosa::Items::status",
+      "Catmandu::MediaMosa::Response",
+      "Catmandu::MediaMosa::Response::Header",
+      "Catmandu::MediaMosa::Response::Items",
+      "Catmandu::MediaMosa::XPath::Helper"
    ],
    "tests" : {
       "fail" : 0,
       "na" : 0,
-      "pass" : 124,
+      "pass" : 141,
       "unknown" : 0
    },
    "version" : "0.279"
@@ -1150,7 +1193,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 9,
-      "pass" : 267,
+      "pass" : 285,
       "unknown" : 0
    },
    "version" : "0.021"
@@ -1161,21 +1204,21 @@
    "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-Mendeley-0.01.tar.gz",
    "name" : "Catmandu-Mendeley",
    "provides" : [
-      "Catmandu::Mendeley",
-      "Catmandu::Importer::MendeleyCatalog"
+      "Catmandu::Importer::MendeleyCatalog",
+      "Catmandu::Mendeley"
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 10,
-      "pass" : 333,
+      "na" : 12,
+      "pass" : 372,
       "unknown" : 0
    },
    "version" : "0.01"
 },
 {
    "abstract" : "Catmandu modules for working with OAI repositories",
-   "date" : "2016-12-15T14:21:08",
-   "download_url" : "https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-OAI-0.12.tar.gz",
+   "date" : "2017-04-20T11:38:45",
+   "download_url" : "https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-OAI-0.17.tar.gz",
    "name" : "Catmandu-OAI",
    "provides" : [
       "Catmandu::Importer::OAI",
@@ -1188,11 +1231,11 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 7,
-      "pass" : 258,
+      "na" : 43,
+      "pass" : 333,
       "unknown" : 0
    },
-   "version" : "0.12"
+   "version" : "0.17"
 },
 {
    "abstract" : "Catmandu modules for working with OCLC web services",
@@ -1209,7 +1252,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 10,
-      "pass" : 78,
+      "pass" : 106,
       "unknown" : 0
    },
    "version" : "0.006"
@@ -1230,9 +1273,9 @@
       "Catmandu::PICA"
    ],
    "tests" : {
-      "fail" : 0,
+      "fail" : 3,
       "na" : 0,
-      "pass" : 193,
+      "pass" : 211,
       "unknown" : 0
    },
    "version" : "0.19"
@@ -1240,23 +1283,24 @@
 {
    "abstract" : "Catmandu module for working with PLoS data",
    "date" : "2012-10-05T14:17:33",
-   "download_url" : "http://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-PLoS-0.01.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-PLoS-0.01.tar.gz",
    "name" : "Catmandu-PLoS",
    "provides" : [
-      null
+      "Catmandu::Importer::PLoS",
+      "Catmandu::PLoS"
    ],
    "tests" : {
       "fail" : 0,
       "na" : 20,
-      "pass" : 736,
+      "pass" : 752,
       "unknown" : 0
    },
    "version" : "0.01"
 },
 {
    "abstract" : "Modules for handling PNX data within the Catmandu framework",
-   "date" : "2016-10-05T12:31:58",
-   "download_url" : "https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-PNX-0.01.tar.gz",
+   "date" : "2017-05-11T11:46:43",
+   "download_url" : "https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-PNX-0.03.tar.gz",
    "name" : "Catmandu-PNX",
    "provides" : [
       "Catmandu::Exporter::PNX",
@@ -1265,23 +1309,23 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 9,
-      "pass" : 250,
+      "na" : 14,
+      "pass" : 100,
       "unknown" : 0
    },
-   "version" : "0.01"
+   "version" : "0.03"
 },
 {
    "abstract" : "unAPI webservice based on Catmandu",
    "date" : "2014-10-06T12:05:15",
-   "download_url" : "http://cpan.metacpan.org/authors/id/V/VO/VOJ/Catmandu-Plack-unAPI-0.11.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/V/VO/VOJ/Catmandu-Plack-unAPI-0.11.tar.gz",
    "name" : "Catmandu-Plack-unAPI",
    "provides" : [
       "Catmandu::Plack::unAPI"
    ],
    "tests" : {
-      "fail" : 68,
-      "na" : 2,
+      "fail" : 100,
+      "na" : 3,
       "pass" : 245,
       "unknown" : 1
    },
@@ -1290,15 +1334,16 @@
 {
    "abstract" : "Catmandu module for working with PubMed data",
    "date" : "2012-10-05T14:21:45",
-   "download_url" : "http://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-PubMed-0.01.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-PubMed-0.01.tar.gz",
    "name" : "Catmandu-PubMed",
    "provides" : [
-      null
+      "Catmandu::Importer::PubMed",
+      "Catmandu::PubMed"
    ],
    "tests" : {
       "fail" : 0,
       "na" : 20,
-      "pass" : 741,
+      "pass" : 757,
       "unknown" : 0
    },
    "version" : "0.01"
@@ -1342,8 +1387,8 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 30,
-      "pass" : 294,
+      "na" : 31,
+      "pass" : 323,
       "unknown" : 0
    },
    "version" : "0.31"
@@ -1360,8 +1405,8 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 1,
-      "pass" : 290,
+      "na" : 3,
+      "pass" : 317,
       "unknown" : 0
    },
    "version" : "0.10"
@@ -1383,12 +1428,32 @@
       "Catmandu::Store::RKD::Bag"
    ],
    "tests" : {
-      "fail" : 4,
-      "na" : 5,
-      "pass" : 218,
+      "fail" : 6,
+      "na" : 8,
+      "pass" : 285,
       "unknown" : 0
    },
    "version" : "0.04"
+},
+{
+   "abstract" : "Store/retrieve items from the Resolver",
+   "date" : "2017-02-20T13:46:37",
+   "download_url" : "https://cpan.metacpan.org/authors/id/P/PI/PIETERDP/Catmandu-Resolver-0.06.tar.gz",
+   "name" : "Catmandu-Resolver",
+   "provides" : [
+      "Catmandu::Fix::make_pid",
+      "Catmandu::Resolver",
+      "Catmandu::Store::Resolver",
+      "Catmandu::Store::Resolver::API",
+      "Catmandu::Store::Resolver::Bag"
+   ],
+   "tests" : {
+      "fail" : 0,
+      "na" : 11,
+      "pass" : 556,
+      "unknown" : 0
+   },
+   "version" : "0.06"
 },
 {
    "abstract" : "Catmandu modules for parsing SFX data",
@@ -1403,7 +1468,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 0,
-      "pass" : 329,
+      "pass" : 365,
       "unknown" : 0
    },
    "version" : "0.01"
@@ -1450,8 +1515,8 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 39,
-      "pass" : 227,
+      "na" : 41,
+      "pass" : 287,
       "unknown" : 0
    },
    "version" : "0.039"
@@ -1467,7 +1532,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 10,
-      "pass" : 365,
+      "pass" : 383,
       "unknown" : 0
    },
    "version" : "0.0102"
@@ -1475,7 +1540,7 @@
 {
    "abstract" : "A Catmandu::Serializer backend using Storable",
    "date" : "2014-03-10T08:41:33",
-   "download_url" : "http://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-Serializer-storable-0.0102.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-Serializer-storable-0.0102.tar.gz",
    "name" : "Catmandu-Serializer-storable",
    "provides" : [
       "Catmandu::Serializer::storable"
@@ -1483,15 +1548,15 @@
    "tests" : {
       "fail" : 0,
       "na" : 10,
-      "pass" : 526,
+      "pass" : 544,
       "unknown" : 0
    },
    "version" : "0.0102"
 },
 {
    "abstract" : "Catmandu modules for working with solr endpoints",
-   "date" : "2016-12-15T14:29:12",
-   "download_url" : "https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-Solr-0.02154.tar.gz",
+   "date" : "2017-04-20T13:37:52",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-Solr-0.0302.tar.gz",
    "name" : "Catmandu-Solr",
    "provides" : [
       "Catmandu::Importer::Solr",
@@ -1503,11 +1568,11 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 5,
-      "pass" : 298,
+      "na" : 44,
+      "pass" : 374,
       "unknown" : 0
    },
-   "version" : "0.02154"
+   "version" : "0.0302"
 },
 {
    "abstract" : "Catmandu modules for working with statistical data",
@@ -1526,7 +1591,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 15,
-      "pass" : 315,
+      "pass" : 349,
       "unknown" : 0
    },
    "version" : "0.13"
@@ -1545,9 +1610,9 @@
       "Catmandu::Store::AAT::SPARQL"
    ],
    "tests" : {
-      "fail" : 1,
-      "na" : 0,
-      "pass" : 233,
+      "fail" : 3,
+      "na" : 1,
+      "pass" : 281,
       "unknown" : 0
    },
    "version" : "0.01"
@@ -1555,7 +1620,7 @@
 {
    "abstract" : "a CHI backed caching store",
    "date" : "2014-06-28T06:51:36",
-   "download_url" : "http://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-Store-CHI-0.02.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-Store-CHI-0.02.tar.gz",
    "name" : "Catmandu-Store-CHI",
    "provides" : [
       "Catmandu::Store::CHI",
@@ -1563,8 +1628,8 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 7,
-      "pass" : 488,
+      "na" : 8,
+      "pass" : 515,
       "unknown" : 0
    },
    "version" : "0.02"
@@ -1572,44 +1637,61 @@
 {
    "abstract" : "A searchable store backed by CouchDB",
    "date" : "2013-05-23T12:25:23",
-   "download_url" : "http://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-Store-CouchDB-0.01.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-Store-CouchDB-0.01.tar.gz",
    "name" : "Catmandu-Store-CouchDB",
    "provides" : [
-      "Catmandu::Store::CouchDB::Bag",
-      "Catmandu::Store::CouchDB"
+      "Catmandu::Store::CouchDB",
+      "Catmandu::Store::CouchDB::Bag"
    ],
    "tests" : {
       "fail" : 0,
       "na" : 13,
-      "pass" : 637,
+      "pass" : 647,
       "unknown" : 0
    },
    "version" : "0.01"
 },
 {
    "abstract" : "Store/retrieve items from the Datahub",
-   "date" : "2016-12-08T11:33:30",
-   "download_url" : "https://cpan.metacpan.org/authors/id/N/NE/NETSENSEI/Catmandu-Store-Datahub-0.01.tar.gz",
+   "date" : "2017-06-08T08:58:53",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NE/NETSENSEI/Catmandu-Store-Datahub-0.05.tar.gz",
    "name" : "Catmandu-Store-Datahub",
    "provides" : [
-      "Catmandu::Bag::IdGenerator::Datahub",
       "Catmandu::Store::Datahub",
+      "Catmandu::Store::Datahub::API",
       "Catmandu::Store::Datahub::Bag",
-      "Catmandu::Store::Datahub::Generator",
       "Catmandu::Store::Datahub::OAuth"
    ],
    "tests" : {
-      "fail" : 324,
+      "fail" : 0,
       "na" : 0,
-      "pass" : 71,
+      "pass" : 165,
       "unknown" : 0
    },
-   "version" : "0.01"
+   "version" : "0.05"
 },
 {
    "abstract" : "A searchable store backed by Elasticsearch",
-   "date" : "2017-01-03T12:35:59",
-   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-Store-Elasticsearch-0.0504.tar.gz",
+   "date" : "2017-03-28T08:12:15",
+   "debian" : {
+      "package" : "libcatmandu-store-elasticsearch-perl",
+      "pathl" : [
+         [
+            "libcatmandu-store-elasticsearch-perl",
+            "/src/libcatmandu-store-elasticsearch-perl/"
+         ]
+      ],
+      "versions" : [
+         {
+            "area" : "main",
+            "suites" : [
+               "sid"
+            ],
+            "version" : "0.0507-1"
+         }
+      ]
+   },
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-Store-Elasticsearch-0.0509.tar.gz",
    "name" : "Catmandu-Store-Elasticsearch",
    "provides" : [
       "Catmandu::Store::ElasticSearch",
@@ -1619,15 +1701,15 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 3,
-      "pass" : 329,
+      "na" : 23,
+      "pass" : 410,
       "unknown" : 0
    },
-   "version" : "0.0504"
+   "version" : "0.0509"
 },
 {
    "abstract" : "A searchable store backed by Lucy",
-   "date" : "2013-06-24T07:18:52",
+   "date" : "2017-03-27T12:23:29",
    "debian" : {
       "package" : "libcatmandu-store-lucy-perl",
       "pathl" : [
@@ -1654,23 +1736,23 @@
          }
       ]
    },
-   "download_url" : "http://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-Store-Lucy-0.0101.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-Store-Lucy-0.0103.tar.gz",
    "name" : "Catmandu-Store-Lucy",
    "provides" : [
       "Catmandu::Store::Lucy",
       "Catmandu::Store::Lucy::Bag"
    ],
    "tests" : {
-      "fail" : 7,
-      "na" : 5,
-      "pass" : 256,
+      "fail" : 0,
+      "na" : 26,
+      "pass" : 380,
       "unknown" : 0
    },
-   "version" : "0.0101"
+   "version" : "0.0103"
 },
 {
    "abstract" : "A searchable store backed by MongoDB",
-   "date" : "2017-01-13T13:03:42",
+   "date" : "2017-03-23T13:39:31",
    "debian" : {
       "package" : "libcatmandu-store-mongodb-perl",
       "pathl" : [
@@ -1690,7 +1772,7 @@
          }
       ]
    },
-   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-Store-MongoDB-0.06.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-Store-MongoDB-0.07.tar.gz",
    "name" : "Catmandu-Store-MongoDB",
    "provides" : [
       "Catmandu::Store::MongoDB",
@@ -1700,11 +1782,29 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 3,
-      "pass" : 165,
+      "na" : 34,
+      "pass" : 402,
       "unknown" : 0
    },
-   "version" : "0.06"
+   "version" : "0.07"
+},
+{
+   "abstract" : "Store/retrieve items from a JSON REST-API endpoint",
+   "date" : "2017-04-28T09:29:52",
+   "download_url" : "https://cpan.metacpan.org/authors/id/P/PI/PIETERDP/Catmandu-Store-REST-0.01.tar.gz",
+   "name" : "Catmandu-Store-REST",
+   "provides" : [
+      "Catmandu::Store::REST",
+      "Catmandu::Store::REST::API",
+      "Catmandu::Store::REST::Bag"
+   ],
+   "tests" : {
+      "fail" : 0,
+      "na" : 9,
+      "pass" : 303,
+      "unknown" : 0
+   },
+   "version" : "0.01"
 },
 {
    "abstract" : "Retrieve items from the RKD",
@@ -1722,30 +1822,12 @@
       "Catmandu::Store::RKD::Bag"
    ],
    "tests" : {
-      "fail" : 3,
+      "fail" : 5,
       "na" : 4,
-      "pass" : 223,
+      "pass" : 252,
       "unknown" : 0
    },
    "version" : "0.03"
-},
-{
-   "abstract" : "Store/retrieve items from the Resolver",
-   "date" : "2017-01-11T10:07:04",
-   "download_url" : "https://cpan.metacpan.org/authors/id/P/PI/PIETERDP/Catmandu-Store-Resolver-0.04.tar.gz",
-   "name" : "Catmandu-Store-Resolver",
-   "provides" : [
-      "Catmandu::Store::Resolver",
-      "Catmandu::Store::Resolver::API",
-      "Catmandu::Store::Resolver::Bag"
-   ],
-   "tests" : {
-      "fail" : 0,
-      "na" : 8,
-      "pass" : 273,
-      "unknown" : 0
-   },
-   "version" : "0.04"
 },
 {
    "abstract" : "Catmandu modules for working with templates",
@@ -1760,7 +1842,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 6,
-      "pass" : 1153,
+      "pass" : 1390,
       "unknown" : 0
    },
    "version" : "0.08"
@@ -1768,7 +1850,7 @@
 {
    "abstract" : "Package that imports Twitter feeds",
    "date" : "2013-08-17T12:17:36",
-   "download_url" : "http://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-Twitter-0.03.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-Twitter-0.03.tar.gz",
    "name" : "Catmandu-Twitter",
    "provides" : [
       "Catmandu::Importer::Twitter"
@@ -1776,7 +1858,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 13,
-      "pass" : 831,
+      "pass" : 844,
       "unknown" : 4
    },
    "version" : "0.03"
@@ -1799,9 +1881,9 @@
       "Catmandu::VIAF::API::Query"
    ],
    "tests" : {
-      "fail" : 11,
+      "fail" : 17,
       "na" : 5,
-      "pass" : 215,
+      "pass" : 336,
       "unknown" : 0
    },
    "version" : "0.04"
@@ -1816,8 +1898,8 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 14,
-      "pass" : 312,
+      "na" : 16,
+      "pass" : 347,
       "unknown" : 0
    },
    "version" : "0.11"
@@ -1845,20 +1927,20 @@
          }
       ]
    },
-   "download_url" : "http://cpan.metacpan.org/authors/id/V/VO/VOJ/Catmandu-Wikidata-0.06.tar.gz",
+   "download_url" : "https://cpan.metacpan.org/authors/id/V/VO/VOJ/Catmandu-Wikidata-0.06.tar.gz",
    "name" : "Catmandu-Wikidata",
    "provides" : [
-      "Catmandu::Importer::Wikidata",
-      "Catmandu::Fix::wd_simple",
-      "Catmandu::Fix::wd_simple_strings",
       "Catmandu::Fix::wd_language",
-      "Catmandu::Wikidata",
-      "Catmandu::Fix::wd_simple_claims"
+      "Catmandu::Fix::wd_simple",
+      "Catmandu::Fix::wd_simple_claims",
+      "Catmandu::Fix::wd_simple_strings",
+      "Catmandu::Importer::Wikidata",
+      "Catmandu::Wikidata"
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 9,
-      "pass" : 480,
+      "na" : 13,
+      "pass" : 517,
       "unknown" : 0
    },
    "version" : "0.06"
@@ -1877,8 +1959,8 @@
    ],
    "tests" : {
       "fail" : 0,
-      "na" : 5,
-      "pass" : 183,
+      "na" : 7,
+      "pass" : 219,
       "unknown" : 0
    },
    "version" : "0.08"
@@ -1899,9 +1981,9 @@
       "Catmandu::XML::Transformer"
    ],
    "tests" : {
-      "fail" : 37,
+      "fail" : 41,
       "na" : 0,
-      "pass" : 509,
+      "pass" : 648,
       "unknown" : 1
    },
    "version" : "0.16"
@@ -1920,7 +2002,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 9,
-      "pass" : 165,
+      "pass" : 184,
       "unknown" : 0
    },
    "version" : "0.04"
@@ -1938,7 +2020,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 30,
-      "pass" : 44,
+      "pass" : 53,
       "unknown" : 0
    },
    "version" : "0.05"
@@ -1955,7 +2037,7 @@
    "tests" : {
       "fail" : 0,
       "na" : 8,
-      "pass" : 229,
+      "pass" : 248,
       "unknown" : 0
    },
    "version" : "0.07"
