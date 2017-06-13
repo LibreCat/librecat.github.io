@@ -10,8 +10,8 @@ my $distributions = [
     @{ importer('distributions')->to_array }
 ];
 
-export( $distributions, 'default', 
-    array => 1, file => '_data/distributions.json' );
+export( $distributions, 'YAML',
+    array => 1, file => '_data/distributions.yml' );
 
 # download distributions and unpack all modules
 remove_tree 'download/lib';
@@ -27,4 +27,3 @@ foreach my $d (@$distributions) {
         remove_tree "download/$full";
     }
 }
-

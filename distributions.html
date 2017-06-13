@@ -44,7 +44,7 @@ title: Distributions
         </td>
         <td>
           <a href="http://matrix.cpantesters.org/?dist={{ distr.name }} {{ distr.version }}">
-            <span style="color:green">{{ distr.tests.pass }}</span> 
+            <span style="color:green">{{ distr.tests.pass }}</span>
             /
             <span style="color:red">{{ distr.tests.fail }}</span>
           </a>
@@ -57,19 +57,19 @@ title: Distributions
 {% assign type='importers' %}
 {% assign namespace='Importer' %}
 {% assign list=site.data.modules.Importer %} 
-{% include modules.html %} 
+{% include modules.html %}
 
 {% assign type='exporters' %}
 {% assign namespace='Emporter' %}
-{% assign list=site.data.modules.Exporter %} 
-{% include modules.html %} 
+{% assign list=site.data.modules.Exporter %}
+{% include modules.html %}
 
 {% assign type='stores' %}
 {% assign namespace='Store' %}
-{% assign list=site.data.modules.Store %} 
-{% include modules.html %} 
+{% assign list=site.data.modules.Store %}
+{% include modules.html %}
 
 {% assign type='fixes' %}
 {% assign namespace='Fix' %}
-{% assign list=site.data.modules.Fix %} 
-{% include modules.html %} 
+{% assign list=site.data.modules.Fix %}
+{% include modules.html %}

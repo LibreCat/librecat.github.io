@@ -3,7 +3,7 @@ use Catmandu -all, -load;
 
 my $modules = { };
 
-importer('default', file => '_data/distributions.json')->each(sub {
+importer('YAML', file => '_data/distributions.yml')->each(sub {
     my $d = shift;
     foreach (@{$d->{provides}}) {
         next unless /^Catmandu::(Importer|Exporter|Store|Fix)::([^:]+)$/;
@@ -13,13 +13,12 @@ importer('default', file => '_data/distributions.json')->each(sub {
 
 foreach my $ns ( keys %$modules ) {
     $modules->{$ns} = [
-        map { { 
+        map { {
             name => $_,
             module => "Catmandu::${ns}::$_",
         } }
-        sort @{ $modules->{$ns} } 
+        sort @{ $modules->{$ns} }
     ]
 }
 
-exporter('default', file => '_data/modules.json')->add($modules);
-
+exporter('YAML', file => '_data/modules.yml')->add($modules);
