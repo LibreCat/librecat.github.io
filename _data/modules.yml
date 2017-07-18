@@ -209,14 +209,24 @@ Fix:
   name: make_pid
 - module: Catmandu::Fix::marc_add
   name: marc_add
+- module: Catmandu::Fix::marc_append
+  name: marc_append
+- module: Catmandu::Fix::marc_copy
+  name: marc_copy
+- module: Catmandu::Fix::marc_cut
+  name: marc_cut
 - module: Catmandu::Fix::marc_decode_dollar_subfields
   name: marc_decode_dollar_subfields
 - module: Catmandu::Fix::marc_in_json
   name: marc_in_json
 - module: Catmandu::Fix::marc_map
   name: marc_map
+- module: Catmandu::Fix::marc_paste
+  name: marc_paste
 - module: Catmandu::Fix::marc_remove
   name: marc_remove
+- module: Catmandu::Fix::marc_replace_all
+  name: marc_replace_all
 - module: Catmandu::Fix::marc_set
   name: marc_set
 - module: Catmandu::Fix::marc_spec
@@ -245,8 +255,12 @@ Fix:
   name: paste
 - module: Catmandu::Fix::perlcode
   name: perlcode
+- module: Catmandu::Fix::pica_add
+  name: pica_add
 - module: Catmandu::Fix::pica_map
   name: pica_map
+- module: Catmandu::Fix::pica_set
+  name: pica_set
 - module: Catmandu::Fix::prepend
   name: prepend
 - module: Catmandu::Fix::random
@@ -430,6 +444,8 @@ Importer:
   name: Parltrack
 - module: Catmandu::Importer::PubMed
   name: PubMed
+- module: Catmandu::Importer::Pure
+  name: Pure
 - module: Catmandu::Importer::Purr
   name: Purr
 - module: Catmandu::Importer::RDF
@@ -448,6 +464,8 @@ Importer:
   name: Twitter
 - module: Catmandu::Importer::Wikidata
   name: Wikidata
+- module: Catmandu::Importer::WoS
+  name: WoS
 - module: Catmandu::Importer::XLS
   name: XLS
 - module: Catmandu::Importer::XLSX
