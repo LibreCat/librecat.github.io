@@ -20,6 +20,8 @@ Exporter:
   name: MAB2
 - module: Catmandu::Exporter::MARC
   name: MARC
+- module: Catmandu::Exporter::MediaHaven
+  name: MediaHaven
 - module: Catmandu::Exporter::Mock
   name: Mock
 - module: Catmandu::Exporter::Multi
@@ -85,6 +87,8 @@ Fix:
   name: aat_search
 - module: Catmandu::Fix::aat_search
   name: aat_search
+- module: Catmandu::Fix::add
+  name: add
 - module: Catmandu::Fix::add_field
   name: add_field
 - module: Catmandu::Fix::add_to_exporter
@@ -113,6 +117,8 @@ Fix:
   name: collapse
 - module: Catmandu::Fix::compact
   name: compact
+- module: Catmandu::Fix::copy
+  name: copy
 - module: Catmandu::Fix::copy_field
   name: copy_field
 - module: Catmandu::Fix::count
@@ -175,6 +181,8 @@ Fix:
   name: isbn13
 - module: Catmandu::Fix::issn
   name: issn
+- module: Catmandu::Fix::join
+  name: join
 - module: Catmandu::Fix::join_field
   name: join_field
 - module: Catmandu::Fix::lido_actor
@@ -209,14 +217,24 @@ Fix:
   name: make_pid
 - module: Catmandu::Fix::marc_add
   name: marc_add
+- module: Catmandu::Fix::marc_append
+  name: marc_append
+- module: Catmandu::Fix::marc_copy
+  name: marc_copy
+- module: Catmandu::Fix::marc_cut
+  name: marc_cut
 - module: Catmandu::Fix::marc_decode_dollar_subfields
   name: marc_decode_dollar_subfields
 - module: Catmandu::Fix::marc_in_json
   name: marc_in_json
 - module: Catmandu::Fix::marc_map
   name: marc_map
+- module: Catmandu::Fix::marc_paste
+  name: marc_paste
 - module: Catmandu::Fix::marc_remove
   name: marc_remove
+- module: Catmandu::Fix::marc_replace_all
+  name: marc_replace_all
 - module: Catmandu::Fix::marc_set
   name: marc_set
 - module: Catmandu::Fix::marc_spec
@@ -227,6 +245,8 @@ Fix:
   name: markdown_to_html
 - module: Catmandu::Fix::memento_find
   name: memento_find
+- module: Catmandu::Fix::move
+  name: move
 - module: Catmandu::Fix::move_field
   name: move_field
 - module: Catmandu::Fix::nothing
@@ -245,14 +265,22 @@ Fix:
   name: paste
 - module: Catmandu::Fix::perlcode
   name: perlcode
+- module: Catmandu::Fix::pica_add
+  name: pica_add
 - module: Catmandu::Fix::pica_map
   name: pica_map
+- module: Catmandu::Fix::pica_set
+  name: pica_set
 - module: Catmandu::Fix::prepend
   name: prepend
 - module: Catmandu::Fix::random
   name: random
+- module: Catmandu::Fix::rdf_ldf_statements
+  name: rdf_ldf_statements
 - module: Catmandu::Fix::reject
   name: reject
+- module: Catmandu::Fix::remove
+  name: remove
 - module: Catmandu::Fix::remove_field
   name: remove_field
 - module: Catmandu::Fix::rename
@@ -273,6 +301,8 @@ Fix:
   name: rkd_name
 - module: Catmandu::Fix::search_in_store
   name: search_in_store
+- module: Catmandu::Fix::set
+  name: set
 - module: Catmandu::Fix::set_array
   name: set_array
 - module: Catmandu::Fix::set_field
@@ -285,8 +315,12 @@ Fix:
   name: sfx_year_range
 - module: Catmandu::Fix::sleep
   name: sleep
+- module: Catmandu::Fix::sort
+  name: sort
 - module: Catmandu::Fix::sort_field
   name: sort_field
+- module: Catmandu::Fix::split
+  name: split
 - module: Catmandu::Fix::split_date
   name: split_date
 - module: Catmandu::Fix::split_field
@@ -404,6 +438,8 @@ Importer:
   name: MODS
 - module: Catmandu::Importer::MWTemplates
   name: MWTemplates
+- module: Catmandu::Importer::MediaHaven
+  name: MediaHaven
 - module: Catmandu::Importer::MediaMosa
   name: MediaMosa
 - module: Catmandu::Importer::MediaWiki
@@ -420,6 +456,12 @@ Importer:
   name: Null
 - module: Catmandu::Importer::OAI
   name: OAI
+- module: Catmandu::Importer::PDF
+  name: PDF
+- module: Catmandu::Importer::PDFInfo
+  name: PDFInfo
+- module: Catmandu::Importer::PDFPages
+  name: PDFPages
 - module: Catmandu::Importer::PICA
   name: PICA
 - module: Catmandu::Importer::PLoS
@@ -430,6 +472,8 @@ Importer:
   name: Parltrack
 - module: Catmandu::Importer::PubMed
   name: PubMed
+- module: Catmandu::Importer::Pure
+  name: Pure
 - module: Catmandu::Importer::Purr
   name: Purr
 - module: Catmandu::Importer::RDF
@@ -448,6 +492,8 @@ Importer:
   name: Twitter
 - module: Catmandu::Importer::Wikidata
   name: Wikidata
+- module: Catmandu::Importer::WoS
+  name: WoS
 - module: Catmandu::Importer::XLS
   name: XLS
 - module: Catmandu::Importer::XLSX
