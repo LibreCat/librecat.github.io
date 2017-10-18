@@ -541,6 +541,8 @@ Store:
   name: MongoDB
 - module: Catmandu::Store::Multi
   name: Multi
+- module: Catmandu::Store::OAI
+  name: OAI
 - module: Catmandu::Store::REST
   name: REST
 - module: Catmandu::Store::RKD

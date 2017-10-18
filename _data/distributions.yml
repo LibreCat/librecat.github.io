@@ -873,7 +873,7 @@
     unknown: 0
   version: '0.09'
 - abstract: Catmandu modules for working with MAB2 data.
-  date: 2017-07-15T11:48:07
+  date: 2017-10-16T15:45:40
   debian:
     package: libcatmandu-mab2-perl
     pathl:
@@ -890,7 +890,7 @@
       suites:
       - jessie
       version: 0.07-1
-  download_url: https://cpan.metacpan.org/authors/id/J/JO/JOROL/Catmandu-MAB2-0.20.tar.gz
+  download_url: https://cpan.metacpan.org/authors/id/J/JO/JOROL/Catmandu-MAB2-0.21.tar.gz
   name: Catmandu-MAB2
   provides:
   - Catmandu::Exporter::MAB2
@@ -907,12 +907,8 @@
   - MAB2::Writer::Handle
   - MAB2::Writer::RAW
   - MAB2::Writer::XML
-  tests:
-    fail: 0
-    na: 37
-    pass: 251
-    unknown: 0
-  version: '0.20'
+  tests: ~
+  version: '0.21'
 - abstract: Catmandu modules for working with MARC data
   date: 2017-10-02T09:17:11
   debian:
@@ -1023,8 +1019,8 @@
   - Catmandu::Store::File::MediaHaven::Searcher
   tests:
     fail: 0
-    na: 24
-    pass: 424
+    na: 26
+    pass: 425
     unknown: 0
   version: '0.05'
 - abstract: Package that imports MediaMosa asset information into your application
@@ -1078,8 +1074,8 @@
     unknown: 0
   version: '0.01'
 - abstract: Catmandu modules for working with OAI repositories
-  date: 2017-04-20T11:38:45
-  download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-OAI-0.17.tar.gz
+  date: 2017-10-17T11:50:53
+  download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-OAI-0.18.tar.gz
   name: Catmandu-OAI
   provides:
   - Catmandu::Importer::OAI
@@ -1089,12 +1085,10 @@
   - Catmandu::Importer::OAI::Parser::raw
   - Catmandu::Importer::OAI::Parser::struct
   - Catmandu::OAI
-  tests:
-    fail: 0
-    na: 67
-    pass: 624
-    unknown: 0
-  version: '0.17'
+  - Catmandu::Store::OAI
+  - Catmandu::Store::OAI::Bag
+  tests: ~
+  version: '0.18'
 - abstract: Catmandu modules for working with OCLC web services
   date: 2015-07-03T13:48:40
   download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-OCLC-0.006.tar.gz
@@ -1279,7 +1273,7 @@
   tests:
     fail: 0
     na: 11
-    pass: 645
+    pass: 649
     unknown: 0
   version: '0.06'
 - abstract: Catmandu modules for parsing SFX data
@@ -1741,7 +1735,7 @@
   tests:
     fail: 0
     na: 10
-    pass: 268
+    pass: 270
     unknown: 0
   version: '0.07'
 ...
