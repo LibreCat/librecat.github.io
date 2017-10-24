@@ -232,7 +232,7 @@
   tests:
     fail: 2
     na: 33
-    pass: 823
+    pass: 850
     unknown: 0
   version: '1.0606'
 - abstract: Retrieve items from the AAT
@@ -909,8 +909,8 @@
   - MAB2::Writer::XML
   tests:
     fail: 0
-    na: 54
-    pass: 190
+    na: 55
+    pass: 238
     unknown: 0
   version: '0.21'
 - abstract: Catmandu modules for working with MARC data
@@ -993,7 +993,7 @@
   tests:
     fail: 14
     na: 10
-    pass: 888
+    pass: 927
     unknown: 0
   version: '0.31'
 - abstract: Catmandu tools for working with markdown data
@@ -1094,7 +1094,7 @@
   tests:
     fail: 0
     na: 20
-    pass: 214
+    pass: 282
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with OCLC web services
@@ -1331,7 +1331,7 @@
   tests:
     fail: 0
     na: 21
-    pass: 391
+    pass: 416
     unknown: 0
   version: '0.41'
 - abstract: A Catmandu::Serializer backend using Data::MessagePack
