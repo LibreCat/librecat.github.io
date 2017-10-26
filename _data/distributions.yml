@@ -232,7 +232,7 @@
   tests:
     fail: 2
     na: 33
-    pass: 858
+    pass: 877
     unknown: 0
   version: '1.0606'
 - abstract: Retrieve items from the AAT
@@ -1094,7 +1094,7 @@
   tests:
     fail: 0
     na: 20
-    pass: 307
+    pass: 331
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with OCLC web services
