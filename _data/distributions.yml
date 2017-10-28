@@ -753,8 +753,8 @@
   - Catmandu::Importer::PDFPages
   tests:
     fail: 3
-    na: 31
-    pass: 57
+    na: 32
+    pass: 58
     unknown: 0
   version: '0.012'
 - abstract: import data from Parltrack into Catmandu
@@ -993,7 +993,7 @@
   tests:
     fail: 14
     na: 10
-    pass: 941
+    pass: 942
     unknown: 0
   version: '0.31'
 - abstract: Catmandu tools for working with markdown data
@@ -1130,8 +1130,8 @@
   - Catmandu::PICA
   tests:
     fail: 0
-    na: 36
-    pass: 251
+    na: 37
+    pass: 256
     unknown: 0
   version: '0.23'
 - abstract: Catmandu module for working with PLoS data
@@ -1198,8 +1198,8 @@
   - Catmandu::Pure
   tests:
     fail: 0
-    na: 43
-    pass: 344
+    na: 44
+    pass: 345
     unknown: 0
   version: '0.02'
 - abstract: Modules for handling RDF data within the Catmandu framework
@@ -1331,7 +1331,7 @@
   tests:
     fail: 0
     na: 21
-    pass: 426
+    pass: 427
     unknown: 0
   version: '0.41'
 - abstract: A Catmandu::Serializer backend using Data::MessagePack
@@ -1607,7 +1607,7 @@
   - Catmandu::VIAF::API::Parse
   - Catmandu::VIAF::API::Query
   tests:
-    fail: 191
+    fail: 198
     na: 6
     pass: 378
     unknown: 0
