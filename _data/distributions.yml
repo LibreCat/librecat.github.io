@@ -1436,20 +1436,16 @@
     unknown: 0
   version: '0.01'
 - abstract: Store/retrieve items from the Datahub
-  date: 2017-07-08T11:55:38
-  download_url: https://cpan.metacpan.org/authors/id/N/NE/NETSENSEI/Catmandu-Store-Datahub-0.06.tar.gz
+  date: 2017-10-29T16:27:33
+  download_url: https://cpan.metacpan.org/authors/id/N/NE/NETSENSEI/Catmandu-Store-Datahub-0.08.tar.gz
   name: Catmandu-Store-Datahub
   provides:
   - Catmandu::Store::Datahub
   - Catmandu::Store::Datahub::API
   - Catmandu::Store::Datahub::Bag
   - Catmandu::Store::Datahub::OAuth
-  tests:
-    fail: 0
-    na: 0
-    pass: 452
-    unknown: 0
-  version: '0.06'
+  tests: ~
+  version: '0.08'
 - abstract: A searchable store backed by Elasticsearch
   date: 2017-03-28T08:12:15
   debian:
