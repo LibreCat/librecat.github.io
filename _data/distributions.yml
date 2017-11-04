@@ -232,7 +232,7 @@
   tests:
     fail: 2
     na: 50
-    pass: 903
+    pass: 915
     unknown: 0
   version: '1.0606'
 - abstract: Retrieve items from the AAT
@@ -1199,7 +1199,7 @@
   tests:
     fail: 0
     na: 44
-    pass: 345
+    pass: 347
     unknown: 0
   version: '0.02'
 - abstract: Modules for handling RDF data within the Catmandu framework
@@ -1371,7 +1371,7 @@
   tests:
     fail: 0
     na: 18
-    pass: 463
+    pass: 468
     unknown: 0
   version: '0.0303'
 - abstract: Catmandu modules for working with statistical data
@@ -1447,7 +1447,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 224
+    pass: 241
     unknown: 0
   version: '0.08'
 - abstract: A searchable store backed by Elasticsearch
