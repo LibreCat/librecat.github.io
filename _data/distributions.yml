@@ -232,7 +232,7 @@
   tests:
     fail: 2
     na: 50
-    pass: 915
+    pass: 928
     unknown: 0
   version: '1.0606'
 - abstract: Retrieve items from the AAT
@@ -980,7 +980,7 @@
   tests:
     fail: 0
     na: 48
-    pass: 295
+    pass: 301
     unknown: 0
   version: '1.19'
 - abstract: Catmandu modules for working with MODS records
@@ -1110,7 +1110,7 @@
   tests:
     fail: 0
     na: 10
-    pass: 115
+    pass: 120
     unknown: 0
   version: '0.006'
 - abstract: Catmandu modules for working with PICA+ data
@@ -1447,7 +1447,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 241
+    pass: 314
     unknown: 0
   version: '0.08'
 - abstract: A searchable store backed by Elasticsearch
