@@ -232,7 +232,7 @@
   tests:
     fail: 2
     na: 50
-    pass: 928
+    pass: 934
     unknown: 0
   version: '1.0606'
 - abstract: Retrieve items from the AAT
@@ -378,8 +378,8 @@
     unknown: 0
   version: '0.04'
 - abstract: Low level Catmandu interface to the BagIt packages.
-  date: 2017-09-11T09:33:10
-  download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-BagIt-0.16.tar.gz
+  date: 2017-11-06T13:18:54
+  download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-BagIt-0.17.tar.gz
   name: Catmandu-BagIt
   provides:
   - Catmandu::BagIt
@@ -390,12 +390,8 @@
   - Catmandu::Store::File::BagIt
   - Catmandu::Store::File::BagIt::Bag
   - Catmandu::Store::File::BagIt::Index
-  tests:
-    fail: 0
-    na: 42
-    pass: 476
-    unknown: 0
-  version: '0.16'
+  tests: ~
+  version: '0.17'
 - abstract: Catmandu modules for working with BibTeX data
   date: 2017-01-17T07:04:04
   download_url: https://cpan.metacpan.org/authors/id/V/VP/VPEIL/Catmandu-BibTeX-0.08.tar.gz
@@ -545,8 +541,8 @@
     unknown: 4
   version: 0.3.0
 - abstract: Low level Catmandu interface to the Fedora Commons REST API
-  date: 2017-08-31T14:21:54
-  download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-FedoraCommons-0.3.tar.gz
+  date: 2017-11-06T13:47:14
+  download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-FedoraCommons-0.4.tar.gz
   name: Catmandu-FedoraCommons
   provides:
   - Catmandu::FedoraCommons
@@ -578,12 +574,8 @@
   - Catmandu::Store::File::FedoraCommons
   - Catmandu::Store::File::FedoraCommons::Bag
   - Catmandu::Store::File::FedoraCommons::Index
-  tests:
-    fail: 0
-    na: 18
-    pass: 145
-    unknown: 0
-  version: '0.3'
+  tests: ~
+  version: '0.4'
 - abstract: Utility functions and generic fixes developed for the Datahub project
   date: 2017-01-16T11:09:30
   download_url: https://cpan.metacpan.org/authors/id/P/PI/PIETERDP/Catmandu-Fix-Datahub-0.03.tar.gz
@@ -869,7 +861,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 563
+    pass: 573
     unknown: 0
   version: '0.09'
 - abstract: Catmandu modules for working with MAB2 data.
@@ -1094,7 +1086,7 @@
   tests:
     fail: 0
     na: 20
-    pass: 331
+    pass: 337
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with OCLC web services
@@ -1168,7 +1160,7 @@
   provides:
   - Catmandu::Plack::unAPI
   tests:
-    fail: 104
+    fail: 108
     na: 3
     pass: 245
     unknown: 1
@@ -1371,7 +1363,7 @@
   tests:
     fail: 0
     na: 18
-    pass: 468
+    pass: 472
     unknown: 0
   version: '0.0303'
 - abstract: Catmandu modules for working with statistical data
@@ -1447,7 +1439,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 314
+    pass: 338
     unknown: 0
   version: '0.08'
 - abstract: A searchable store backed by Elasticsearch
@@ -1701,7 +1693,7 @@
   tests:
     fail: 117
     na: 0
-    pass: 882
+    pass: 893
     unknown: 1
   version: '0.16'
 - abstract: Modules for handling XML data with XSD compilation
