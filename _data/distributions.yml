@@ -265,8 +265,8 @@
   - Catmandu::Importer::Activiti::RuntimeTask
   tests:
     fail: 0
-    na: 4
-    pass: 337
+    na: 5
+    pass: 345
     unknown: 0
   version: '0.11'
 - abstract: Catmandu interface to Adlib
@@ -374,7 +374,7 @@
   tests:
     fail: 2
     na: 12
-    pass: 331
+    pass: 342
     unknown: 0
   version: '0.04'
 - abstract: Low level Catmandu interface to the BagIt packages.
@@ -390,7 +390,11 @@
   - Catmandu::Store::File::BagIt
   - Catmandu::Store::File::BagIt::Bag
   - Catmandu::Store::File::BagIt::Index
-  tests: ~
+  tests:
+    fail: 0
+    na: 13
+    pass: 97
+    unknown: 0
   version: '0.17'
 - abstract: Catmandu modules for working with BibTeX data
   date: 2017-01-17T07:04:04
@@ -453,7 +457,7 @@
   tests:
     fail: 1
     na: 3
-    pass: 406
+    pass: 410
     unknown: 0
   version: '0.06'
 - abstract: interactive shell for Catmandu
@@ -574,7 +578,11 @@
   - Catmandu::Store::File::FedoraCommons
   - Catmandu::Store::File::FedoraCommons::Bag
   - Catmandu::Store::File::FedoraCommons::Index
-  tests: ~
+  tests:
+    fail: 0
+    na: 19
+    pass: 85
+    unknown: 0
   version: '0.4'
 - abstract: Utility functions and generic fixes developed for the Datahub project
   date: 2017-01-16T11:09:30
@@ -1221,9 +1229,9 @@
   - Catmandu::Importer::RDF
   - Catmandu::RDF
   tests:
-    fail: 2
-    na: 33
-    pass: 150
+    fail: 4
+    na: 35
+    pass: 154
     unknown: 0
   version: '0.32'
 - abstract: Catmandu modules for working with RIS data
@@ -1273,7 +1281,7 @@
   tests:
     fail: 0
     na: 11
-    pass: 651
+    pass: 652
     unknown: 0
   version: '0.06'
 - abstract: Catmandu modules for parsing SFX data
@@ -1363,7 +1371,7 @@
   tests:
     fail: 0
     na: 18
-    pass: 472
+    pass: 473
     unknown: 0
   version: '0.0303'
 - abstract: Catmandu modules for working with statistical data
@@ -1439,7 +1447,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 338
+    pass: 341
     unknown: 0
   version: '0.08'
 - abstract: A searchable store backed by Elasticsearch
@@ -1567,8 +1575,8 @@
   - Catmandu::Template
   tests:
     fail: 0
-    na: 13
-    pass: 484
+    na: 14
+    pass: 493
     unknown: 0
   version: '0.12'
 - abstract: Package that imports Twitter feeds
@@ -1580,7 +1588,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 852
+    pass: 855
     unknown: 4
   version: '0.03'
 - abstract: Retrieve items from VIAF
