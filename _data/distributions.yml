@@ -914,7 +914,7 @@
     unknown: 0
   version: '0.21'
 - abstract: Catmandu modules for working with MARC data
-  date: 2017-10-02T09:17:11
+  date: 2017-11-08T09:30:50
   debian:
     package: libcatmandu-marc-perl
     pathl:
@@ -931,7 +931,7 @@
       suites:
       - jessie
       version: 0.206-2
-  download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-MARC-1.19.tar.gz
+  download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-MARC-1.20.tar.gz
   name: Catmandu-MARC
   provides:
   - Catmandu::Exporter::MARC
@@ -977,12 +977,8 @@
   - Catmandu::Importer::MARC::Record
   - Catmandu::Importer::MARC::XML
   - Catmandu::MARC
-  tests:
-    fail: 0
-    na: 48
-    pass: 301
-    unknown: 0
-  version: '1.19'
+  tests: ~
+  version: '1.20'
 - abstract: Catmandu modules for working with MODS records
   date: 2015-11-04T09:18:39
   download_url: https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-MODS-0.31.tar.gz
