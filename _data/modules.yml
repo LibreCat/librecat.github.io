@@ -418,6 +418,8 @@ Importer:
   name: CrossRef
 - module: Catmandu::Importer::DBI
   name: DBI
+- module: Catmandu::Importer::DKVP
+  name: DKVP
 - module: Catmandu::Importer::DOI
   name: DOI
 - module: Catmandu::Importer::EuropePMC
