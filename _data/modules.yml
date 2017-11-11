@@ -369,6 +369,8 @@ Fix:
   name: vacuum
 - module: Catmandu::Fix::viaf_match
   name: viaf_match
+- module: Catmandu::Fix::viaf_match_id
+  name: viaf_match_id
 - module: Catmandu::Fix::viaf_read
   name: viaf_read
 - module: Catmandu::Fix::viaf_search
