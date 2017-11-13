@@ -234,7 +234,7 @@
   tests:
     fail: 0
     na: 20
-    pass: 204
+    pass: 269
     unknown: 0
   version: '1.07'
 - abstract: Retrieve items from the AAT
@@ -252,7 +252,7 @@
   tests:
     fail: 16
     na: 6
-    pass: 743
+    pass: 767
     unknown: 0
   version: '0.03'
 - abstract: Catmandu module for Activiti
@@ -287,7 +287,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 744
+    pass: 766
     unknown: 0
   version: '0.02'
 - abstract: Low level api for Aleph X Services
@@ -500,7 +500,7 @@
   tests:
     fail: 0
     na: 14
-    pass: 195
+    pass: 251
     unknown: 0
   version: '0.07'
 - abstract: Catmandu modules for working with DOI data.
@@ -579,7 +579,7 @@
   tests:
     fail: 0
     na: 30
-    pass: 251
+    pass: 274
     unknown: 0
   version: '0.4'
 - abstract: Utility functions and generic fixes developed for the Datahub project
@@ -593,7 +593,7 @@
   tests:
     fail: 0
     na: 1
-    pass: 840
+    pass: 868
     unknown: 0
   version: '0.03'
 - abstract: Catmandu fixes for processing dates
@@ -867,7 +867,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 573
+    pass: 611
     unknown: 0
   version: '0.09'
 - abstract: Catmandu modules for working with MAB2 data.
@@ -978,7 +978,7 @@
   tests:
     fail: 0
     na: 12
-    pass: 195
+    pass: 228
     unknown: 0
   version: '1.20'
 - abstract: Catmandu modules for working with MODS records
@@ -1092,7 +1092,7 @@
   tests:
     fail: 0
     na: 22
-    pass: 364
+    pass: 371
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with OCLC web services
@@ -1368,8 +1368,8 @@
   - Catmandu::Store::Solr::Searcher
   tests:
     fail: 0
-    na: 21
-    pass: 497
+    na: 22
+    pass: 515
     unknown: 0
   version: '0.0303'
 - abstract: Catmandu modules for working with statistical data
@@ -1445,7 +1445,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 341
+    pass: 370
     unknown: 0
   version: '0.08'
 - abstract: A searchable store backed by Elasticsearch
@@ -1605,7 +1605,11 @@
   - Catmandu::VIAF::API::ID
   - Catmandu::VIAF::API::Parse
   - Catmandu::VIAF::API::Query
-  tests: ~
+  tests:
+    fail: 0
+    na: 2
+    pass: 143
+    unknown: 0
   version: '0.05'
 - abstract: An implementation of Catmandu::Validator to support JSON Schema
   date: 2016-04-06T06:43:46
@@ -1694,9 +1698,9 @@
   - Catmandu::XML
   - Catmandu::XML::Transformer
   tests:
-    fail: 117
+    fail: 123
     na: 0
-    pass: 922
+    pass: 931
     unknown: 1
   version: '0.16'
 - abstract: Modules for handling XML data with XSD compilation
