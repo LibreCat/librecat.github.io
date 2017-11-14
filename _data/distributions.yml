@@ -234,7 +234,7 @@
   tests:
     fail: 0
     na: 20
-    pass: 269
+    pass: 346
     unknown: 0
   version: '1.07'
 - abstract: Retrieve items from the AAT
@@ -252,7 +252,7 @@
   tests:
     fail: 16
     na: 6
-    pass: 767
+    pass: 786
     unknown: 0
   version: '0.03'
 - abstract: Catmandu module for Activiti
@@ -287,7 +287,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 766
+    pass: 787
     unknown: 0
   version: '0.02'
 - abstract: Low level api for Aleph X Services
@@ -392,7 +392,11 @@
   - Catmandu::Store::File::BagIt
   - Catmandu::Store::File::BagIt::Bag
   - Catmandu::Store::File::BagIt::Index
-  tests: ~
+  tests:
+    fail: 0
+    na: 5
+    pass: 172
+    unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with BibTeX data
   date: 2017-01-17T07:04:04
@@ -484,8 +488,8 @@
     unknown: 0
   version: '0.007'
 - abstract: Catmandu tools to communicate with DBI based interfaces
-  date: 2017-11-09T12:42:49
-  download_url: https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-DBI-0.07.tar.gz
+  date: 2017-11-13T08:06:28
+  download_url: https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-DBI-0.0701.tar.gz
   name: Catmandu-DBI
   provides:
   - Catmandu::DBI
@@ -497,12 +501,8 @@
   - Catmandu::Store::DBI::Handler::Pg
   - Catmandu::Store::DBI::Handler::SQLite
   - Catmandu::Store::DBI::Iterator
-  tests:
-    fail: 0
-    na: 14
-    pass: 251
-    unknown: 0
-  version: '0.07'
+  tests: ~
+  version: '0.0701'
 - abstract: Catmandu modules for working with DOI data.
   date: 2012-10-05T14:14:40
   download_url: https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-DOI-0.01.tar.gz
@@ -579,7 +579,7 @@
   tests:
     fail: 0
     na: 30
-    pass: 274
+    pass: 301
     unknown: 0
   version: '0.4'
 - abstract: Utility functions and generic fixes developed for the Datahub project
@@ -593,7 +593,7 @@
   tests:
     fail: 0
     na: 1
-    pass: 868
+    pass: 887
     unknown: 0
   version: '0.03'
 - abstract: Catmandu fixes for processing dates
@@ -867,7 +867,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 611
+    pass: 620
     unknown: 0
   version: '0.09'
 - abstract: Catmandu modules for working with MAB2 data.
@@ -912,7 +912,7 @@
     unknown: 0
   version: '0.21'
 - abstract: Catmandu modules for working with MARC data
-  date: 2017-11-08T09:30:50
+  date: 2017-11-13T13:23:05
   debian:
     package: libcatmandu-marc-perl
     pathl:
@@ -929,7 +929,7 @@
       suites:
       - jessie
       version: 0.206-2
-  download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-MARC-1.20.tar.gz
+  download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-MARC-1.21.tar.gz
   name: Catmandu-MARC
   provides:
   - Catmandu::Exporter::MARC
@@ -975,12 +975,8 @@
   - Catmandu::Importer::MARC::Record
   - Catmandu::Importer::MARC::XML
   - Catmandu::MARC
-  tests:
-    fail: 0
-    na: 12
-    pass: 228
-    unknown: 0
-  version: '1.20'
+  tests: ~
+  version: '1.21'
 - abstract: Catmandu modules for working with MODS records
   date: 2015-11-04T09:18:39
   download_url: https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-MODS-0.31.tar.gz
@@ -1092,7 +1088,7 @@
   tests:
     fail: 0
     na: 22
-    pass: 371
+    pass: 386
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with OCLC web services
@@ -1369,7 +1365,7 @@
   tests:
     fail: 0
     na: 22
-    pass: 515
+    pass: 531
     unknown: 0
   version: '0.0303'
 - abstract: Catmandu modules for working with statistical data
@@ -1445,7 +1441,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 370
+    pass: 382
     unknown: 0
   version: '0.08'
 - abstract: A searchable store backed by Elasticsearch
@@ -1608,7 +1604,7 @@
   tests:
     fail: 0
     na: 2
-    pass: 143
+    pass: 193
     unknown: 0
   version: '0.05'
 - abstract: An implementation of Catmandu::Validator to support JSON Schema
@@ -1698,9 +1694,9 @@
   - Catmandu::XML
   - Catmandu::XML::Transformer
   tests:
-    fail: 123
+    fail: 128
     na: 0
-    pass: 931
+    pass: 936
     unknown: 1
   version: '0.16'
 - abstract: Modules for handling XML data with XSD compilation
