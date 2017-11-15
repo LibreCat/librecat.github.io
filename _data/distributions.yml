@@ -232,9 +232,9 @@
   - Catmandu::Validator
   - Catmandu::Validator::Simple
   tests:
-    fail: 0
-    na: 20
-    pass: 346
+    fail: 1
+    na: 26
+    pass: 436
     unknown: 0
   version: '1.07'
 - abstract: Retrieve items from the AAT
@@ -252,7 +252,7 @@
   tests:
     fail: 16
     na: 6
-    pass: 786
+    pass: 818
     unknown: 0
   version: '0.03'
 - abstract: Catmandu module for Activiti
@@ -287,7 +287,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 787
+    pass: 819
     unknown: 0
   version: '0.02'
 - abstract: Low level api for Aleph X Services
@@ -394,8 +394,8 @@
   - Catmandu::Store::File::BagIt::Index
   tests:
     fail: 0
-    na: 5
-    pass: 172
+    na: 10
+    pass: 266
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with BibTeX data
@@ -501,7 +501,11 @@
   - Catmandu::Store::DBI::Handler::Pg
   - Catmandu::Store::DBI::Handler::SQLite
   - Catmandu::Store::DBI::Iterator
-  tests: ~
+  tests:
+    fail: 0
+    na: 25
+    pass: 155
+    unknown: 0
   version: '0.0701'
 - abstract: Catmandu modules for working with DOI data.
   date: 2012-10-05T14:14:40
@@ -578,8 +582,8 @@
   - Catmandu::Store::File::FedoraCommons::Index
   tests:
     fail: 0
-    na: 30
-    pass: 301
+    na: 31
+    pass: 311
     unknown: 0
   version: '0.4'
 - abstract: Utility functions and generic fixes developed for the Datahub project
@@ -593,7 +597,7 @@
   tests:
     fail: 0
     na: 1
-    pass: 887
+    pass: 912
     unknown: 0
   version: '0.03'
 - abstract: Catmandu fixes for processing dates
@@ -867,7 +871,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 620
+    pass: 623
     unknown: 0
   version: '0.09'
 - abstract: Catmandu modules for working with MAB2 data.
@@ -1088,7 +1092,7 @@
   tests:
     fail: 0
     na: 22
-    pass: 386
+    pass: 389
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with OCLC web services
@@ -1364,8 +1368,8 @@
   - Catmandu::Store::Solr::Searcher
   tests:
     fail: 0
-    na: 22
-    pass: 531
+    na: 23
+    pass: 552
     unknown: 0
   version: '0.0303'
 - abstract: Catmandu modules for working with statistical data
@@ -1441,7 +1445,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 382
+    pass: 407
     unknown: 0
   version: '0.08'
 - abstract: A searchable store backed by Elasticsearch
@@ -1603,8 +1607,8 @@
   - Catmandu::VIAF::API::Query
   tests:
     fail: 0
-    na: 2
-    pass: 193
+    na: 3
+    pass: 284
     unknown: 0
   version: '0.05'
 - abstract: An implementation of Catmandu::Validator to support JSON Schema
@@ -1694,10 +1698,10 @@
   - Catmandu::XML
   - Catmandu::XML::Transformer
   tests:
-    fail: 128
+    fail: 133
     na: 0
-    pass: 936
-    unknown: 1
+    pass: 949
+    unknown: 2
   version: '0.16'
 - abstract: Modules for handling XML data with XSD compilation
   date: 2016-10-30T16:15:37
