@@ -233,8 +233,8 @@
   - Catmandu::Validator::Simple
   tests:
     fail: 1
-    na: 26
-    pass: 436
+    na: 27
+    pass: 465
     unknown: 0
   version: '1.07'
 - abstract: Retrieve items from the AAT
@@ -252,7 +252,7 @@
   tests:
     fail: 16
     na: 6
-    pass: 818
+    pass: 831
     unknown: 0
   version: '0.03'
 - abstract: Catmandu module for Activiti
@@ -287,7 +287,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 819
+    pass: 831
     unknown: 0
   version: '0.02'
 - abstract: Low level api for Aleph X Services
@@ -346,7 +346,7 @@
   tests:
     fail: 0
     na: 18
-    pass: 102
+    pass: 104
     unknown: 0
   version: '0.101'
 - abstract: modules for working with Atom feeds
@@ -394,8 +394,8 @@
   - Catmandu::Store::File::BagIt::Index
   tests:
     fail: 0
-    na: 10
-    pass: 266
+    na: 12
+    pass: 308
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with BibTeX data
@@ -503,8 +503,8 @@
   - Catmandu::Store::DBI::Iterator
   tests:
     fail: 0
-    na: 25
-    pass: 155
+    na: 26
+    pass: 199
     unknown: 0
   version: '0.0701'
 - abstract: Catmandu modules for working with DOI data.
@@ -597,7 +597,7 @@
   tests:
     fail: 0
     na: 1
-    pass: 912
+    pass: 923
     unknown: 0
   version: '0.03'
 - abstract: Catmandu fixes for processing dates
@@ -706,7 +706,7 @@
   tests:
     fail: 3
     na: 11
-    pass: 273
+    pass: 275
     unknown: 3
   version: '0.06'
 - abstract: Catmandu importer for importing log entries
@@ -730,7 +730,7 @@
   tests:
     fail: 0
     na: 23
-    pass: 366
+    pass: 368
     unknown: 0
   version: '0.04'
 - abstract: extract MediaWiki template data
@@ -871,7 +871,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 623
+    pass: 636
     unknown: 0
   version: '0.09'
 - abstract: Catmandu modules for working with MAB2 data.
@@ -979,7 +979,11 @@
   - Catmandu::Importer::MARC::Record
   - Catmandu::Importer::MARC::XML
   - Catmandu::MARC
-  tests: ~
+  tests:
+    fail: 0
+    na: 27
+    pass: 147
+    unknown: 0
   version: '1.21'
 - abstract: Catmandu modules for working with MODS records
   date: 2015-11-04T09:18:39
@@ -1091,8 +1095,8 @@
   - Catmandu::Store::OAI::Bag
   tests:
     fail: 0
-    na: 22
-    pass: 389
+    na: 23
+    pass: 409
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with OCLC web services
@@ -1129,7 +1133,7 @@
   tests:
     fail: 0
     na: 37
-    pass: 256
+    pass: 260
     unknown: 0
   version: '0.23'
 - abstract: Catmandu module for working with PLoS data
@@ -1197,7 +1201,7 @@
   tests:
     fail: 0
     na: 44
-    pass: 347
+    pass: 349
     unknown: 0
   version: '0.02'
 - abstract: Modules for handling RDF data within the Catmandu framework
@@ -1279,7 +1283,7 @@
   tests:
     fail: 0
     na: 11
-    pass: 654
+    pass: 656
     unknown: 0
   version: '0.06'
 - abstract: Catmandu modules for parsing SFX data
@@ -1369,7 +1373,7 @@
   tests:
     fail: 0
     na: 23
-    pass: 552
+    pass: 559
     unknown: 0
   version: '0.0303'
 - abstract: Catmandu modules for working with statistical data
@@ -1445,7 +1449,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 407
+    pass: 416
     unknown: 0
   version: '0.08'
 - abstract: A searchable store backed by Elasticsearch
@@ -1574,7 +1578,7 @@
   tests:
     fail: 0
     na: 15
-    pass: 493
+    pass: 495
     unknown: 0
   version: '0.12'
 - abstract: Package that imports Twitter feeds
@@ -1607,8 +1611,8 @@
   - Catmandu::VIAF::API::Query
   tests:
     fail: 0
-    na: 3
-    pass: 284
+    na: 5
+    pass: 318
     unknown: 0
   version: '0.05'
 - abstract: An implementation of Catmandu::Validator to support JSON Schema
@@ -1698,9 +1702,9 @@
   - Catmandu::XML
   - Catmandu::XML::Transformer
   tests:
-    fail: 133
+    fail: 136
     na: 0
-    pass: 949
+    pass: 951
     unknown: 2
   version: '0.16'
 - abstract: Modules for handling XML data with XSD compilation
