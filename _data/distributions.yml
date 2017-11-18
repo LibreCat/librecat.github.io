@@ -234,7 +234,7 @@
   tests:
     fail: 1
     na: 27
-    pass: 465
+    pass: 525
     unknown: 0
   version: '1.07'
 - abstract: Retrieve items from the AAT
@@ -252,7 +252,7 @@
   tests:
     fail: 16
     na: 6
-    pass: 831
+    pass: 866
     unknown: 0
   version: '0.03'
 - abstract: Catmandu module for Activiti
@@ -287,7 +287,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 831
+    pass: 862
     unknown: 0
   version: '0.02'
 - abstract: Low level api for Aleph X Services
@@ -376,7 +376,7 @@
   tests:
     fail: 2
     na: 12
-    pass: 342
+    pass: 347
     unknown: 0
   version: '0.04'
 - abstract: Low level Catmandu interface to the BagIt packages.
@@ -394,8 +394,8 @@
   - Catmandu::Store::File::BagIt::Index
   tests:
     fail: 0
-    na: 12
-    pass: 308
+    na: 13
+    pass: 403
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with BibTeX data
@@ -503,8 +503,8 @@
   - Catmandu::Store::DBI::Iterator
   tests:
     fail: 0
-    na: 26
-    pass: 199
+    na: 28
+    pass: 312
     unknown: 0
   version: '0.0701'
 - abstract: Catmandu modules for working with DOI data.
@@ -597,7 +597,7 @@
   tests:
     fail: 0
     na: 1
-    pass: 923
+    pass: 955
     unknown: 0
   version: '0.03'
 - abstract: Catmandu fixes for processing dates
@@ -871,7 +871,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 636
+    pass: 648
     unknown: 0
   version: '0.09'
 - abstract: Catmandu modules for working with MAB2 data.
@@ -981,8 +981,8 @@
   - Catmandu::MARC
   tests:
     fail: 0
-    na: 27
-    pass: 147
+    na: 29
+    pass: 233
     unknown: 0
   version: '1.21'
 - abstract: Catmandu modules for working with MODS records
@@ -1096,7 +1096,7 @@
   tests:
     fail: 0
     na: 23
-    pass: 409
+    pass: 429
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with OCLC web services
@@ -1449,7 +1449,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 416
+    pass: 437
     unknown: 0
   version: '0.08'
 - abstract: A searchable store backed by Elasticsearch
@@ -1590,7 +1590,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 855
+    pass: 856
     unknown: 4
   version: '0.03'
 - abstract: Retrieve items from the VIAF authority file
@@ -1612,7 +1612,7 @@
   tests:
     fail: 0
     na: 5
-    pass: 318
+    pass: 373
     unknown: 0
   version: '0.05'
 - abstract: An implementation of Catmandu::Validator to support JSON Schema
@@ -1702,9 +1702,9 @@
   - Catmandu::XML
   - Catmandu::XML::Transformer
   tests:
-    fail: 136
+    fail: 145
     na: 0
-    pass: 951
+    pass: 958
     unknown: 2
   version: '0.16'
 - abstract: Modules for handling XML data with XSD compilation
