@@ -234,7 +234,7 @@
   tests:
     fail: 1
     na: 27
-    pass: 525
+    pass: 557
     unknown: 0
   version: '1.07'
 - abstract: Retrieve items from the AAT
@@ -252,7 +252,7 @@
   tests:
     fail: 16
     na: 6
-    pass: 866
+    pass: 881
     unknown: 0
   version: '0.03'
 - abstract: Catmandu module for Activiti
@@ -287,7 +287,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 862
+    pass: 877
     unknown: 0
   version: '0.02'
 - abstract: Low level api for Aleph X Services
@@ -346,7 +346,7 @@
   tests:
     fail: 0
     na: 18
-    pass: 104
+    pass: 106
     unknown: 0
   version: '0.101'
 - abstract: modules for working with Atom feeds
@@ -395,7 +395,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 403
+    pass: 445
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with BibTeX data
@@ -504,7 +504,7 @@
   tests:
     fail: 0
     na: 28
-    pass: 312
+    pass: 374
     unknown: 0
   version: '0.0701'
 - abstract: Catmandu modules for working with DOI data.
@@ -597,7 +597,7 @@
   tests:
     fail: 0
     na: 1
-    pass: 955
+    pass: 970
     unknown: 0
   version: '0.03'
 - abstract: Catmandu fixes for processing dates
@@ -636,7 +636,7 @@
   tests:
     fail: 0
     na: 48
-    pass: 436
+    pass: 438
     unknown: 0
   version: '0.011'
 - abstract: Catmandu fix modules for processing xml (deprecated)
@@ -706,7 +706,7 @@
   tests:
     fail: 3
     na: 11
-    pass: 275
+    pass: 277
     unknown: 3
   version: '0.06'
 - abstract: Catmandu importer for importing log entries
@@ -840,7 +840,7 @@
   tests:
     fail: 0
     na: 49
-    pass: 441
+    pass: 443
     unknown: 0
   version: '0.0104'
 - abstract: Modules for handling LIDO data within the Catmandu framework
@@ -871,7 +871,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 648
+    pass: 657
     unknown: 0
   version: '0.09'
 - abstract: Catmandu modules for working with MAB2 data.
@@ -982,7 +982,7 @@
   tests:
     fail: 0
     na: 29
-    pass: 233
+    pass: 281
     unknown: 0
   version: '1.21'
 - abstract: Catmandu modules for working with MODS records
@@ -1096,7 +1096,7 @@
   tests:
     fail: 0
     na: 23
-    pass: 429
+    pass: 444
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with OCLC web services
@@ -1116,8 +1116,8 @@
     unknown: 0
   version: '0.006'
 - abstract: Catmandu modules for working with PICA+ data
-  date: 2017-07-14T08:30:25
-  download_url: https://cpan.metacpan.org/authors/id/K/KL/KLEE/Catmandu-PICA-0.23.tar.gz
+  date: 2017-11-18T14:57:14
+  download_url: https://cpan.metacpan.org/authors/id/J/JO/JOROL/Catmandu-PICA-0.24.tar.gz
   name: Catmandu-PICA
   provides:
   - Catmandu::Exporter::PICA
@@ -1130,12 +1130,8 @@
   - Catmandu::Importer::SRU::Parser::picaxml
   - Catmandu::Importer::SRU::Parser::ppxml
   - Catmandu::PICA
-  tests:
-    fail: 0
-    na: 37
-    pass: 260
-    unknown: 0
-  version: '0.23'
+  tests: ~
+  version: '0.24'
 - abstract: Catmandu module for working with PLoS data
   date: 2012-10-05T14:17:33
   download_url: https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-PLoS-0.01.tar.gz
@@ -1160,7 +1156,7 @@
   tests:
     fail: 0
     na: 15
-    pass: 132
+    pass: 134
     unknown: 0
   version: '0.03'
 - abstract: unAPI webservice based on Catmandu
@@ -1373,7 +1369,7 @@
   tests:
     fail: 0
     na: 23
-    pass: 559
+    pass: 567
     unknown: 0
   version: '0.0303'
 - abstract: Catmandu modules for working with statistical data
@@ -1449,7 +1445,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 437
+    pass: 452
     unknown: 0
   version: '0.08'
 - abstract: A searchable store backed by Elasticsearch
@@ -1475,7 +1471,7 @@
   tests:
     fail: 0
     na: 23
-    pass: 426
+    pass: 429
     unknown: 0
   version: '0.0509'
 - abstract: A searchable store backed by Lucy
@@ -1504,7 +1500,7 @@
   tests:
     fail: 0
     na: 26
-    pass: 392
+    pass: 394
     unknown: 0
   version: '0.0103'
 - abstract: A searchable store backed by MongoDB
@@ -1531,7 +1527,7 @@
   tests:
     fail: 0
     na: 34
-    pass: 415
+    pass: 417
     unknown: 0
   version: '0.07'
 - abstract: Store/retrieve items from a JSON REST-API endpoint
@@ -1545,7 +1541,7 @@
   tests:
     fail: 0
     na: 9
-    pass: 317
+    pass: 320
     unknown: 0
   version: '0.01'
 - abstract: Retrieve items from the RKD
@@ -1612,7 +1608,7 @@
   tests:
     fail: 0
     na: 5
-    pass: 373
+    pass: 400
     unknown: 0
   version: '0.05'
 - abstract: An implementation of Catmandu::Validator to support JSON Schema
@@ -1704,7 +1700,7 @@
   tests:
     fail: 145
     na: 0
-    pass: 958
+    pass: 963
     unknown: 2
   version: '0.16'
 - abstract: Modules for handling XML data with XSD compilation
