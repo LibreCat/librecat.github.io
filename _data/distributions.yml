@@ -234,7 +234,7 @@
   tests:
     fail: 1
     na: 27
-    pass: 557
+    pass: 602
     unknown: 0
   version: '1.07'
 - abstract: Retrieve items from the AAT
@@ -252,7 +252,7 @@
   tests:
     fail: 16
     na: 6
-    pass: 881
+    pass: 896
     unknown: 0
   version: '0.03'
 - abstract: Catmandu module for Activiti
@@ -268,7 +268,7 @@
   tests:
     fail: 0
     na: 5
-    pass: 346
+    pass: 342
     unknown: 0
   version: '0.11'
 - abstract: Catmandu interface to Adlib
@@ -287,7 +287,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 877
+    pass: 889
     unknown: 0
   version: '0.02'
 - abstract: Low level api for Aleph X Services
@@ -334,7 +334,7 @@
     fail: 0
     na: 3
     pass: 157
-    unknown: 86
+    unknown: 82
   version: '1.065'
 - abstract: Catmandu modules for working with ArXiv data.
   date: 2017-03-10T15:51:28
@@ -395,7 +395,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 445
+    pass: 488
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with BibTeX data
@@ -408,8 +408,8 @@
   - Catmandu::Importer::BibTeX
   tests:
     fail: 0
-    na: 26
-    pass: 387
+    na: 27
+    pass: 388
     unknown: 0
   version: '0.08'
 - abstract: Catmandu modules for working with Blacklight catalogs
@@ -471,7 +471,7 @@
   tests:
     fail: 0
     na: 17
-    pass: 1027
+    pass: 1007
     unknown: 1
   version: '0.01'
 - abstract: Catmandu modules for working with crossref data
@@ -504,7 +504,7 @@
   tests:
     fail: 0
     na: 28
-    pass: 374
+    pass: 428
     unknown: 0
   version: '0.0701'
 - abstract: Catmandu modules for working with DOI data.
@@ -517,7 +517,7 @@
   tests:
     fail: 96
     na: 9
-    pass: 216
+    pass: 207
     unknown: 0
   version: '0.01'
 - abstract: A bundle of Catmandu modules for working with data from EuropePMC
@@ -597,7 +597,7 @@
   tests:
     fail: 0
     na: 1
-    pass: 970
+    pass: 985
     unknown: 0
   version: '0.03'
 - abstract: Catmandu fixes for processing dates
@@ -660,7 +660,7 @@
   tests:
     fail: 0
     na: 8
-    pass: 466
+    pass: 449
     unknown: 0
   version: '0.0201'
 - abstract: Catmandu modules for the Google Maps geocoding api
@@ -780,7 +780,7 @@
   tests:
     fail: 0
     na: 10
-    pass: 345
+    pass: 329
     unknown: 0
   version: '0.02'
 - abstract: load JSON-encoded data from a server using a GET HTTP request
@@ -871,7 +871,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 657
+    pass: 662
     unknown: 0
   version: '0.09'
 - abstract: Catmandu modules for working with MAB2 data.
@@ -982,7 +982,7 @@
   tests:
     fail: 0
     na: 29
-    pass: 281
+    pass: 313
     unknown: 0
   version: '1.21'
 - abstract: Catmandu modules for working with MODS records
@@ -1050,7 +1050,7 @@
   tests:
     fail: 0
     na: 3
-    pass: 167
+    pass: 163
     unknown: 0
   version: '0.279'
 - abstract: Catmandu modules for MediaWiki
@@ -1076,7 +1076,7 @@
   tests:
     fail: 0
     na: 12
-    pass: 410
+    pass: 413
     unknown: 0
   version: '0.01'
 - abstract: Catmandu modules for working with OAI repositories
@@ -1096,7 +1096,7 @@
   tests:
     fail: 0
     na: 23
-    pass: 444
+    pass: 459
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with OCLC web services
@@ -1142,7 +1142,7 @@
   tests:
     fail: 0
     na: 20
-    pass: 767
+    pass: 745
     unknown: 0
   version: '0.01'
 - abstract: Modules for handling PNX data within the Catmandu framework
@@ -1181,7 +1181,7 @@
   tests:
     fail: 0
     na: 20
-    pass: 767
+    pass: 745
     unknown: 0
   version: '0.01'
 - abstract: A bundle of Catmandu modules for working with data from Pure
@@ -1228,8 +1228,8 @@
   - Catmandu::RDF
   tests:
     fail: 4
-    na: 35
-    pass: 154
+    na: 37
+    pass: 156
     unknown: 0
   version: '0.32'
 - abstract: Catmandu modules for working with RIS data
@@ -1353,7 +1353,7 @@
   tests:
     fail: 0
     na: 11
-    pass: 568
+    pass: 552
     unknown: 0
   version: '0.0102'
 - abstract: Catmandu modules for working with solr endpoints
@@ -1417,7 +1417,7 @@
   tests:
     fail: 0
     na: 11
-    pass: 524
+    pass: 523
     unknown: 0
   version: '0.02'
 - abstract: A searchable store backed by CouchDB
@@ -1430,7 +1430,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 653
+    pass: 630
     unknown: 0
   version: '0.01'
 - abstract: Store/retrieve items from the Datahub
@@ -1445,7 +1445,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 452
+    pass: 464
     unknown: 0
   version: '0.08'
 - abstract: A searchable store backed by Elasticsearch
@@ -1586,7 +1586,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 856
+    pass: 849
     unknown: 4
   version: '0.03'
 - abstract: Retrieve items from the VIAF authority file
@@ -1608,7 +1608,7 @@
   tests:
     fail: 0
     na: 5
-    pass: 400
+    pass: 421
     unknown: 0
   version: '0.05'
 - abstract: An implementation of Catmandu::Validator to support JSON Schema
@@ -1650,7 +1650,7 @@
   tests:
     fail: 0
     na: 14
-    pass: 543
+    pass: 542
     unknown: 0
   version: '0.06'
 - abstract: Catmandu modules to work with the Web Of Science web services
