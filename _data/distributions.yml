@@ -234,7 +234,7 @@
   tests:
     fail: 1
     na: 27
-    pass: 602
+    pass: 638
     unknown: 0
   version: '1.07'
 - abstract: Retrieve items from the AAT
@@ -252,7 +252,7 @@
   tests:
     fail: 16
     na: 6
-    pass: 896
+    pass: 913
     unknown: 0
   version: '0.03'
 - abstract: Catmandu module for Activiti
@@ -287,7 +287,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 889
+    pass: 909
     unknown: 0
   version: '0.02'
 - abstract: Low level api for Aleph X Services
@@ -395,7 +395,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 488
+    pass: 492
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with BibTeX data
@@ -421,8 +421,8 @@
   - Catmandu::Importer::Blacklight
   tests:
     fail: 0
-    na: 15
-    pass: 265
+    na: 16
+    pass: 267
     unknown: 0
   version: '0.03'
 - abstract: Package that exports data in a Breaker format
@@ -459,7 +459,7 @@
   tests:
     fail: 1
     na: 3
-    pass: 411
+    pass: 413
     unknown: 0
   version: '0.06'
 - abstract: interactive shell for Catmandu
@@ -504,7 +504,7 @@
   tests:
     fail: 0
     na: 28
-    pass: 428
+    pass: 494
     unknown: 0
   version: '0.0701'
 - abstract: Catmandu modules for working with DOI data.
@@ -543,7 +543,7 @@
   tests:
     fail: 0
     na: 10
-    pass: 956
+    pass: 959
     unknown: 4
   version: 0.3.0
 - abstract: Low level Catmandu interface to the Fedora Commons REST API
@@ -583,7 +583,7 @@
   tests:
     fail: 0
     na: 31
-    pass: 311
+    pass: 317
     unknown: 0
   version: '0.4'
 - abstract: Utility functions and generic fixes developed for the Datahub project
@@ -597,7 +597,7 @@
   tests:
     fail: 0
     na: 1
-    pass: 985
+    pass: 1002
     unknown: 0
   version: '0.03'
 - abstract: Catmandu fixes for processing dates
@@ -718,7 +718,7 @@
   tests:
     fail: 0
     na: 21
-    pass: 395
+    pass: 396
     unknown: 6
   version: '0.0112'
 - abstract: get information about CPAN releases
@@ -871,7 +871,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 662
+    pass: 671
     unknown: 0
   version: '0.09'
 - abstract: Catmandu modules for working with MAB2 data.
@@ -912,7 +912,7 @@
   tests:
     fail: 0
     na: 55
-    pass: 258
+    pass: 261
     unknown: 0
   version: '0.21'
 - abstract: Catmandu modules for working with MARC data
@@ -982,7 +982,7 @@
   tests:
     fail: 0
     na: 29
-    pass: 313
+    pass: 367
     unknown: 0
   version: '1.21'
 - abstract: Catmandu modules for working with MODS records
@@ -995,7 +995,7 @@
   tests:
     fail: 14
     na: 10
-    pass: 945
+    pass: 1024
     unknown: 0
   version: '0.31'
 - abstract: Catmandu tools for working with markdown data
@@ -1008,7 +1008,7 @@
   tests:
     fail: 0
     na: 4
-    pass: 313
+    pass: 317
     unknown: 0
   version: '0.011'
 - abstract: Tools to communicate with the Zeticon MediaHaven server
@@ -1026,7 +1026,7 @@
   tests:
     fail: 0
     na: 26
-    pass: 426
+    pass: 428
     unknown: 0
   version: '0.05'
 - abstract: Package that imports MediaMosa asset information into your application
@@ -1063,7 +1063,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 315
+    pass: 316
     unknown: 0
   version: '0.021'
 - abstract: Catmandu modules wrapping the Mendeley API
@@ -1096,7 +1096,7 @@
   tests:
     fail: 0
     na: 23
-    pass: 459
+    pass: 482
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with OCLC web services
@@ -1130,7 +1130,11 @@
   - Catmandu::Importer::SRU::Parser::picaxml
   - Catmandu::Importer::SRU::Parser::ppxml
   - Catmandu::PICA
-  tests: ~
+  tests:
+    fail: 47
+    na: 10
+    pass: 165
+    unknown: 0
   version: '0.24'
 - abstract: Catmandu module for working with PLoS data
   date: 2012-10-05T14:17:33
@@ -1329,7 +1333,7 @@
   tests:
     fail: 0
     na: 21
-    pass: 427
+    pass: 513
     unknown: 0
   version: '0.41'
 - abstract: A Catmandu::Serializer backend using Data::MessagePack
@@ -1369,7 +1373,7 @@
   tests:
     fail: 0
     na: 23
-    pass: 567
+    pass: 571
     unknown: 0
   version: '0.0303'
 - abstract: Catmandu modules for working with statistical data
@@ -1404,7 +1408,7 @@
   tests:
     fail: 3
     na: 1
-    pass: 298
+    pass: 301
     unknown: 0
   version: '0.01'
 - abstract: a CHI backed caching store
@@ -1445,7 +1449,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 464
+    pass: 479
     unknown: 0
   version: '0.08'
 - abstract: A searchable store backed by Elasticsearch
@@ -1574,7 +1578,7 @@
   tests:
     fail: 0
     na: 15
-    pass: 495
+    pass: 497
     unknown: 0
   version: '0.12'
 - abstract: Package that imports Twitter feeds
@@ -1608,7 +1612,7 @@
   tests:
     fail: 0
     na: 5
-    pass: 421
+    pass: 447
     unknown: 0
   version: '0.05'
 - abstract: An implementation of Catmandu::Validator to support JSON Schema
@@ -1664,8 +1668,8 @@
   - Catmandu::WoS::WSDL
   tests:
     fail: 0
-    na: 10
-    pass: 276
+    na: 11
+    pass: 282
     unknown: 0
   version: '0.02'
 - abstract: modules for working with Excel .xls and .xlsx files
@@ -1715,7 +1719,7 @@
   tests:
     fail: 24
     na: 12
-    pass: 239
+    pass: 241
     unknown: 0
   version: '0.04'
 - abstract: Catmandu module for working with Z3950 data
@@ -1742,7 +1746,7 @@
   tests:
     fail: 0
     na: 10
-    pass: 275
+    pass: 278
     unknown: 0
   version: '0.07'
 ...
