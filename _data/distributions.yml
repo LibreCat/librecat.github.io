@@ -234,7 +234,7 @@
   tests:
     fail: 1
     na: 27
-    pass: 638
+    pass: 650
     unknown: 0
   version: '1.07'
 - abstract: Retrieve items from the AAT
@@ -252,7 +252,7 @@
   tests:
     fail: 16
     na: 6
-    pass: 913
+    pass: 914
     unknown: 0
   version: '0.03'
 - abstract: Catmandu module for Activiti
@@ -287,7 +287,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 909
+    pass: 910
     unknown: 0
   version: '0.02'
 - abstract: Low level api for Aleph X Services
@@ -394,7 +394,7 @@
   - Catmandu::Store::File::BagIt::Index
   tests:
     fail: 0
-    na: 13
+    na: 14
     pass: 492
     unknown: 0
   version: '0.18'
@@ -409,7 +409,7 @@
   tests:
     fail: 0
     na: 27
-    pass: 388
+    pass: 389
     unknown: 0
   version: '0.08'
 - abstract: Catmandu modules for working with Blacklight catalogs
@@ -503,8 +503,8 @@
   - Catmandu::Store::DBI::Iterator
   tests:
     fail: 0
-    na: 28
-    pass: 494
+    na: 29
+    pass: 499
     unknown: 0
   version: '0.0701'
 - abstract: Catmandu modules for working with DOI data.
@@ -597,7 +597,7 @@
   tests:
     fail: 0
     na: 1
-    pass: 1002
+    pass: 1003
     unknown: 0
   version: '0.03'
 - abstract: Catmandu fixes for processing dates
@@ -619,7 +619,7 @@
   tests:
     fail: 0
     na: 22
-    pass: 395
+    pass: 396
     unknown: 0
   version: '0.0131'
 - abstract: Catmandu fixes to check file attributes
@@ -871,8 +871,35 @@
   tests:
     fail: 0
     na: 0
-    pass: 671
+    pass: 672
     unknown: 0
+  version: '0.09'
+- abstract: Modules for handling LIDO data within the Catmandu framework
+  date: 2017-11-21T15:19:27
+  download_url: https://cpan.metacpan.org/authors/id/N/NE/NETSENSEI/Catmandu-LIDO-0.09.tar.gz
+  name: Catmandu-LIDO
+  provides:
+  - Catmandu::Exporter::LIDO
+  - Catmandu::Fix::LIDO::DescriptiveNote
+  - Catmandu::Fix::LIDO::ID
+  - Catmandu::Fix::LIDO::Nameset
+  - Catmandu::Fix::LIDO::Term
+  - Catmandu::Fix::LIDO::Utility
+  - Catmandu::Fix::LIDO::Value
+  - Catmandu::Fix::lido_actor
+  - Catmandu::Fix::lido_baseid
+  - Catmandu::Fix::lido_basenameset
+  - Catmandu::Fix::lido_basevalue
+  - Catmandu::Fix::lido_classification
+  - Catmandu::Fix::lido_date
+  - Catmandu::Fix::lido_descriptivenote
+  - Catmandu::Fix::lido_inscription
+  - Catmandu::Fix::lido_objectmeasurements
+  - Catmandu::Fix::lido_term
+  - Catmandu::Importer::LIDO
+  - Catmandu::Importer::OAI::Parser::lido
+  - Catmandu::LIDO
+  tests: ~
   version: '0.09'
 - abstract: Catmandu modules for working with MAB2 data.
   date: 2017-10-16T15:45:40
@@ -981,8 +1008,8 @@
   - Catmandu::MARC
   tests:
     fail: 0
-    na: 29
-    pass: 367
+    na: 30
+    pass: 369
     unknown: 0
   version: '1.21'
 - abstract: Catmandu modules for working with MODS records
@@ -995,7 +1022,7 @@
   tests:
     fail: 14
     na: 10
-    pass: 1024
+    pass: 1037
     unknown: 0
   version: '0.31'
 - abstract: Catmandu tools for working with markdown data
@@ -1012,8 +1039,8 @@
     unknown: 0
   version: '0.011'
 - abstract: Tools to communicate with the Zeticon MediaHaven server
-  date: 2017-09-12T09:42:50
-  download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-MediaHaven-0.05.tar.gz
+  date: 2017-11-21T12:57:18
+  download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-MediaHaven-0.06.tar.gz
   name: Catmandu-MediaHaven
   provides:
   - Catmandu::Exporter::MediaHaven
@@ -1025,10 +1052,10 @@
   - Catmandu::Store::File::MediaHaven::Searcher
   tests:
     fail: 0
-    na: 26
-    pass: 428
+    na: 12
+    pass: 0
     unknown: 0
-  version: '0.05'
+  version: '0.06'
 - abstract: Package that imports MediaMosa asset information into your application
   date: 2013-04-09T10:26:19
   download_url: https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-MediaMosa-0.279.tar.gz
@@ -1096,7 +1123,7 @@
   tests:
     fail: 0
     na: 23
-    pass: 482
+    pass: 485
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with OCLC web services
@@ -1132,8 +1159,8 @@
   - Catmandu::PICA
   tests:
     fail: 47
-    na: 10
-    pass: 165
+    na: 13
+    pass: 187
     unknown: 0
   version: '0.24'
 - abstract: Catmandu module for working with PLoS data
@@ -1333,7 +1360,7 @@
   tests:
     fail: 0
     na: 21
-    pass: 513
+    pass: 527
     unknown: 0
   version: '0.41'
 - abstract: A Catmandu::Serializer backend using Data::MessagePack
@@ -1373,7 +1400,7 @@
   tests:
     fail: 0
     na: 23
-    pass: 571
+    pass: 572
     unknown: 0
   version: '0.0303'
 - abstract: Catmandu modules for working with statistical data
@@ -1449,7 +1476,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 479
+    pass: 480
     unknown: 0
   version: '0.08'
 - abstract: A searchable store backed by Elasticsearch
@@ -1578,7 +1605,7 @@
   tests:
     fail: 0
     na: 15
-    pass: 497
+    pass: 498
     unknown: 0
   version: '0.12'
 - abstract: Package that imports Twitter feeds
@@ -1612,7 +1639,7 @@
   tests:
     fail: 0
     na: 5
-    pass: 447
+    pass: 450
     unknown: 0
   version: '0.05'
 - abstract: An implementation of Catmandu::Validator to support JSON Schema

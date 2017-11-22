@@ -16,6 +16,8 @@ Exporter:
   name: JSON
 - module: Catmandu::Exporter::LIDO
   name: LIDO
+- module: Catmandu::Exporter::LIDO
+  name: LIDO
 - module: Catmandu::Exporter::MAB2
   name: MAB2
 - module: Catmandu::Exporter::MARC
@@ -187,22 +189,42 @@ Fix:
   name: join_field
 - module: Catmandu::Fix::lido_actor
   name: lido_actor
+- module: Catmandu::Fix::lido_actor
+  name: lido_actor
+- module: Catmandu::Fix::lido_baseid
+  name: lido_baseid
 - module: Catmandu::Fix::lido_baseid
   name: lido_baseid
 - module: Catmandu::Fix::lido_basenameset
   name: lido_basenameset
+- module: Catmandu::Fix::lido_basenameset
+  name: lido_basenameset
+- module: Catmandu::Fix::lido_basevalue
+  name: lido_basevalue
 - module: Catmandu::Fix::lido_basevalue
   name: lido_basevalue
 - module: Catmandu::Fix::lido_classification
   name: lido_classification
+- module: Catmandu::Fix::lido_classification
+  name: lido_classification
+- module: Catmandu::Fix::lido_date
+  name: lido_date
 - module: Catmandu::Fix::lido_date
   name: lido_date
 - module: Catmandu::Fix::lido_descriptivenote
   name: lido_descriptivenote
+- module: Catmandu::Fix::lido_descriptivenote
+  name: lido_descriptivenote
+- module: Catmandu::Fix::lido_inscription
+  name: lido_inscription
 - module: Catmandu::Fix::lido_inscription
   name: lido_inscription
 - module: Catmandu::Fix::lido_objectmeasurements
   name: lido_objectmeasurements
+- module: Catmandu::Fix::lido_objectmeasurements
+  name: lido_objectmeasurements
+- module: Catmandu::Fix::lido_term
+  name: lido_term
 - module: Catmandu::Fix::lido_term
   name: lido_term
 - module: Catmandu::Fix::log
@@ -432,6 +454,8 @@ Importer:
   name: JSON
 - module: Catmandu::Importer::LDAP
   name: LDAP
+- module: Catmandu::Importer::LIDO
+  name: LIDO
 - module: Catmandu::Importer::LIDO
   name: LIDO
 - module: Catmandu::Importer::MAB2
