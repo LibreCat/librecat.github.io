@@ -234,7 +234,7 @@
   tests:
     fail: 1
     na: 27
-    pass: 650
+    pass: 657
     unknown: 0
   version: '1.07'
 - abstract: Retrieve items from the AAT
@@ -899,7 +899,11 @@
   - Catmandu::Importer::LIDO
   - Catmandu::Importer::OAI::Parser::lido
   - Catmandu::LIDO
-  tests: ~
+  tests:
+    fail: 0
+    na: 0
+    pass: 676
+    unknown: 0
   version: '0.09'
 - abstract: Catmandu modules for working with MAB2 data.
   date: 2017-10-16T15:45:40
@@ -1022,7 +1026,7 @@
   tests:
     fail: 14
     na: 10
-    pass: 1037
+    pass: 1044
     unknown: 0
   version: '0.31'
 - abstract: Catmandu tools for working with markdown data
@@ -1053,7 +1057,7 @@
   tests:
     fail: 0
     na: 12
-    pass: 0
+    pass: 17
     unknown: 0
   version: '0.06'
 - abstract: Package that imports MediaMosa asset information into your application
@@ -1123,7 +1127,7 @@
   tests:
     fail: 0
     na: 23
-    pass: 485
+    pass: 487
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with OCLC web services
@@ -1158,9 +1162,9 @@
   - Catmandu::Importer::SRU::Parser::ppxml
   - Catmandu::PICA
   tests:
-    fail: 47
+    fail: 48
     na: 13
-    pass: 187
+    pass: 190
     unknown: 0
   version: '0.24'
 - abstract: Catmandu module for working with PLoS data
@@ -1360,7 +1364,7 @@
   tests:
     fail: 0
     na: 21
-    pass: 527
+    pass: 531
     unknown: 0
   version: '0.41'
 - abstract: A Catmandu::Serializer backend using Data::MessagePack
@@ -1435,7 +1439,7 @@
   tests:
     fail: 3
     na: 1
-    pass: 301
+    pass: 302
     unknown: 0
   version: '0.01'
 - abstract: a CHI backed caching store
