@@ -234,7 +234,7 @@
   tests:
     fail: 1
     na: 27
-    pass: 657
+    pass: 697
     unknown: 0
   version: '1.07'
 - abstract: Retrieve items from the AAT
@@ -252,7 +252,7 @@
   tests:
     fail: 16
     na: 6
-    pass: 914
+    pass: 916
     unknown: 0
   version: '0.03'
 - abstract: Catmandu module for Activiti
@@ -287,7 +287,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 910
+    pass: 912
     unknown: 0
   version: '0.02'
 - abstract: Low level api for Aleph X Services
@@ -395,7 +395,7 @@
   tests:
     fail: 0
     na: 14
-    pass: 492
+    pass: 493
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with BibTeX data
@@ -439,7 +439,7 @@
   tests:
     fail: 0
     na: 27
-    pass: 363
+    pass: 364
     unknown: 0
   version: '0.10'
 - abstract: Catmandu interface to CollectiveAccess
@@ -484,7 +484,7 @@
   tests:
     fail: 0
     na: 9
-    pass: 233
+    pass: 235
     unknown: 0
   version: '0.007'
 - abstract: Catmandu tools to communicate with DBI based interfaces
@@ -504,7 +504,7 @@
   tests:
     fail: 0
     na: 29
-    pass: 499
+    pass: 502
     unknown: 0
   version: '0.0701'
 - abstract: Catmandu modules for working with DOI data.
@@ -515,7 +515,7 @@
   - Catmandu::DOI
   - Catmandu::Importer::DOI
   tests:
-    fail: 96
+    fail: 97
     na: 9
     pass: 207
     unknown: 0
@@ -543,7 +543,7 @@
   tests:
     fail: 0
     na: 10
-    pass: 959
+    pass: 960
     unknown: 4
   version: 0.3.0
 - abstract: Low level Catmandu interface to the Fedora Commons REST API
@@ -597,7 +597,7 @@
   tests:
     fail: 0
     na: 1
-    pass: 1003
+    pass: 1004
     unknown: 0
   version: '0.03'
 - abstract: Catmandu fixes for processing dates
@@ -636,7 +636,7 @@
   tests:
     fail: 0
     na: 48
-    pass: 438
+    pass: 440
     unknown: 0
   version: '0.011'
 - abstract: Catmandu fix modules for processing xml (deprecated)
@@ -718,7 +718,7 @@
   tests:
     fail: 0
     na: 21
-    pass: 396
+    pass: 397
     unknown: 6
   version: '0.0112'
 - abstract: get information about CPAN releases
@@ -902,7 +902,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 676
+    pass: 683
     unknown: 0
   version: '0.09'
 - abstract: Catmandu modules for working with MAB2 data.
@@ -1026,7 +1026,7 @@
   tests:
     fail: 14
     na: 10
-    pass: 1044
+    pass: 1095
     unknown: 0
   version: '0.31'
 - abstract: Catmandu tools for working with markdown data
@@ -1057,7 +1057,7 @@
   tests:
     fail: 0
     na: 12
-    pass: 17
+    pass: 229
     unknown: 0
   version: '0.06'
 - abstract: Package that imports MediaMosa asset information into your application
@@ -1127,7 +1127,7 @@
   tests:
     fail: 0
     na: 23
-    pass: 487
+    pass: 509
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with OCLC web services
@@ -1164,7 +1164,7 @@
   tests:
     fail: 48
     na: 13
-    pass: 190
+    pass: 226
     unknown: 0
   version: '0.24'
 - abstract: Catmandu module for working with PLoS data
@@ -1232,7 +1232,7 @@
   tests:
     fail: 0
     na: 44
-    pass: 349
+    pass: 351
     unknown: 0
   version: '0.02'
 - abstract: Modules for handling RDF data within the Catmandu framework
@@ -1328,7 +1328,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 379
+    pass: 380
     unknown: 0
   version: '0.01'
 - abstract: Catmandu module for working with SRU data
@@ -1364,7 +1364,7 @@
   tests:
     fail: 0
     na: 21
-    pass: 531
+    pass: 569
     unknown: 0
   version: '0.41'
 - abstract: A Catmandu::Serializer backend using Data::MessagePack
@@ -1376,7 +1376,7 @@
   tests:
     fail: 0
     na: 10
-    pass: 393
+    pass: 395
     unknown: 0
   version: '0.0102'
 - abstract: A Catmandu::Serializer backend using Storable
@@ -1404,7 +1404,7 @@
   tests:
     fail: 0
     na: 23
-    pass: 572
+    pass: 573
     unknown: 0
   version: '0.0303'
 - abstract: Catmandu modules for working with statistical data
@@ -1422,7 +1422,7 @@
   tests:
     fail: 0
     na: 16
-    pass: 370
+    pass: 371
     unknown: 0
   version: '0.13'
 - abstract: Retrieve items from the AAT
@@ -1480,7 +1480,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 480
+    pass: 481
     unknown: 0
   version: '0.08'
 - abstract: A searchable store backed by Elasticsearch
@@ -1643,7 +1643,7 @@
   tests:
     fail: 0
     na: 5
-    pass: 450
+    pass: 452
     unknown: 0
   version: '0.05'
 - abstract: An implementation of Catmandu::Validator to support JSON Schema
@@ -1655,7 +1655,7 @@
   tests:
     fail: 0
     na: 16
-    pass: 358
+    pass: 359
     unknown: 0
   version: '0.11'
 - abstract: Import from Wikidata for processing with Catmandu
