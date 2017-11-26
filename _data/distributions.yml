@@ -234,7 +234,7 @@
   tests:
     fail: 1
     na: 27
-    pass: 697
+    pass: 703
     unknown: 0
   version: '1.07'
 - abstract: Retrieve items from the AAT
@@ -902,7 +902,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 683
+    pass: 686
     unknown: 0
   version: '0.09'
 - abstract: Catmandu modules for working with MAB2 data.
@@ -1026,7 +1026,7 @@
   tests:
     fail: 14
     na: 10
-    pass: 1095
+    pass: 1099
     unknown: 0
   version: '0.31'
 - abstract: Catmandu tools for working with markdown data
@@ -1057,7 +1057,7 @@
   tests:
     fail: 0
     na: 12
-    pass: 229
+    pass: 249
     unknown: 0
   version: '0.06'
 - abstract: Package that imports MediaMosa asset information into your application
@@ -1127,7 +1127,7 @@
   tests:
     fail: 0
     na: 23
-    pass: 509
+    pass: 514
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with OCLC web services
@@ -1364,7 +1364,7 @@
   tests:
     fail: 0
     na: 21
-    pass: 569
+    pass: 573
     unknown: 0
   version: '0.41'
 - abstract: A Catmandu::Serializer backend using Data::MessagePack
