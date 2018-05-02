@@ -149,6 +149,8 @@ Fix:
   name: export_to_string
 - module: Catmandu::Fix::file_size
   name: file_size
+- module: Catmandu::Fix::file_stat
+  name: file_stat
 - module: Catmandu::Fix::filter
   name: filter
 - module: Catmandu::Fix::flatten
@@ -179,6 +181,8 @@ Fix:
   name: isbn10
 - module: Catmandu::Fix::isbn13
   name: isbn13
+- module: Catmandu::Fix::isbn_versions
+  name: isbn_versions
 - module: Catmandu::Fix::issn
   name: issn
 - module: Catmandu::Fix::join
@@ -367,8 +371,12 @@ Fix:
   name: uuid
 - module: Catmandu::Fix::vacuum
   name: vacuum
+- module: Catmandu::Fix::validate
+  name: validate
 - module: Catmandu::Fix::viaf_match
   name: viaf_match
+- module: Catmandu::Fix::viaf_match_id
+  name: viaf_match_id
 - module: Catmandu::Fix::viaf_read
   name: viaf_read
 - module: Catmandu::Fix::viaf_search
@@ -418,6 +426,8 @@ Importer:
   name: CrossRef
 - module: Catmandu::Importer::DBI
   name: DBI
+- module: Catmandu::Importer::DKVP
+  name: DKVP
 - module: Catmandu::Importer::DOI
   name: DOI
 - module: Catmandu::Importer::EuropePMC
@@ -494,6 +504,14 @@ Importer:
   name: Wikidata
 - module: Catmandu::Importer::WoS
   name: WoS
+- module: Catmandu::Importer::WoSCitedReferences
+  name: WoSCitedReferences
+- module: Catmandu::Importer::WoSCitingArticles
+  name: WoSCitingArticles
+- module: Catmandu::Importer::WoSRelatedRecords
+  name: WoSRelatedRecords
+- module: Catmandu::Importer::WoSRetrieveById
+  name: WoSRetrieveById
 - module: Catmandu::Importer::XLS
   name: XLS
 - module: Catmandu::Importer::XLSX
@@ -541,6 +559,8 @@ Store:
   name: MongoDB
 - module: Catmandu::Store::Multi
   name: Multi
+- module: Catmandu::Store::OAI
+  name: OAI
 - module: Catmandu::Store::REST
   name: REST
 - module: Catmandu::Store::RKD
