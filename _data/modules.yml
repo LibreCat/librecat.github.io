@@ -12,10 +12,10 @@ Exporter:
   name: CSV
 - module: Catmandu::Exporter::Count
   name: Count
+- module: Catmandu::Exporter::HTML
+  name: HTML
 - module: Catmandu::Exporter::JSON
   name: JSON
-- module: Catmandu::Exporter::LIDO
-  name: LIDO
 - module: Catmandu::Exporter::LIDO
   name: LIDO
 - module: Catmandu::Exporter::MAB2
@@ -167,6 +167,12 @@ Fix:
   name: get_json
 - module: Catmandu::Fix::hash
   name: hash
+- module: Catmandu::Fix::html_filter_tag
+  name: html_filter_tag
+- module: Catmandu::Fix::html_filter_type
+  name: html_filter_type
+- module: Catmandu::Fix::html_text
+  name: html_text
 - module: Catmandu::Fix::human_byte_size
   name: human_byte_size
 - module: Catmandu::Fix::import
@@ -193,42 +199,22 @@ Fix:
   name: join_field
 - module: Catmandu::Fix::lido_actor
   name: lido_actor
-- module: Catmandu::Fix::lido_actor
-  name: lido_actor
-- module: Catmandu::Fix::lido_baseid
-  name: lido_baseid
 - module: Catmandu::Fix::lido_baseid
   name: lido_baseid
 - module: Catmandu::Fix::lido_basenameset
   name: lido_basenameset
-- module: Catmandu::Fix::lido_basenameset
-  name: lido_basenameset
-- module: Catmandu::Fix::lido_basevalue
-  name: lido_basevalue
 - module: Catmandu::Fix::lido_basevalue
   name: lido_basevalue
 - module: Catmandu::Fix::lido_classification
   name: lido_classification
-- module: Catmandu::Fix::lido_classification
-  name: lido_classification
-- module: Catmandu::Fix::lido_date
-  name: lido_date
 - module: Catmandu::Fix::lido_date
   name: lido_date
 - module: Catmandu::Fix::lido_descriptivenote
   name: lido_descriptivenote
-- module: Catmandu::Fix::lido_descriptivenote
-  name: lido_descriptivenote
-- module: Catmandu::Fix::lido_inscription
-  name: lido_inscription
 - module: Catmandu::Fix::lido_inscription
   name: lido_inscription
 - module: Catmandu::Fix::lido_objectmeasurements
   name: lido_objectmeasurements
-- module: Catmandu::Fix::lido_objectmeasurements
-  name: lido_objectmeasurements
-- module: Catmandu::Fix::lido_term
-  name: lido_term
 - module: Catmandu::Fix::lido_term
   name: lido_term
 - module: Catmandu::Fix::log
@@ -389,6 +375,8 @@ Fix:
   name: uri_decode
 - module: Catmandu::Fix::uri_encode
   name: uri_encode
+- module: Catmandu::Fix::uri_status_code
+  name: uri_status_code
 - module: Catmandu::Fix::uuid
   name: uuid
 - module: Catmandu::Fix::vacuum
@@ -454,14 +442,14 @@ Importer:
   name: DOI
 - module: Catmandu::Importer::EuropePMC
   name: EuropePMC
+- module: Catmandu::Importer::HTML
+  name: HTML
 - module: Catmandu::Importer::Inspire
   name: Inspire
 - module: Catmandu::Importer::JSON
   name: JSON
 - module: Catmandu::Importer::LDAP
   name: LDAP
-- module: Catmandu::Importer::LIDO
-  name: LIDO
 - module: Catmandu::Importer::LIDO
   name: LIDO
 - module: Catmandu::Importer::MAB2
@@ -528,7 +516,6 @@ Importer:
   name: Wikidata
 - module: Catmandu::Importer::WoS
   name: WoS
-<<<<<<< HEAD
 - module: Catmandu::Importer::WoSCitedReferences
   name: WoSCitedReferences
 - module: Catmandu::Importer::WoSCitingArticles
@@ -537,8 +524,6 @@ Importer:
   name: WoSRelatedRecords
 - module: Catmandu::Importer::WoSRetrieveById
   name: WoSRetrieveById
-=======
->>>>>>> f48e1ae742fb818f8f1fd3e96ca18ce608a0ee6b
 - module: Catmandu::Importer::XLS
   name: XLS
 - module: Catmandu::Importer::XLSX
