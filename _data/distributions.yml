@@ -1,6 +1,6 @@
 ---
 - abstract: a data toolkit
-  date: 2018-03-06T10:26:34
+  date: 2018-08-30T08:40:57
   debian:
     package: libcatmandu-perl
     pathl:
@@ -21,7 +21,7 @@
       - jessie
       - jessie-kfreebsd
       version: 0.9206-1
-  download_url: https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-1.09.tar.gz
+  download_url: https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-1.10.tar.gz
   name: Catmandu
   provides:
   - Catmandu
@@ -50,7 +50,6 @@
   - Catmandu::Cmd::import
   - Catmandu::Cmd::info
   - Catmandu::Cmd::run
-  - Catmandu::Cmd::stream
   - Catmandu::Cmd::touch
   - Catmandu::Counter
   - Catmandu::Droppable
@@ -68,9 +67,6 @@
   - Catmandu::Exporter::TSV
   - Catmandu::Exporter::Text
   - Catmandu::Exporter::YAML
-  - Catmandu::FileBag
-  - Catmandu::FileBag::Index
-  - Catmandu::FileStore
   - Catmandu::Fix
   - Catmandu::Fix::Base
   - Catmandu::Fix::Bind
@@ -107,6 +103,8 @@
   - Catmandu::Fix::Condition::valid
   - Catmandu::Fix::Has
   - Catmandu::Fix::Inlineable
+  - Catmandu::Fix::Namespace
+  - Catmandu::Fix::Namespace::perl
   - Catmandu::Fix::Parser
   - Catmandu::Fix::SimpleGetValue
   - Catmandu::Fix::add
@@ -212,22 +210,12 @@
   - Catmandu::Pluggable
   - Catmandu::Plugin::Datestamps
   - Catmandu::Plugin::Readonly
-  - Catmandu::Plugin::SideCar
   - Catmandu::Plugin::Versioning
   - Catmandu::Sane
   - Catmandu::Searchable
   - Catmandu::Serializer
   - Catmandu::Serializer::json
   - Catmandu::Store
-  - Catmandu::Store::File::Memory
-  - Catmandu::Store::File::Memory::Bag
-  - Catmandu::Store::File::Memory::Index
-  - Catmandu::Store::File::Multi
-  - Catmandu::Store::File::Multi::Bag
-  - Catmandu::Store::File::Multi::Index
-  - Catmandu::Store::File::Simple
-  - Catmandu::Store::File::Simple::Bag
-  - Catmandu::Store::File::Simple::Index
   - Catmandu::Store::Hash
   - Catmandu::Store::Hash::Bag
   - Catmandu::Store::Multi
@@ -241,9 +229,9 @@
   tests:
     fail: 0
     na: 21
-    pass: 840
-    unknown: 1
-  version: '1.09'
+    pass: 531
+    unknown: 0
+  version: '1.10'
 - abstract: Retrieve items from the AAT
   date: 2017-01-11T08:05:22
   download_url: https://cpan.metacpan.org/authors/id/P/PI/PIETERDP/Catmandu-AAT-0.03.tar.gz
@@ -257,9 +245,9 @@
   - Catmandu::Store::AAT
   - Catmandu::Store::AAT::Bag
   tests:
-    fail: 20
+    fail: 22
     na: 6
-    pass: 1095
+    pass: 1215
     unknown: 0
   version: '0.03'
 - abstract: Catmandu module for Activiti
@@ -275,7 +263,7 @@
   tests:
     fail: 0
     na: 5
-    pass: 358
+    pass: 362
     unknown: 0
   version: '0.11'
 - abstract: Catmandu interface to Adlib
@@ -294,7 +282,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 1107
+    pass: 1240
     unknown: 0
   version: '0.02'
 - abstract: turns baubles into trinkets
@@ -341,22 +329,22 @@
   tests:
     fail: 0
     na: 11
-    pass: 233
+    pass: 238
     unknown: 0
   version: '1.07'
 - abstract: Catmandu modules for working with ArXiv data.
-  date: 2018-03-15T09:08:17
-  download_url: https://cpan.metacpan.org/authors/id/V/VP/VPEIL/Catmandu-ArXiv-0.200.tar.gz
+  date: 2018-08-31T07:13:23
+  download_url: https://cpan.metacpan.org/authors/id/V/VP/VPEIL/Catmandu-ArXiv-0.211.tar.gz
   name: Catmandu-ArXiv
   provides:
   - Catmandu::ArXiv
   - Catmandu::Importer::ArXiv
   tests:
-    fail: 73
-    na: 9
-    pass: 91
+    fail: 0
+    na: 13
+    pass: 299
     unknown: 0
-  version: '0.200'
+  version: '0.211'
 - abstract: modules for working with Atom feeds
   date: 2014-12-22T14:38:03
   debian:
@@ -385,12 +373,12 @@
   tests:
     fail: 2
     na: 12
-    pass: 362
+    pass: 366
     unknown: 0
   version: '0.04'
 - abstract: Low level Catmandu interface to the BagIt packages.
-  date: 2018-04-04T07:41:43
-  download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-BagIt-0.23.tar.gz
+  date: 2018-09-03T09:28:23
+  download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-BagIt-0.232.tar.gz
   name: Catmandu-BagIt
   provides:
   - Catmandu::BagIt
@@ -403,10 +391,10 @@
   - Catmandu::Store::File::BagIt::Index
   tests:
     fail: 0
-    na: 11
-    pass: 217
+    na: 12
+    pass: 140
     unknown: 0
-  version: '0.23'
+  version: '0.232'
 - abstract: Catmandu modules for working with BibTeX data
   date: 2017-01-17T07:04:04
   download_url: https://cpan.metacpan.org/authors/id/V/VP/VPEIL/Catmandu-BibTeX-0.08.tar.gz
@@ -418,7 +406,7 @@
   tests:
     fail: 0
     na: 27
-    pass: 407
+    pass: 410
     unknown: 0
   version: '0.08'
 - abstract: Catmandu modules for working with Blacklight catalogs
@@ -431,27 +419,28 @@
   tests:
     fail: 0
     na: 16
-    pass: 286
+    pass: 291
     unknown: 0
   version: '0.03'
 - abstract: Package that exports data in a Breaker format
-  date: 2018-04-03T07:24:04
-  download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-Breaker-0.12.tar.gz
+  date: 2018-09-03T11:43:15
+  download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-Breaker-0.14.tar.gz
   name: Catmandu-Breaker
   provides:
   - Catmandu::Breaker
   - Catmandu::Cmd::breaker
   - Catmandu::Exporter::Breaker
   - Catmandu::Exporter::Breaker::Parser::json
+  - Catmandu::Exporter::Breaker::Parser::mab
   - Catmandu::Exporter::Breaker::Parser::marc
   - Catmandu::Exporter::Breaker::Parser::pica
   - Catmandu::Exporter::Breaker::Parser::xml
   tests:
     fail: 0
     na: 2
-    pass: 200
+    pass: 157
     unknown: 0
-  version: '0.12'
+  version: '0.14'
 - abstract: Catmandu interface to CollectiveAccess
   date: 2017-02-15T14:14:42
   download_url: https://cpan.metacpan.org/authors/id/P/PI/PIETERDP/Catmandu-CA-0.06.tar.gz
@@ -469,7 +458,7 @@
   tests:
     fail: 1
     na: 3
-    pass: 432
+    pass: 435
     unknown: 0
   version: '0.06'
 - abstract: interactive shell for Catmandu
@@ -481,7 +470,7 @@
   tests:
     fail: 0
     na: 18
-    pass: 1020
+    pass: 1023
     unknown: 1
   version: '0.01'
 - abstract: Catmandu modules for working with crossref data
@@ -494,7 +483,7 @@
   tests:
     fail: 0
     na: 9
-    pass: 255
+    pass: 258
     unknown: 0
   version: '0.007'
 - abstract: Catmandu tools to communicate with DBI based interfaces
@@ -513,22 +502,21 @@
   - Catmandu::Store::DBI::Iterator
   tests:
     fail: 0
-    na: 12
-    pass: 477
+    na: 13
+    pass: 675
     unknown: 0
   version: '0.0702'
 - abstract: Catmandu modules for working with DOI data.
   date: 2012-10-05T14:14:40
-  debian: {}
   download_url: https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-DOI-0.01.tar.gz
   name: Catmandu-DOI
   provides:
   - Catmandu::DOI
   - Catmandu::Importer::DOI
   tests:
-    fail: 109
+    fail: 110
     na: 9
-    pass: 211
+    pass: 213
     unknown: 0
   version: '0.01'
 - abstract: A bundle of Catmandu modules for working with data from EuropePMC
@@ -542,7 +530,7 @@
   tests:
     fail: 0
     na: 17
-    pass: 172
+    pass: 177
     unknown: 0
   version: '1.01'
 - abstract: ASCII/Markdown table exporter
@@ -554,7 +542,7 @@
   tests:
     fail: 0
     na: 11
-    pass: 1091
+    pass: 1175
     unknown: 4
   version: 0.3.0
 - abstract: Low level Catmandu interface to the Fedora Commons REST API
@@ -594,9 +582,38 @@
   tests:
     fail: 0
     na: 34
-    pass: 336
+    pass: 341
     unknown: 0
   version: '0.4'
+- abstract: Namespace for packages that can make files persistent
+  date: 2018-08-29T12:23:33
+  download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-FileStore-1.12.tar.gz
+  name: Catmandu-FileStore
+  provides:
+  - Catmandu::Cmd::stream
+  - Catmandu::DirectoryIndex
+  - Catmandu::DirectoryIndex::Map
+  - Catmandu::DirectoryIndex::Number
+  - Catmandu::DirectoryIndex::UUID
+  - Catmandu::FileBag
+  - Catmandu::FileBag::Index
+  - Catmandu::FileStore
+  - Catmandu::Plugin::SideCar
+  - Catmandu::Store::File::Memory
+  - Catmandu::Store::File::Memory::Bag
+  - Catmandu::Store::File::Memory::Index
+  - Catmandu::Store::File::Multi
+  - Catmandu::Store::File::Multi::Bag
+  - Catmandu::Store::File::Multi::Index
+  - Catmandu::Store::File::Simple
+  - Catmandu::Store::File::Simple::Bag
+  - Catmandu::Store::File::Simple::Index
+  tests:
+    fail: 0
+    na: 5
+    pass: 494
+    unknown: 0
+  version: '1.12'
 - abstract: Utility functions and generic fixes developed for the Datahub project
   date: 2017-01-16T11:09:30
   download_url: https://cpan.metacpan.org/authors/id/P/PI/PIETERDP/Catmandu-Fix-Datahub-0.03.tar.gz
@@ -608,7 +625,7 @@
   tests:
     fail: 0
     na: 1
-    pass: 1194
+    pass: 1325
     unknown: 0
   version: '0.03'
 - abstract: Catmandu fixes for processing dates
@@ -630,7 +647,7 @@
   tests:
     fail: 0
     na: 18
-    pass: 298
+    pass: 304
     unknown: 0
   version: '0.0132'
 - abstract: Catmandu fixes to check file attributes
@@ -648,7 +665,7 @@
   tests:
     fail: 0
     na: 20
-    pass: 479
+    pass: 484
     unknown: 0
   version: '0.012'
 - abstract: Catmandu fix modules for processing xml (deprecated)
@@ -661,7 +678,7 @@
     fail: 0
     na: 12
     pass: 168
-    unknown: 78
+    unknown: 82
   version: '0.2'
 - abstract: pipe data to be fixed through an external process
   date: 2013-06-21T07:39:52
@@ -686,7 +703,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 353
+    pass: 358
     unknown: 0
   version: '0.01'
 - abstract: Modules for handling HTML data within the Catmandu framework
@@ -703,7 +720,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 461
+    pass: 469
     unknown: 0
   version: '0.02'
 - abstract: Namespace fixing around identifiers (for normalization, validation, etc.),
@@ -736,9 +753,9 @@
   - Catmandu::Identifier
   - Memento::TimeTravel
   tests:
-    fail: 0
-    na: 3
-    pass: 380
+    fail: 3
+    na: 4
+    pass: 606
     unknown: 0
   version: '0.10'
 - abstract: Catmandu importer for importing log entries
@@ -750,7 +767,7 @@
   tests:
     fail: 0
     na: 21
-    pass: 418
+    pass: 421
     unknown: 6
   version: '0.0112'
 - abstract: get information about CPAN releases
@@ -762,20 +779,19 @@
   tests:
     fail: 0
     na: 23
-    pass: 388
+    pass: 393
     unknown: 0
   version: '0.04'
 - abstract: extract MediaWiki template data
   date: 2015-03-02T10:17:36
-  debian: {}
   download_url: https://cpan.metacpan.org/authors/id/V/VO/VOJ/Catmandu-Importer-MWTemplates-0.01.tar.gz
   name: Catmandu-Importer-MWTemplates
   provides:
   - Catmandu::Importer::MWTemplates
   tests:
-    fail: 20
+    fail: 22
     na: 93
-    pass: 400
+    pass: 402
     unknown: 0
   version: '0.01'
 - abstract: Catmandu importer to extract data from one pdf
@@ -801,7 +817,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 378
+    pass: 382
     unknown: 2
   version: '0.001'
 - abstract: Perl Utility for Recent Releases
@@ -848,7 +864,7 @@
   tests:
     fail: 0
     na: 11
-    pass: 489
+    pass: 493
     unknown: 0
   version: '0.50'
 - abstract: Catmandu modules for working with Inspire data.
@@ -859,9 +875,9 @@
   - Catmandu::Importer::Inspire
   - Catmandu::Inspire
   tests:
-    fail: 19
+    fail: 20
     na: 5
-    pass: 180
+    pass: 183
     unknown: 0
   version: '0.265'
 - abstract: Catmandu modules for working with LDAP directories
@@ -874,7 +890,7 @@
   tests:
     fail: 0
     na: 49
-    pass: 459
+    pass: 462
     unknown: 0
   version: '0.0104'
 - abstract: Modules for handling LIDO data within the Catmandu framework
@@ -905,7 +921,7 @@
   tests:
     fail: 2
     na: 0
-    pass: 529
+    pass: 591
     unknown: 0
   version: '0.10'
 - abstract: Catmandu modules for working with MAB2 data.
@@ -950,11 +966,11 @@
   tests:
     fail: 1
     na: 55
-    pass: 276
+    pass: 280
     unknown: 0
   version: '0.21'
 - abstract: Catmandu modules for working with MARC data
-  date: 2017-12-16T12:42:23
+  date: 2018-06-21T13:34:05
   debian:
     package: libcatmandu-marc-perl
     pathl:
@@ -972,7 +988,7 @@
       - jessie
       - jessie-kfreebsd
       version: 0.206-2
-  download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-MARC-1.231.tar.gz
+  download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-MARC-1.24.tar.gz
   name: Catmandu-MARC
   provides:
   - Catmandu::Exporter::MARC
@@ -1020,10 +1036,10 @@
   - Catmandu::MARC
   tests:
     fail: 0
-    na: 24
-    pass: 388
+    na: 7
+    pass: 157
     unknown: 0
-  version: '1.231'
+  version: '1.24'
 - abstract: Catmandu modules for working with MODS records
   date: 2015-11-04T09:18:39
   debian:
@@ -1045,7 +1061,7 @@
   tests:
     fail: 17
     na: 10
-    pass: 1284
+    pass: 1287
     unknown: 0
   version: '0.31'
 - abstract: Catmandu tools for working with markdown data
@@ -1058,7 +1074,7 @@
   tests:
     fail: 0
     na: 4
-    pass: 332
+    pass: 335
     unknown: 0
   version: '0.011'
 - abstract: Tools to communicate with the Zeticon MediaHaven server
@@ -1076,12 +1092,11 @@
   tests:
     fail: 0
     na: 36
-    pass: 396
+    pass: 401
     unknown: 0
   version: '0.08'
 - abstract: Package that imports MediaMosa asset information into your application
   date: 2013-04-09T10:26:19
-  debian: {}
   download_url: https://cpan.metacpan.org/authors/id/N/NJ/NJFRANCK/Catmandu-MediaMosa-0.279.tar.gz
   name: Catmandu-MediaMosa
   provides:
@@ -1101,7 +1116,7 @@
   tests:
     fail: 0
     na: 3
-    pass: 182
+    pass: 185
     unknown: 0
   version: '0.279'
 - abstract: Catmandu modules for MediaWiki
@@ -1114,7 +1129,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 337
+    pass: 340
     unknown: 0
   version: '0.021'
 - abstract: Catmandu modules wrapping the Mendeley API
@@ -1127,7 +1142,7 @@
   tests:
     fail: 0
     na: 12
-    pass: 438
+    pass: 442
     unknown: 0
   version: '0.01'
 - abstract: Catmandu modules for working with OAI repositories
@@ -1146,8 +1161,8 @@
   - Catmandu::Store::OAI::Bag
   tests:
     fail: 2
-    na: 33
-    pass: 749
+    na: 34
+    pass: 864
     unknown: 0
   version: '0.18'
 - abstract: Catmandu modules for working with OCLC web services
@@ -1161,9 +1176,9 @@
   - Catmandu::OCLC::VIAFAuthorityCluster
   - Catmandu::OCLC::xID
   tests:
-    fail: 2
+    fail: 3
     na: 10
-    pass: 139
+    pass: 143
     unknown: 0
   version: '0.006'
 - abstract: Catmandu modules for working with PICA+ data
@@ -1185,7 +1200,7 @@
   tests:
     fail: 1
     na: 3
-    pass: 268
+    pass: 274
     unknown: 0
   version: '0.26'
 - abstract: Catmandu module for working with PLoS data
@@ -1198,7 +1213,7 @@
   tests:
     fail: 0
     na: 20
-    pass: 761
+    pass: 764
     unknown: 0
   version: '0.01'
 - abstract: Modules for handling PNX data within the Catmandu framework
@@ -1212,7 +1227,7 @@
   tests:
     fail: 0
     na: 15
-    pass: 153
+    pass: 156
     unknown: 0
   version: '0.03'
 - abstract: unAPI webservice based on Catmandu
@@ -1222,7 +1237,7 @@
   provides:
   - Catmandu::Plack::unAPI
   tests:
-    fail: 127
+    fail: 131
     na: 3
     pass: 245
     unknown: 1
@@ -1237,7 +1252,7 @@
   tests:
     fail: 0
     na: 20
-    pass: 760
+    pass: 763
     unknown: 0
   version: '0.01'
 - abstract: A bundle of Catmandu modules for working with data from Pure
@@ -1253,7 +1268,7 @@
   tests:
     fail: 0
     na: 44
-    pass: 368
+    pass: 372
     unknown: 0
   version: '0.02'
 - abstract: Modules for handling RDF data within the Catmandu framework
@@ -1293,8 +1308,8 @@
     unknown: 0
   version: '0.32'
 - abstract: Catmandu modules for working with RIS data
-  date: 2015-08-18T17:34:52
-  download_url: https://cpan.metacpan.org/authors/id/V/VP/VPEIL/Catmandu-RIS-0.10.tar.gz
+  date: 2018-08-20T18:41:08
+  download_url: https://cpan.metacpan.org/authors/id/V/VP/VPEIL/Catmandu-RIS-0.11.tar.gz
   name: Catmandu-RIS
   provides:
   - Catmandu::Exporter::RIS
@@ -1302,10 +1317,10 @@
   - Catmandu::RIS
   tests:
     fail: 0
-    na: 4
-    pass: 357
+    na: 24
+    pass: 472
     unknown: 0
-  version: '0.10'
+  version: '0.11'
 - abstract: Retrieve items from the RKD
   date: 2017-01-10T14:57:11
   download_url: https://cpan.metacpan.org/authors/id/P/PI/PIETERDP/Catmandu-RKD-0.04.tar.gz
@@ -1323,7 +1338,7 @@
   tests:
     fail: 42
     na: 8
-    pass: 341
+    pass: 344
     unknown: 0
   version: '0.04'
 - abstract: Store/retrieve items from the Resolver
@@ -1339,7 +1354,7 @@
   tests:
     fail: 0
     na: 11
-    pass: 676
+    pass: 679
     unknown: 0
   version: '0.06'
 - abstract: Catmandu modules for parsing SFX data
@@ -1353,7 +1368,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 395
+    pass: 399
     unknown: 0
   version: '0.01'
 - abstract: Catmandu module for working with SRU data
@@ -1393,7 +1408,7 @@
   tests:
     fail: 3
     na: 6
-    pass: 369
+    pass: 372
     unknown: 0
   version: '0.421'
 - abstract: A Catmandu::Serializer backend using Data::MessagePack
@@ -1405,7 +1420,7 @@
   tests:
     fail: 0
     na: 10
-    pass: 415
+    pass: 419
     unknown: 0
   version: '0.0102'
 - abstract: A Catmandu::Serializer backend using Storable
@@ -1417,7 +1432,7 @@
   tests:
     fail: 0
     na: 12
-    pass: 568
+    pass: 572
     unknown: 0
   version: '0.0102'
 - abstract: Catmandu modules for working with solr endpoints
@@ -1432,8 +1447,8 @@
   - Catmandu::Store::Solr::Searcher
   tests:
     fail: 0
-    na: 31
-    pass: 775
+    na: 32
+    pass: 822
     unknown: 0
   version: '0.0303'
 - abstract: Catmandu modules for working with statistical data
@@ -1451,7 +1466,7 @@
   tests:
     fail: 0
     na: 16
-    pass: 572
+    pass: 661
     unknown: 0
   version: '0.13'
 - abstract: Retrieve items from the AAT
@@ -1468,7 +1483,7 @@
   tests:
     fail: 3
     na: 1
-    pass: 325
+    pass: 328
     unknown: 0
   version: '0.01'
 - abstract: a CHI backed caching store
@@ -1481,7 +1496,7 @@
   tests:
     fail: 0
     na: 11
-    pass: 535
+    pass: 538
     unknown: 0
   version: '0.02'
 - abstract: A searchable store backed by CouchDB
@@ -1509,7 +1524,7 @@
   tests:
     fail: 0
     na: 2
-    pass: 634
+    pass: 692
     unknown: 0
   version: '0.08'
 - abstract: A searchable store backed by Elasticsearch
@@ -1535,7 +1550,7 @@
   tests:
     fail: 0
     na: 23
-    pass: 448
+    pass: 451
     unknown: 0
   version: '0.0509'
 - abstract: A searchable store backed by Lucy
@@ -1568,7 +1583,7 @@
   tests:
     fail: 0
     na: 26
-    pass: 421
+    pass: 424
     unknown: 0
   version: '0.0103'
 - abstract: A searchable store backed by MongoDB
@@ -1598,7 +1613,7 @@
   tests:
     fail: 0
     na: 34
-    pass: 432
+    pass: 435
     unknown: 0
   version: '0.07'
 - abstract: Store/retrieve items from a JSON REST-API endpoint
@@ -1612,7 +1627,7 @@
   tests:
     fail: 0
     na: 9
-    pass: 340
+    pass: 343
     unknown: 0
   version: '0.01'
 - abstract: Retrieve items from the RKD
@@ -1631,7 +1646,7 @@
   tests:
     fail: 33
     na: 4
-    pass: 308
+    pass: 311
     unknown: 0
   version: '0.03'
 - abstract: Catmandu modules for working with templates
@@ -1656,7 +1671,7 @@
   tests:
     fail: 0
     na: 15
-    pass: 564
+    pass: 568
     unknown: 0
   version: '0.12'
 - abstract: Package that imports Twitter feeds
@@ -1668,7 +1683,7 @@
   tests:
     fail: 0
     na: 13
-    pass: 862
+    pass: 863
     unknown: 4
   version: '0.03'
 - abstract: Retrieve items from the VIAF authority file
@@ -1690,7 +1705,7 @@
   tests:
     fail: 0
     na: 7
-    pass: 652
+    pass: 776
     unknown: 0
   version: '0.05'
 - abstract: An implementation of Catmandu::Validator to support JSON Schema
@@ -1702,7 +1717,7 @@
   tests:
     fail: 0
     na: 16
-    pass: 374
+    pass: 377
     unknown: 0
   version: '0.11'
 - abstract: Import from Wikidata for processing with Catmandu
@@ -1733,7 +1748,7 @@
   tests:
     fail: 0
     na: 14
-    pass: 564
+    pass: 568
     unknown: 0
   version: '0.06'
 - abstract: Catmandu modules to work with the Web Of Science web services
@@ -1752,7 +1767,7 @@
   tests:
     fail: 0
     na: 0
-    pass: 182
+    pass: 187
     unknown: 0
   version: '0.0301'
 - abstract: modules for working with Excel .xls and .xlsx files
@@ -1779,7 +1794,7 @@
   tests:
     fail: 0
     na: 7
-    pass: 249
+    pass: 253
     unknown: 0
   version: '0.08'
 - abstract: modules for handling XML data within the Catmandu framework
@@ -1807,9 +1822,9 @@
   - Catmandu::XML
   - Catmandu::XML::Transformer
   tests:
-    fail: 187
+    fail: 253
     na: 0
-    pass: 1117
+    pass: 1210
     unknown: 2
   version: '0.16'
 - abstract: Modules for handling XML data with XSD compilation
@@ -1835,7 +1850,7 @@
   tests:
     fail: 24
     na: 12
-    pass: 257
+    pass: 260
     unknown: 0
   version: '0.04'
 - abstract: Catmandu module for working with Z3950 data
@@ -1862,7 +1877,7 @@
   tests:
     fail: 0
     na: 10
-    pass: 295
+    pass: 300
     unknown: 0
   version: '0.07'
 ...

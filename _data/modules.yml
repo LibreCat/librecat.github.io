@@ -75,6 +75,8 @@ Fix:
   name: Has
 - module: Catmandu::Fix::Inlineable
   name: Inlineable
+- module: Catmandu::Fix::Namespace
+  name: Namespace
 - module: Catmandu::Fix::Parser
   name: Parser
 - module: Catmandu::Fix::SimpleGetValue
