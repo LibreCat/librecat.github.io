@@ -33,3 +33,8 @@ be committed to update the website:
     git add _data _config.yml
     git commit -m "autoupdate distributions"
     git push
+
+## Install and run jekyll
+
+    bundle install
+    jekyll serve
