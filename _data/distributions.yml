@@ -13,7 +13,8 @@
       - sid
       version: 1.2016-1
     - area: main
-      suites: []
+      suites:
+      - bullseye
       version: 1.2012-2
     - area: main
       suites:
@@ -25,6 +26,7 @@
       version: 1.0304-2
     - area: main
       suites:
+      - jessie
       - jessie-kfreebsd
       version: 0.9206-1
   download_url: https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-1.2016.tar.gz
@@ -392,6 +394,7 @@
     versions:
     - area: main
       suites:
+      - bullseye
       - bookworm
       - sid
       version: 0.05-1
@@ -405,6 +408,7 @@
       version: 0.04-1
     - area: main
       suites:
+      - jessie
       - jessie-kfreebsd
       version: 0.02-2
   download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-Atom-0.05.tar.gz
@@ -547,8 +551,8 @@
   - Catmandu::Store::DBI::Iterator
   tests:
     fail: 0
-    na: 0
-    pass: 8
+    na: 1
+    pass: 82
     unknown: 0
   version: '0.11'
 - abstract: Catmandu modules for working with DOI data.
@@ -640,6 +644,7 @@
     versions:
     - area: main
       suites:
+      - bullseye
       - bookworm
       - sid
       version: 1.16-1
@@ -929,6 +934,7 @@
     versions:
     - area: main
       suites:
+      - bullseye
       - bookworm
       - sid
       version: 0.52-1
@@ -942,6 +948,7 @@
       version: 0.50-1
     - area: main
       suites:
+      - jessie
       - jessie-kfreebsd
       version: 0.40-1
   download_url: https://cpan.metacpan.org/authors/id/V/VO/VOJ/Catmandu-Importer-getJSON-0.52.tar.gz
@@ -1024,6 +1031,7 @@
     versions:
     - area: main
       suites:
+      - bullseye
       - bookworm
       - sid
       version: 0.24-1
@@ -1037,6 +1045,7 @@
       version: 0.14-1
     - area: main
       suites:
+      - jessie
       - jessie-kfreebsd
       version: 0.07-1
   download_url: https://cpan.metacpan.org/authors/id/J/JO/JOROL/Catmandu-MAB2-0.24.tar.gz
@@ -1078,6 +1087,7 @@
     - area: main
       suites:
       - buster
+      - bullseye
       version: 1.241-1
     - area: main
       suites:
@@ -1085,6 +1095,7 @@
       version: 0.215-1
     - area: main
       suites:
+      - jessie
       - jessie-kfreebsd
       version: 0.206-2
   download_url: https://cpan.metacpan.org/authors/id/H/HO/HOCHSTEN/Catmandu-MARC-1.271.tar.gz
@@ -1140,7 +1151,7 @@
   tests:
     fail: 0
     na: 1
-    pass: 31
+    pass: 33
     unknown: 0
   version: '1.271'
 - abstract: Catmandu modules for working with MODS records
@@ -1153,6 +1164,7 @@
     versions:
     - area: main
       suites:
+      - bullseye
       - bookworm
       - sid
       version: 0.31-1.1
@@ -1289,7 +1301,7 @@
   tests:
     fail: 0
     na: 3
-    pass: 96
+    pass: 97
     unknown: 0
   version: '1.07'
 - abstract: Catmandu module for working with PLoS data
@@ -1371,6 +1383,7 @@
     - area: main
       suites:
       - buster
+      - bullseye
       - bookworm
       - sid
       version: 0.32-2
@@ -1380,6 +1393,7 @@
       version: 0.31-1
     - area: main
       suites:
+      - jessie
       - jessie-kfreebsd
       version: 0.18-1
   download_url: https://cpan.metacpan.org/authors/id/V/VO/VOJ/Catmandu-RDF-0.32.tar.gz
@@ -1474,7 +1488,8 @@
       - sid
       version: 0.43.0-2
     - area: main
-      suites: []
+      suites:
+      - bullseye
       version: 0.42.8-1
     - area: main
       suites:
@@ -1486,6 +1501,7 @@
       version: 0.039-1
     - area: main
       suites:
+      - jessie
       - jessie-kfreebsd
       version: 0.037-1
   download_url: https://cpan.metacpan.org/authors/id/V/VO/VOJ/Catmandu-SRU-0.430.tar.gz
@@ -1620,6 +1636,7 @@
     versions:
     - area: main
       suites:
+      - bullseye
       - bookworm
       - sid
       version: 1.0202-1
@@ -1654,7 +1671,8 @@
       - sid
       version: 0.0806-1
     - area: main
-      suites: []
+      suites:
+      - bullseye
       version: 0.0803-1
     - area: main
       suites:
@@ -1720,6 +1738,7 @@
     versions:
     - area: main
       suites:
+      - bullseye
       - bookworm
       - sid
       version: 0.13-1
@@ -1795,11 +1814,13 @@
     versions:
     - area: main
       suites:
+      - bullseye
       - bookworm
       - sid
       version: 0.06-1.1
     - area: main
       suites:
+      - jessie
       - stretch
       - buster
       - jessie-kfreebsd
@@ -1852,7 +1873,8 @@
       - sid
       version: 0.10-1
     - area: main
-      suites: []
+      suites:
+      - bullseye
       version: 0.09-1
     - area: main
       suites:
@@ -1882,6 +1904,7 @@
     versions:
     - area: main
       suites:
+      - bullseye
       - bookworm
       - sid
       version: 0.16-1.1
@@ -1916,6 +1939,7 @@
     versions:
     - area: main
       suites:
+      - bullseye
       - bookworm
       - sid
       version: 0.05-1
