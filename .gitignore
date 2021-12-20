@@ -10,3 +10,4 @@ purr.err
 purr.pl
 purr.sh
 cpanfile.snapshot
+.DS_Store
