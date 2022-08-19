@@ -239,6 +239,8 @@ Fix:
   name: mab_map
 - module: Catmandu::Fix::make_pid
   name: make_pid
+- module: Catmandu::Fix::mapping
+  name: mapping
 - module: Catmandu::Fix::marc_add
   name: marc_add
 - module: Catmandu::Fix::marc_append
