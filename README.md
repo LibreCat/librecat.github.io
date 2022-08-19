@@ -16,9 +16,9 @@ for local usage of this homepage.
 To build **Catmandu Documentation**, clone the
 [Catmandu wiki](https://github.com/LibreCat/Catmandu/wiki):
 
-    git clone https://github.com/LibreCat/Catmandu.wiki.git wiki
-    ln -s wiki/book Catmandu
-    cd wiki/book; make # build HTML documentation
+    git clone git@github.com:LibreCat/Catmandu.wiki.git wiki
+    git clone --branch gh-pages git@github.com:LibreCat/Catmandu.git Catmandu
+    make -C wiki/book homepage
 
 To update **Catmandu Distributions** install
 [Catmandu](https://metacpan.org/release/Catmandu) and run:
@@ -44,4 +44,7 @@ be committed to update the website:
 Pushing to GitHub will update the page <http://librecat.org/> except
 <http://librecat.org/Catmandu/>.  The latter published via the `gh-pages`
 branch of repository <https://github.com/LibreCat/Catmandu> from the
-[Catmandu wiki](https://github.com/LibreCat/Catmandu/wiki).
+[Catmandu wiki](https://github.com/LibreCat/Catmandu/wiki). To update
+and publish this part of the site:
+
+     make -C wiki/book publish
