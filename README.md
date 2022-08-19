@@ -38,3 +38,10 @@ be committed to update the website:
 
     bundle install
     jekyll serve
+
+## Deployment
+
+Pushing to GitHub will update the page <http://librecat.org/> except
+<http://librecat.org/Catmandu/>.  The latter published via the `gh-pages`
+branch of repository <https://github.com/LibreCat/Catmandu> from the
+[Catmandu wiki](https://github.com/LibreCat/Catmandu/wiki).
