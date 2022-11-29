@@ -17,121 +17,52 @@ title: LibreCat/Catmandu data processing toolkit
 
 <div class="container">
 
-  <div class="marketing">
-<!-- Bye bye advent see you next year
-    <h1>Advent Calendar <img src="assets/img/advent.jpeg"></h1>
-    <p class="marketing-byline">Follow our <a href="http://librecatproject.wordpress.com">advent calendar</a> in December with easy daily posts on library data processing with Catmandu. No programming skills required!</p>
+<h1>Download</h1>
 
--->
+All our tools are available on our github page:
 
-
-    <div class="marketing">
-    <h1>LibreCat</h1>
-
-      <h2>What is LibreCat?</h2>
-
-<p>
-LibreCat is a new institutional repository system developed by LibreCat Group.
-LibreCat was development in 2013 in Bielefeld and was made available on GitHub from
-the start. Since 2015 the code is in production at Bielefeld. In 2016 Ghent
-University joined the development and is using the cataloging backend in production.
-</p>
-
-      <h2>Features</h2>
-<p>
-Cataloging of many record types: Book, Book (Editor), Book Chapter, Book Review, Conference Abstract, Conference (Editor), Conference Paper, Dissertation, Encyclopedia Article, Journal Article, Special Issue, Newspaper Article, Preprint, Report, Translation, Translation (Section), Working Paper, Thesis, Research Data, Project, Award, Research Group.
-Drag and drop upload of full-text publications.
-Copycat from
-  <a href="http://www.doi.org/">DOI</a>,
-  <a href="https://www.ncbi.nlm.nih.gov/pubmed">PubMED</a>,
-  <a href="https://arxiv.org/">ArXiv</a> and
-  <a href="https://login.webofknowledge.com/">Web of Science</a>.
-<a href="https://scholar.google.com">Google Scholar</a> indexation support.
-Citation styles configurable from Zotero Style Repository.
-Full <a href="https://www.mathjax.org/">MathJAX</a> Latex support to add mathematical formulas in abstracts and titles.
-Pluggable authentication modules.
-Delegate input and management to user others.
-Multilingual support.
-<a href="https://www.elastic.co/">ElasticSearch</a> indexing.
-Pluggable file store backend.
-Command line support using <a href="https://metacpan.org/pod/Catmandu">Catmandu</a>.
-<a href="http://www.openarchives.org/pmh/">OAI-PMH</a> and
-<a href="http://www.loc.gov/standards/sru/">SRU</a>.
-REST / content negotiation.
-LibreCat is open source and shipped with the same license as the Perl language: <a href="http://dev.perl.org/licenses/">http://dev.perl.org/licenses/</a>.
-</p>
-
-      <h2>What does it look like?</h2>
-
-<p>
-We have demo LibreCat installation installed at <a href="http://demo.librecat.org/">http://demo.librecat.org/</a>.
-</p>
-
-      <h2>Download</h2>
-
-<p>
-Download LibreCat at <a href="https://github.com/LibreCat/LibreCat/releases">https://github.com/LibreCat/LibreCat/releases</a>.
-</p>
-
-<p>
-Read the installation instructions and documentation at <a href="https://github.com/LibreCat/LibreCat/wiki">https://github.com/LibreCat/LibreCat/wiki</a>.
-</p>
+<h2><a href="https://github.com/LibreCat">https://github.com/LibreCat</a></h2>
 
 <h1>Catmandu</h1>
 
-
-      <h2>What is Catmandu?</h2>
 <p>
-Catmandu is a command line tool to access and convert data <br>
-from your digital library, research services or any other open data sets.
-</p>
-      <h2>Features</h2>
-<p>
-Download data via protocols such as <a href="http://www.openarchives.org/pmh/">OAI-PMH</a>, <a href="http://www.loc.gov/standards/sru/">SRU</a>, <a href="https://en.wikipedia.org/wiki/SPARQL">SPARQL</a> and <a href="http://linkeddatafragments.org/">Linked Data Fragments</a>. <br>
-Convert formats such as <a href="http://www.loc.gov/marc/">MARC</a>, <a href="http://www.loc.gov/mods/">MODS</a>, <a href="http://dublincore.org/">Dublin Core</a> and many more. <br>
-Generate <a href="https://www.w3.org/RDF/">RDF</a> and speak the <a href="http://semanticweb.org/wiki/Main_Page">Semantic Web</a>. <br>
-Index your data into databases such as <a href="http://lucene.apache.org/solr/">Solr</a>,
-<a href="https://www.elastic.co/">Elasticsearch</a> and
-<a href="https://www.mongodb.org/">MongoDB</a>. <br>
-Use a simple <a href="http://librecat.org/Catmandu/#fix-language">Fix</a> language to convert metadata into any format you like.
-</p>
-      <h2>What does it look like?</h2>
-<p>
-  <pre style="text-align: left; padding-left: 150px;"><tt>$ catmandu convert OAI --url http://biblio.ugent.be/oai
-$ catmandu convert MARC --fix "marc_map(245,title)" &lt; data.mrc
-$ catmandu import MARC to MongoDB --database_name data < marc.mrc
-$ catmandu export MongoDB --database_name data to JSON
-
-  </tt></pre>
+Catmandu provides a command line client and a Perl API to ease the export (E) 
+transformation (T) and loading (L) of data into databases or data file, ETL in short.
 </p>
 
-<div class="row-fluid">
-  <h2>Download</h2>
-    Download <a href="https://cpan.metacpan.org/authors/id/N/NI/NICS/Catmandu-1.2002.tar.gz">Catmandu 1.2002</a>
+<p>
+Catmandu is specialized in processing, converting, creating library metadata from
+various input sources.
+</p>
 
-    <div>
-     CPAN: <a href="https://metacpan.org/pod/Catmandu">https://metacpan.org/pod/Catmandu</a>
-    </div>
-    <div>
-     GitHub: <a href="https://github.com/LibreCat/Catmandu">https://github.com/LibreCat/Catmandu</a>
-    </div>
-    <div>
-      <div>
-     Virtual Box:<a href="https://librecatproject.wordpress.com/get-catmandu/">https://librecatproject.wordpress.com/get-catmandu/</a>
-      </div>
-    </div>
-  </div>
-</div>
+<p>
+Catmandu can process: MARC, MAB, XML, Aleph X-services, BagIt, BibTeX, EAD, LIDO, JSON
+Markdown, MODS, OAI-PMH, ORCID, PLoS, PNX, RDF, RIS, SRU, XML, XLS, XSD , YAML, Z39.50
+and many other formats.
+</p>
+<h1>Who are we?</h1>
+<p>
+LibreCat is a group of library developers and enthusiasts who meet at library conferences 
+such as ELAG and SWIB and enjoy sharing code to process library (meta)data. 
+</p>
 
-<div class="row-fluid">
-  <h2>Documentation and Help</h2>
-  <p>
-    Read the <a href="Catmandu/#installation">installation instructions</a>,
-    look at our <a href="use-cases.html">use cases</a> or get a 18 day
-    <a href="https://librecatproject.wordpress.com/2014/12/01/day-1-getting-catmandu/">Advent introduction</a>
-    into Linux basics and Catmandu!
-  </p>
-  <p>
-    You can always contact us at
-    <a href="https://lists.uni-bielefeld.de/mailman2/cgi/unibi/listinfo/librecat-dev">our mailing list</a>.
+<p>
+This group was formed in 2013 and created many free and open source tools. This project 
+page provides an overview of all the tools the group shares with the rest of the world.
+</p>
+
+<p>
+We created our tools mainly because they helped us in our own projects. We hope that these 
+tools can help you in your own projects. We are not a compagy nor have any funding for any 
+helpdesk or extensive support. The code is provided as is. If any questions arise please ask 
+the developers of the individual projects for assistence.
+</p>
+
+<p>
+If you need more information about the main <a href="Catmandu">https://metacpan.org/pod/Catmandu</a>
+project follow our <a href="https://librecatproject.wordpress.com">blog</a>, read our 
+<a href="https://github.com/LibreCat/Catmandu/wiki">Wiki</a>, or join our 
+<a href="https://lists.uni-bielefeld.de/mailman2/cgi/unibi/listinfo/librecat-dev">mailing list</a>.
+</p>
+
 </div>
