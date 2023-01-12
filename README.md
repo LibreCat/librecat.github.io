@@ -13,4 +13,4 @@ for local usage of this homepage.
 ## Install and run jekyll
 
     bundle install
-    jekyll serve
+    bundle exec jekyll serve
